@@ -32,6 +32,6 @@ class _TreeLocation {
     final key = this.key != null ? '@${this.key}' : null;
     final position = this.position != null ? '#${this.position}' : '';
     final parent = this.parent?.toString() ?? '';
-    return '$parent$token${key ?? position}';
+    return '$parent[$token${key ?? position}]';
   }
 }

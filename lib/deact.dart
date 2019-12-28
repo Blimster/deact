@@ -15,38 +15,46 @@ void deact(String selector, Component root) {
 class State<T> {
   final String selector;
   final Node rootNode;
-  T _state;
+  T _value;
 
-  State._(this.selector, this.rootNode, this._state);
+  State._(this.selector, this.rootNode, this._value);
 
   void update(void updater(T state)) {
-    updater(_state);
+    updater(_value);
     _render(selector, rootNode);
   }
 
   void set(T setter(T state)) {
-    _state = setter(_state);
+    _value = setter(_value);
     _render(selector, rootNode);
   }
 
-  T get get => _state;
+  T get value => _value;
 }
 
 class ComponentRenderContext<T> {
   final String selector;
   final Node rootNode;
-  State<T> _state;
+  final List<State> _states = [];
+  int _stateIndex = 0;
 
   ComponentRenderContext._(this.selector, this.rootNode);
 
   State<T> state(T initialValue) {
-    if (_state == null) {
-      _state = State._(selector, rootNode, initialValue);
+    if(_states.length > _stateIndex) {
+      final state = _states[_stateIndex];
+      _stateIndex++;
+      return state;
+    } else {
+      final state = State._(selector, rootNode, initialValue);
+      _states.add(state);
+      _stateIndex++;
+      return state;
     }
-    return _state;
   }
 }
 
+typedef FunctionalComponent = Element Function(ComponentRenderContext ctx);
 typedef EventListener<E extends html.Event> = void Function(E event);
 
 abstract class Node {
@@ -78,6 +86,17 @@ abstract class Component extends Node {
   Element render(ComponentRenderContext context);
 }
 
+class Functional extends Component {
+  final FunctionalComponent component;
+
+  Functional._({Object key, this.component}) : super(key: key);
+
+  @override
+  Element render(ComponentRenderContext context) {
+    return component(context);
+  }
+}
+
 Text text(String text) => Text._(text);
 
 extension DeactString on String {
@@ -86,6 +105,10 @@ extension DeactString on String {
 
 Element element(String name, {Map<String, String> attributes, Map<String, Object> listeners, List<Node> children}) {
   return Element._(name, null, attributes, listeners, children);
+}
+
+Component functional({Object key, FunctionalComponent component}) {
+  return Functional._(key: key, component: component);
 }
 
 Element div({String id, String style, EventListener<MouseEvent> onclick, List<Node> children}) {

@@ -17,9 +17,10 @@ void _renderElement(
   _TreeLocation parent,
 ) {
   if (node is Element) {
+    node._location = _TreeLocation(parent, 'e:${node.name}');
+    print(node._location);
     final props = [];
     if (node.attributes != null) {
-      node._location = _TreeLocation(parent, 'e:${node.name}');
       node.attributes.forEach((name, value) => props.addAll([name, value]));
     }
     if (node.listeners != null) {
@@ -33,15 +34,17 @@ void _renderElement(
     _elementClose(node.name);
   } else if (node is Text) {
     node._location = _TreeLocation(parent, 't');
-
+    print(node._location);
     _text(node.text);
   } else if (node is Component) {
-    node._location = _TreeLocation(parent, 'c:${node.runtimeType}');
+    node._location = _TreeLocation(parent, 'c:${node.runtimeType}', key: node.key);
+    print(node._location);
     var context = _contexts[node._location];
     if (context == null) {
       context = ComponentRenderContext._(selector, rootNode);
       _contexts[node._location] = context;
     }
+    context._stateIndex = 0;
     final elementNode = node.render(context);
     _renderElement(selector, rootNode, elementNode, node._location);
   } else {
