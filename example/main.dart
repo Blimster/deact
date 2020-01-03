@@ -1,8 +1,10 @@
 import 'package:deact/deact.dart';
 import 'package:logging/logging.dart';
 
+bool showCounter = true;
+
 void main() {
-  Logger.root.level = Level.ALL;
+  Logger.root.level = Level.FINE;
   Logger.root.onRecord.listen((LogRecord rec) {
     print(rec.message);
   });
@@ -15,7 +17,7 @@ class Red extends Component {
   Element render(ComponentRenderContext context) {
     return div(id: 'foo', style: 'color: red', children: [
       'I am red!'.txt,
-      counter(key: 'blue'),
+      if (showCounter) counter(key: 'blue'),
       Counter(key: 'foo'),
       Counter(key: 'bar'),
       'I am red again!'.txt,
@@ -36,7 +38,12 @@ Component counter({Object key}) => fc(
 
       return div(
           style: 'color: blue; user-select: none; cursor: pointer',
-          onclick: (e) => counter.set((s) => s + 1),
+          onclick: (e) {
+            counter.set((s) => s + 1);
+            if (counter.value == 3) {
+              showCounter = false;
+            }
+          },
           children: [
             'I am blue! Counter: ${counter.value}'.txt,
           ]);
