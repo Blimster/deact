@@ -23,14 +23,14 @@ void _renderInstance(_DeactInstance instance) {
   });
   locationsToRemove.forEach((location) {
     instance.contexts.remove(location);
-    instance.logger.fine('removed context for node at ${location}');
+    instance.logger.fine('${location}: removed context');
   });
 }
 
 void _renderNode(_DeactInstance instance, Node node, _TreeLocation parent, Set<_TreeLocation> usedLocations) {
   if (node is Element) {
     node._location = _TreeLocation(parent, 'e:${node.name}');
-    instance.logger.finest('processing node at ${node._location}');
+    instance.logger.finest('${node._location}: processing node');
     final props = [];
     if (node.attributes != null) {
       node.attributes.forEach((name, value) => props.addAll([name, value]));
@@ -46,17 +46,17 @@ void _renderNode(_DeactInstance instance, Node node, _TreeLocation parent, Set<_
     _elementClose(node.name);
   } else if (node is Text) {
     node._location = _TreeLocation(parent, 't');
-    instance.logger.finest('processing node at ${node._location}');
+    instance.logger.finest('${node._location}: processing node');
     _text(node.text);
   } else if (node is Component) {
     node._location = _TreeLocation(parent, 'c:${node.runtimeType}', key: node.key);
     usedLocations.add(node._location);
-    instance.logger.finest('processing node at ${node._location}');
+    instance.logger.finest('${node._location}: processing node');
     var context = instance.contexts[node._location];
     if (context == null) {
-      context = ComponentRenderContext._(instance);
+      context = ComponentRenderContext._(instance, node._location);
       instance.contexts[node._location] = context;
-      instance.logger.fine('created context for node at ${node._location}');
+      instance.logger.fine('${node._location}: created context');
     }
     context._stateIndex = 0;
     final elementNode = node.render(context);

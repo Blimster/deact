@@ -3,6 +3,7 @@ library deact;
 import 'dart:html';
 import 'dart:js';
 import 'dart:html' as html;
+import 'dart:js_util';
 
 import 'package:logging/logging.dart';
 

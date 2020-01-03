@@ -21,10 +21,11 @@ class State<T> {
 
 class ComponentRenderContext<T> {
   final _DeactInstance _instance;
+  final _TreeLocation _location;
   final List<State> _states = [];
   int _stateIndex = 0;
 
-  ComponentRenderContext._(this._instance);
+  ComponentRenderContext._(this._instance, this._location);
 
   State<T> state(T initialValue) {
     if (_states.length > _stateIndex) {
@@ -33,6 +34,7 @@ class ComponentRenderContext<T> {
       return state;
     } else {
       final state = State._(_instance, initialValue);
+      _instance.logger.fine('${_location}: created state at index ${_stateIndex} with initial value ${initialValue}');
       _states.add(state);
       _stateIndex++;
       return state;
