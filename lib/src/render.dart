@@ -1,29 +1,35 @@
 part of deact;
 
 void _renderInstance(_DeactInstance instance) {
-  final hostElement = html.querySelector(instance.selector);
-  if (hostElement == null) {
-    throw ArgumentError('no element found for selector {selector}');
-  }
-
-  final usedLocations = <_TreeLocation>{};
-  _patch(
-      hostElement,
-      () => _renderNode(
-            instance,
-            instance.rootNode,
-            _TreeLocation(null, 's:${instance.selector}'),
-            usedLocations,
-          ));
-  final locationsToRemove = <_TreeLocation>{};
-  instance.contexts.keys.forEach((location) {
-    if (usedLocations.contains(location) == false) {
-      locationsToRemove.add(location);
+  Future(() {
+    final hostElement = html.querySelector(instance.selector);
+    if (hostElement == null) {
+      throw ArgumentError('no element found for selector {selector}');
     }
-  });
-  locationsToRemove.forEach((location) {
-    instance.contexts.remove(location);
-    instance.logger.fine('${location}: removed context');
+
+    final usedLocations = <_TreeLocation>{};
+    _patch(
+        hostElement,
+        () => _renderNode(
+              instance,
+              instance.rootNode,
+              _TreeLocation(null, 's:${instance.selector}'),
+              usedLocations,
+            ));
+    final locationsToRemove = <_TreeLocation>{};
+    instance.contexts.keys.forEach((location) {
+      if (usedLocations.contains(location) == false) {
+        locationsToRemove.add(location);
+      }
+    });
+    locationsToRemove.forEach((location) {
+      final ctx = instance.contexts[location];
+      ctx._cleanups.values.forEach((cleanup) {
+        cleanup();
+      });
+      instance.contexts.remove(location);
+      instance.logger.fine('${location}: removed context');
+    });
   });
 }
 
@@ -52,15 +58,45 @@ void _renderNode(_DeactInstance instance, Node node, _TreeLocation parent, Set<_
     node._location = _TreeLocation(parent, 'c:${node.runtimeType}', key: node.key);
     usedLocations.add(node._location);
     instance.logger.finest('${node._location}: processing node');
+    var newContext = false;
     var context = instance.contexts[node._location];
     if (context == null) {
       context = ComponentRenderContext._(instance, node._location);
       instance.contexts[node._location] = context;
       instance.logger.fine('${node._location}: created context');
+      newContext = true;
     }
-    context._stateIndex = 0;
+    context._effects.clear();
     final elementNode = node.render(context);
     _renderNode(instance, elementNode, node._location, usedLocations);
+    context._effects.keys.forEach((name) {
+      final states = context._effectStateDependencies[name];
+
+      var executeEffect = false;
+      if (states == null || newContext) {
+        executeEffect = true;
+      } else {
+        for (final state in states) {
+          if (state._valueChanged) {
+            executeEffect = true;
+            break;
+          }
+        }
+      }
+
+      if (executeEffect) {
+        final cleanup = context._cleanups[name];
+        if (cleanup != null) {
+          cleanup();
+        }
+        final effect = context._effects[name];
+        final newCleanup = effect();
+        if (newCleanup != null) {
+          context._cleanups[name] = newCleanup;
+        }
+      }
+    });
+    context._states.values.forEach((state) => state._valueChanged = false);
   } else {
     throw ArgumentError('unsupported type ${node.runtimeType} of node!');
   }

@@ -4,7 +4,7 @@ import 'package:logging/logging.dart';
 bool showCounter = true;
 
 void main() {
-  Logger.root.level = Level.FINE;
+  Logger.root.level = Level.INFO;
   Logger.root.onRecord.listen((LogRecord rec) {
     print(rec.message);
   });
@@ -34,7 +34,14 @@ class Red extends Component {
 Component counter({Object key}) => fc(
     key: key,
     component: (ctx) {
-      final counter = ctx.state(0);
+      final counter = ctx.state('counter', 0);
+
+      ctx.effect('effect', () {
+        print('effect');
+        return () {
+          print('cleanup');
+        };
+      }, dependsOn: []);
 
       return div(
           style: 'color: blue; user-select: none; cursor: pointer',
@@ -54,8 +61,8 @@ class Counter extends Component {
 
   @override
   Element render(ComponentRenderContext ctx) {
-    final counter1 = ctx.state(0);
-    final counter2 = ctx.state(10);
+    final counter1 = ctx.state('counter1', 0);
+    final counter2 = ctx.state('counter2', 10);
     return div(
         id: 'bar',
         style: 'color: blue; user-select: none; cursor: pointer',
