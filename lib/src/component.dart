@@ -27,13 +27,15 @@ typedef Effect = Cleanup Function();
 
 class ComponentRenderContext<T> {
   final _DeactInstance _instance;
+  final ComponentRenderContext _parent;
   final _TreeLocation _location;
+  final Component _component;
   final Map<String, State> _states = {};
   final Map<String, Effect> _effects = {};
   final Map<String, Cleanup> _cleanups = {};
   final Map<String, List<State>> _effectStateDependencies = {};
 
-  ComponentRenderContext._(this._instance, this._location);
+  ComponentRenderContext._(this._parent, this._instance, this._location, this._component);
 
   State<T> state(String name, T initialValue) {
     return _states.putIfAbsent(name, () {
@@ -47,9 +49,22 @@ class ComponentRenderContext<T> {
     _effects[name] = effect;
     _effectStateDependencies[name] = dependsOn;
   }
+
+  State<S> globalState<S>(String name) {
+    var parent = _parent;
+    while (parent != null) {
+      if (parent._component is _GlobalStateProvider) {
+        final _GlobalStateProvider gsp = parent._component;
+        if (gsp._name == name) {
+          return gsp._state;
+        }
+      }
+    }
+    return throw StateError('no global state with name $name found above the requesting component');
+  }
 }
 
-typedef FunctionalComponent = Element Function(ComponentRenderContext ctx);
+typedef FunctionalComponent = Node Function(ComponentRenderContext ctx);
 typedef EventListener<E extends html.Event> = void Function(E event);
 
 abstract class Component extends Node {
@@ -58,7 +73,7 @@ abstract class Component extends Node {
       : this.key = key,
         super._(null);
 
-  Element render(ComponentRenderContext context);
+  Node render(ComponentRenderContext context);
 }
 
 class Functional extends Component {
@@ -72,6 +87,6 @@ class Functional extends Component {
   }
 }
 
-Component fc({Object key, FunctionalComponent component}) {
-  return Functional._(key: key, component: component);
+Component fc({Object key, FunctionalComponent root}) {
+  return Functional._(key: key, component: root);
 }

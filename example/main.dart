@@ -14,7 +14,7 @@ void main() {
 
 class Red extends Component {
   @override
-  Element render(ComponentRenderContext context) {
+  Node render(ComponentRenderContext context) {
     return div(id: 'foo', style: 'color: red', children: [
       'I am red!'.txt,
       if (showCounter) counter(key: 'blue'),
@@ -31,50 +31,66 @@ class Red extends Component {
   }
 }
 
-Component counter({Object key}) => fc(
-    key: key,
-    component: (ctx) {
-      final counter = ctx.state('counter', 0);
+Node foo() {
+  return fc(root: (ctx) {
+    final c = ctx.globalState('ctr');
+    return div(children: ['global counter: ${c.value}'.txt]);
+  });
+}
 
-      ctx.effect('effect', () {
-        print('effect');
-        return () {
-          print('cleanup');
-        };
-      }, dependsOn: []);
+Component counter({Object key}) => globalStateProvider(
+      name: 'ctr',
+      initialValue: 0,
+      children: [
+        foo(),
+        fc(
+            key: key,
+            root: (ctx) {
+              final counter = ctx.globalState('ctr');
 
-      return div(
-          style: 'color: blue; user-select: none; cursor: pointer',
-          onclick: (e) {
-            counter.set((s) => s + 1);
-            if (counter.value == 3) {
-              showCounter = false;
-            }
-          },
-          children: [
-            'I am blue! Counter: ${counter.value}'.txt,
-          ]);
-    });
+              ctx.effect('effect', () {
+                print('effect');
+                return () {
+                  print('cleanup');
+                };
+              }, dependsOn: []);
+
+              return div(
+                  style: 'color: blue; user-select: none; cursor: pointer',
+                  onclick: (e) {
+                    counter.set((s) => s + 1);
+                    if (counter.value == 3) {
+                      showCounter = false;
+                    }
+                  },
+                  children: [
+                    'I am blue! Counter: ${counter.value}'.txt,
+                  ]);
+            })
+      ],
+    );
 
 class Counter extends Component {
   Counter({Object key}) : super(key: key);
 
   @override
-  Element render(ComponentRenderContext ctx) {
+  Node render(ComponentRenderContext ctx) {
     final counter1 = ctx.state('counter1', 0);
     final counter2 = ctx.state('counter2', 10);
-    return div(
-        id: 'bar',
-        style: 'color: blue; user-select: none; cursor: pointer',
-        onclick: (e) {
-          if (e.client.x > 20) {
-            counter1.set((s) => s + 1);
-          } else {
-            counter2.set((s) => s + 10);
-          }
-        },
-        children: [
-          'Click me: ${counter1.value + counter2.value}'.txt,
-        ]);
+    return fragment([
+      div(
+          id: 'bar',
+          style: 'color: blue; user-select: none; cursor: pointer',
+          onclick: (e) {
+            if (e.client.x > 20) {
+              counter1.set((s) => s + 1);
+            } else {
+              counter2.set((s) => s + 10);
+            }
+          },
+          children: [
+            'Click me: ${counter1.value + counter2.value}'.txt,
+          ])
+    ]);
   }
 }
