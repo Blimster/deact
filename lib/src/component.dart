@@ -1,11 +1,16 @@
 part of deact;
 
+class _TypeLiteral<T> {
+  Type type() => T;
+}
+
 class State<T> {
   final _DeactInstance _instance;
+  final _TypeLiteral<T> _type;
   T _value;
   bool _valueChanged = true;
 
-  State._(this._instance, this._value);
+  State._(this._instance, this._value) : _type = _TypeLiteral<T>();
 
   void update(void updater(T state)) {
     updater(_value);
@@ -25,7 +30,7 @@ class State<T> {
 typedef Cleanup = void Function();
 typedef Effect = Cleanup Function();
 
-class ComponentRenderContext<T> {
+class ComponentRenderContext {
   final _DeactInstance _instance;
   final ComponentRenderContext _parent;
   final _TreeLocation _location;
@@ -37,7 +42,7 @@ class ComponentRenderContext<T> {
 
   ComponentRenderContext._(this._parent, this._instance, this._location, this._component);
 
-  State<T> state(String name, T initialValue) {
+  State<T> state<T>(String name, T initialValue) {
     return _states.putIfAbsent(name, () {
       final state = State._(_instance, initialValue);
       _instance.logger.fine('${_location}: created state with name ${name} with initial value ${initialValue}');
@@ -45,22 +50,25 @@ class ComponentRenderContext<T> {
     });
   }
 
-  void effect(String name, Effect effect, {List<State> dependsOn}) {
-    _effects[name] = effect;
-    _effectStateDependencies[name] = dependsOn;
-  }
-
   State<S> globalState<S>(String name) {
     var parent = _parent;
     while (parent != null) {
-      if (parent._component is _GlobalStateProvider) {
-        final _GlobalStateProvider gsp = parent._component;
+      if (parent._component is _GlobalStateProvider<S>) {
+        final _GlobalStateProvider<S> gsp = parent._component;
         if (gsp._name == name) {
-          return gsp._state;
+          if (gsp._state._type.type() == S) {
+            return gsp._state;
+          }
         }
       }
+      parent = parent._parent;
     }
-    return throw StateError('no global state with name $name found above the requesting component');
+    return throw StateError('no global state with name $name and type $S found!');
+  }
+
+  void effect(String name, Effect effect, {List<State> dependsOn}) {
+    _effects[name] = effect;
+    _effectStateDependencies[name] = dependsOn;
   }
 }
 

@@ -4,7 +4,7 @@ class _GlobalStateProvider<T> extends Component {
   final String _name;
   final T _initialValue;
   final List<Node> children;
-  State _state;
+  State<T> _state;
 
   _GlobalStateProvider(this._name, this._initialValue, this.children);
 
@@ -16,5 +16,5 @@ class _GlobalStateProvider<T> extends Component {
 }
 
 Node globalStateProvider<T>({String name, T initialValue, List<Node> children}) {
-  return _GlobalStateProvider(name, initialValue, children);
+  return _GlobalStateProvider<T>(name, initialValue, children);
 }

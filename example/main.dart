@@ -33,12 +33,12 @@ class Red extends Component {
 
 Node foo() {
   return fc(root: (ctx) {
-    final c = ctx.globalState('ctr');
+    final c = ctx.globalState<int>('ctr');
     return div(children: ['global counter: ${c.value}'.txt]);
   });
 }
 
-Component counter({Object key}) => globalStateProvider(
+Component counter({Object key}) => globalStateProvider<int>(
       name: 'ctr',
       initialValue: 0,
       children: [
@@ -46,7 +46,7 @@ Component counter({Object key}) => globalStateProvider(
         fc(
             key: key,
             root: (ctx) {
-              final counter = ctx.globalState('ctr');
+              final counter = ctx.globalState<int>('ctr');
 
               ctx.effect('effect', () {
                 print('effect');
