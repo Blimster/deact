@@ -73,7 +73,6 @@ class ComponentRenderContext {
 }
 
 typedef FunctionalComponent = Node Function(ComponentRenderContext ctx);
-typedef EventListener<E extends html.Event> = void Function(E event);
 
 abstract class Component extends Node {
   final Object key;
