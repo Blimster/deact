@@ -2,7 +2,7 @@ part of deact;
 
 void _renderInstance(_DeactInstance instance) {
   Future(() {
-    final hostElement = html.querySelector(instance.selector);
+    final hostElement = Html.querySelector(instance.selector);
     if (hostElement == null) {
       throw ArgumentError('no element found for selector {selector}');
     }

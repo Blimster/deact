@@ -1,4 +1,5 @@
 import 'package:deact/deact.dart';
+import 'package:deact/deact_html52.dart';
 import 'package:logging/logging.dart';
 
 bool showCounter = true;
@@ -78,6 +79,7 @@ class Counter extends Component {
     final counter1 = ctx.state('counter1', 0);
     final counter2 = ctx.state('counter2', 10);
     return fragment([
+      audio(autoplay: null),
       div(
           id: 'bar',
           style: 'color: blue; user-select: none; cursor: pointer',
