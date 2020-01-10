@@ -17,6 +17,12 @@ part 'src/deact/render.dart';
 part 'src/deact/text.dart';
 part 'src/deact/tree_location.dart';
 
+/// The entrypoint to mount a Deact application to the DOM.
+///
+/// The application will be mounted beneath the elements
+/// selected by the given [selector]. All node beneath
+/// that element will be deleted and replaced by the
+/// [root] node.
 void deact(String selector, Node root) {
   _renderInstance(_DeactInstance(selector, root));
 }
