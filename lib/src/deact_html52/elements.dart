@@ -24,6 +24,7 @@ Element a({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -42,9 +43,11 @@ Element a({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -117,6 +120,9 @@ Element a({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -171,6 +177,9 @@ Element a({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -179,6 +188,9 @@ Element a({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -212,6 +224,7 @@ Element abbr({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -230,9 +243,11 @@ Element abbr({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -283,6 +298,9 @@ Element abbr({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -338,6 +356,9 @@ Element abbr({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -346,6 +367,9 @@ Element abbr({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -379,6 +403,7 @@ Element address({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -397,9 +422,11 @@ Element address({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -450,6 +477,9 @@ Element address({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -505,6 +535,9 @@ Element address({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -513,6 +546,9 @@ Element address({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -556,6 +592,7 @@ Element area({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -574,9 +611,11 @@ Element area({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -658,6 +697,9 @@ Element area({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -712,6 +754,9 @@ Element area({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -720,6 +765,9 @@ Element area({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -753,6 +801,7 @@ Element article({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -771,9 +820,11 @@ Element article({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -824,6 +875,9 @@ Element article({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -879,6 +933,9 @@ Element article({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -887,6 +944,9 @@ Element article({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -920,6 +980,7 @@ Element aside({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -938,9 +999,11 @@ Element aside({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -991,6 +1054,9 @@ Element aside({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -1046,6 +1112,9 @@ Element aside({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -1054,6 +1123,9 @@ Element aside({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -1094,6 +1166,7 @@ Element audio({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -1112,9 +1185,11 @@ Element audio({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -1187,6 +1262,9 @@ Element audio({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -1241,6 +1319,9 @@ Element audio({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -1249,6 +1330,9 @@ Element audio({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -1282,6 +1366,7 @@ Element b({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -1300,9 +1385,11 @@ Element b({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -1354,6 +1441,9 @@ Element b({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -1408,6 +1498,9 @@ Element b({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -1416,6 +1509,9 @@ Element b({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -1451,6 +1547,7 @@ Element base({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -1469,9 +1566,11 @@ Element base({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -1529,6 +1628,9 @@ Element base({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -1583,6 +1685,9 @@ Element base({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -1591,6 +1696,9 @@ Element base({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -1624,6 +1732,7 @@ Element bdi({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -1642,9 +1751,11 @@ Element bdi({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -1695,6 +1806,9 @@ Element bdi({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -1750,6 +1864,9 @@ Element bdi({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -1758,6 +1875,9 @@ Element bdi({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -1791,6 +1911,7 @@ Element bdo({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -1809,9 +1930,11 @@ Element bdo({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -1862,6 +1985,9 @@ Element bdo({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -1917,6 +2043,9 @@ Element bdo({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -1925,6 +2054,9 @@ Element bdo({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -1959,6 +2091,7 @@ Element blockquote({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -1977,9 +2110,11 @@ Element blockquote({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -2034,6 +2169,9 @@ Element blockquote({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -2088,6 +2226,9 @@ Element blockquote({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -2096,6 +2237,9 @@ Element blockquote({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -2129,6 +2273,7 @@ Element body({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -2147,9 +2292,11 @@ Element body({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -2200,6 +2347,9 @@ Element body({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -2255,6 +2405,9 @@ Element body({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -2263,6 +2416,9 @@ Element body({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -2296,6 +2452,7 @@ Element br({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -2314,9 +2471,11 @@ Element br({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -2367,6 +2526,9 @@ Element br({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -2422,6 +2584,9 @@ Element br({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -2430,6 +2595,9 @@ Element br({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -2474,6 +2642,7 @@ Element button({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -2492,9 +2661,11 @@ Element button({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -2579,6 +2750,9 @@ Element button({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -2633,6 +2807,9 @@ Element button({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -2641,6 +2818,9 @@ Element button({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -2676,6 +2856,7 @@ Element canvas({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -2694,9 +2875,11 @@ Element canvas({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -2754,6 +2937,9 @@ Element canvas({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -2808,6 +2994,9 @@ Element canvas({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -2816,6 +3005,9 @@ Element canvas({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -2849,6 +3041,7 @@ Element caption({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -2867,9 +3060,11 @@ Element caption({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -2920,6 +3115,9 @@ Element caption({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -2975,6 +3173,9 @@ Element caption({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -2983,6 +3184,9 @@ Element caption({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -3016,6 +3220,7 @@ Element cite({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -3034,9 +3239,11 @@ Element cite({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -3087,6 +3294,9 @@ Element cite({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -3142,6 +3352,9 @@ Element cite({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -3150,6 +3363,9 @@ Element cite({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -3183,6 +3399,7 @@ Element code({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -3201,9 +3418,11 @@ Element code({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -3254,6 +3473,9 @@ Element code({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -3309,6 +3531,9 @@ Element code({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -3317,6 +3542,9 @@ Element code({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -3351,6 +3579,7 @@ Element col({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -3369,9 +3598,11 @@ Element col({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -3425,6 +3656,9 @@ Element col({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -3480,6 +3714,9 @@ Element col({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -3488,6 +3725,9 @@ Element col({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -3522,6 +3762,7 @@ Element colgroup({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -3540,9 +3781,11 @@ Element colgroup({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -3596,6 +3839,9 @@ Element colgroup({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -3651,6 +3897,9 @@ Element colgroup({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -3659,6 +3908,9 @@ Element colgroup({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -3693,6 +3945,7 @@ Element data({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -3711,9 +3964,11 @@ Element data({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -3768,6 +4023,9 @@ Element data({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -3822,6 +4080,9 @@ Element data({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -3830,6 +4091,9 @@ Element data({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -3863,6 +4127,7 @@ Element datalist({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -3881,9 +4146,11 @@ Element datalist({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -3934,6 +4201,9 @@ Element datalist({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -3989,6 +4259,9 @@ Element datalist({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -3997,6 +4270,9 @@ Element datalist({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -4030,6 +4306,7 @@ Element dd({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -4048,9 +4325,11 @@ Element dd({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -4101,6 +4380,9 @@ Element dd({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -4156,6 +4438,9 @@ Element dd({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -4164,6 +4449,9 @@ Element dd({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -4199,6 +4487,7 @@ Element del({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -4217,9 +4506,11 @@ Element del({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -4277,6 +4568,9 @@ Element del({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -4331,6 +4625,9 @@ Element del({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -4339,6 +4636,9 @@ Element del({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -4373,6 +4673,7 @@ Element details({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -4391,9 +4692,11 @@ Element details({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -4448,6 +4751,9 @@ Element details({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -4502,6 +4808,9 @@ Element details({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -4510,6 +4819,9 @@ Element details({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -4543,6 +4855,7 @@ Element dfn({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -4561,9 +4874,11 @@ Element dfn({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -4615,6 +4930,9 @@ Element dfn({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -4669,6 +4987,9 @@ Element dfn({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -4677,6 +4998,9 @@ Element dfn({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -4711,6 +5035,7 @@ Element dialog({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -4729,9 +5054,11 @@ Element dialog({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -4786,6 +5113,9 @@ Element dialog({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -4840,6 +5170,9 @@ Element dialog({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -4848,6 +5181,9 @@ Element dialog({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -4881,6 +5217,7 @@ Element div({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -4899,9 +5236,11 @@ Element div({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -4952,6 +5291,9 @@ Element div({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -5007,6 +5349,9 @@ Element div({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -5015,6 +5360,9 @@ Element div({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -5048,6 +5396,7 @@ Element dl({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -5066,9 +5415,11 @@ Element dl({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -5119,6 +5470,9 @@ Element dl({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -5174,6 +5528,9 @@ Element dl({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -5182,6 +5539,9 @@ Element dl({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -5215,6 +5575,7 @@ Element dt({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -5233,9 +5594,11 @@ Element dt({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -5286,6 +5649,9 @@ Element dt({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -5341,6 +5707,9 @@ Element dt({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -5349,6 +5718,9 @@ Element dt({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -5382,6 +5754,7 @@ Element em({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -5400,9 +5773,11 @@ Element em({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -5453,6 +5828,9 @@ Element em({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -5508,6 +5886,9 @@ Element em({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -5516,6 +5897,9 @@ Element em({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -5553,6 +5937,7 @@ Element embed({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -5571,9 +5956,11 @@ Element embed({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -5637,6 +6024,9 @@ Element embed({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -5691,6 +6081,9 @@ Element embed({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -5699,6 +6092,9 @@ Element embed({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -5735,6 +6131,7 @@ Element fieldset({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -5753,9 +6150,11 @@ Element fieldset({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -5816,6 +6215,9 @@ Element fieldset({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -5870,6 +6272,9 @@ Element fieldset({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -5878,6 +6283,9 @@ Element fieldset({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -5911,6 +6319,7 @@ Element figcaption({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -5929,9 +6338,11 @@ Element figcaption({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -5982,6 +6393,9 @@ Element figcaption({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -6037,6 +6451,9 @@ Element figcaption({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -6045,6 +6462,9 @@ Element figcaption({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -6078,6 +6498,7 @@ Element figure({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -6096,9 +6517,11 @@ Element figure({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -6149,6 +6572,9 @@ Element figure({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -6204,6 +6630,9 @@ Element figure({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -6212,6 +6641,9 @@ Element figure({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -6245,6 +6677,7 @@ Element footer({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -6263,9 +6696,11 @@ Element footer({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -6316,6 +6751,9 @@ Element footer({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -6371,6 +6809,9 @@ Element footer({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -6379,6 +6820,9 @@ Element footer({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -6420,6 +6864,7 @@ Element form({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -6438,9 +6883,11 @@ Element form({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -6516,6 +6963,9 @@ Element form({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -6570,6 +7020,9 @@ Element form({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -6578,6 +7031,9 @@ Element form({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -6611,6 +7067,7 @@ Element h1({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -6629,9 +7086,11 @@ Element h1({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -6682,6 +7141,9 @@ Element h1({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -6737,6 +7199,9 @@ Element h1({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -6745,6 +7210,9 @@ Element h1({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -6778,6 +7246,7 @@ Element h2({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -6796,9 +7265,11 @@ Element h2({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -6849,6 +7320,9 @@ Element h2({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -6904,6 +7378,9 @@ Element h2({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -6912,6 +7389,9 @@ Element h2({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -6945,6 +7425,7 @@ Element h3({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -6963,9 +7444,11 @@ Element h3({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -7016,6 +7499,9 @@ Element h3({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -7071,6 +7557,9 @@ Element h3({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -7079,6 +7568,9 @@ Element h3({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -7112,6 +7604,7 @@ Element h4({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -7130,9 +7623,11 @@ Element h4({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -7183,6 +7678,9 @@ Element h4({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -7238,6 +7736,9 @@ Element h4({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -7246,6 +7747,9 @@ Element h4({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -7279,6 +7783,7 @@ Element h5({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -7297,9 +7802,11 @@ Element h5({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -7350,6 +7857,9 @@ Element h5({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -7405,6 +7915,9 @@ Element h5({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -7413,6 +7926,9 @@ Element h5({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -7446,6 +7962,7 @@ Element h6({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -7464,9 +7981,11 @@ Element h6({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -7517,6 +8036,9 @@ Element h6({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -7572,6 +8094,9 @@ Element h6({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -7580,6 +8105,9 @@ Element h6({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -7613,6 +8141,7 @@ Element head({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -7631,9 +8160,11 @@ Element head({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -7684,6 +8215,9 @@ Element head({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -7739,6 +8273,9 @@ Element head({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -7747,6 +8284,9 @@ Element head({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -7780,6 +8320,7 @@ Element header({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -7798,9 +8339,11 @@ Element header({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -7851,6 +8394,9 @@ Element header({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -7906,6 +8452,9 @@ Element header({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -7914,6 +8463,9 @@ Element header({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -7947,6 +8499,7 @@ Element hr({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -7965,9 +8518,11 @@ Element hr({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -8018,6 +8573,9 @@ Element hr({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -8073,6 +8631,9 @@ Element hr({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -8081,6 +8642,9 @@ Element hr({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -8115,6 +8679,7 @@ Element html({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -8133,9 +8698,11 @@ Element html({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -8190,6 +8757,9 @@ Element html({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -8244,6 +8814,9 @@ Element html({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -8252,6 +8825,9 @@ Element html({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -8285,6 +8861,7 @@ Element i({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -8303,9 +8880,11 @@ Element i({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -8357,6 +8936,9 @@ Element i({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -8411,6 +8993,9 @@ Element i({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -8419,6 +9004,9 @@ Element i({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -8460,6 +9048,7 @@ Element iframe({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -8478,9 +9067,11 @@ Element iframe({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -8556,6 +9147,9 @@ Element iframe({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -8610,6 +9204,9 @@ Element iframe({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -8618,6 +9215,9 @@ Element iframe({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -8661,6 +9261,7 @@ Element img({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -8679,9 +9280,11 @@ Element img({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -8763,6 +9366,9 @@ Element img({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -8817,6 +9423,9 @@ Element img({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -8825,6 +9434,9 @@ Element img({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -8889,6 +9501,7 @@ Element input({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -8907,9 +9520,11 @@ Element input({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -9054,6 +9669,9 @@ Element input({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -9108,6 +9726,9 @@ Element input({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -9116,6 +9737,9 @@ Element input({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -9151,6 +9775,7 @@ Element ins({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -9169,9 +9794,11 @@ Element ins({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -9229,6 +9856,9 @@ Element ins({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -9283,6 +9913,9 @@ Element ins({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -9291,6 +9924,9 @@ Element ins({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -9324,6 +9960,7 @@ Element kbd({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -9342,9 +9979,11 @@ Element kbd({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -9396,6 +10035,9 @@ Element kbd({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -9450,6 +10092,9 @@ Element kbd({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -9458,6 +10103,9 @@ Element kbd({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -9492,6 +10140,7 @@ Element label({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -9510,9 +10159,11 @@ Element label({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -9567,6 +10218,9 @@ Element label({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -9621,6 +10275,9 @@ Element label({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -9629,6 +10286,9 @@ Element label({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -9662,6 +10322,7 @@ Element legend({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -9680,9 +10341,11 @@ Element legend({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -9734,6 +10397,9 @@ Element legend({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -9788,6 +10454,9 @@ Element legend({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -9796,6 +10465,9 @@ Element legend({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -9830,6 +10502,7 @@ Element li({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -9848,9 +10521,11 @@ Element li({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -9905,6 +10580,9 @@ Element li({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -9959,6 +10637,9 @@ Element li({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -9967,6 +10648,9 @@ Element li({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -10009,6 +10693,7 @@ Element link({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -10027,9 +10712,11 @@ Element link({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -10108,6 +10795,9 @@ Element link({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -10162,6 +10852,9 @@ Element link({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -10170,6 +10863,9 @@ Element link({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -10203,6 +10899,7 @@ Element main({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -10221,9 +10918,11 @@ Element main({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -10275,6 +10974,9 @@ Element main({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -10329,6 +11031,9 @@ Element main({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -10337,6 +11042,9 @@ Element main({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -10371,6 +11079,7 @@ Element map({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -10389,9 +11098,11 @@ Element map({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -10446,6 +11157,9 @@ Element map({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -10500,6 +11214,9 @@ Element map({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -10508,6 +11225,9 @@ Element map({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -10541,6 +11261,7 @@ Element mark({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -10559,9 +11280,11 @@ Element mark({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -10613,6 +11336,9 @@ Element mark({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -10667,6 +11393,9 @@ Element mark({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -10675,6 +11404,9 @@ Element mark({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -10712,6 +11444,7 @@ Element meta({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -10730,9 +11463,11 @@ Element meta({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -10796,6 +11531,9 @@ Element meta({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -10850,6 +11588,9 @@ Element meta({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -10858,6 +11599,9 @@ Element meta({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -10897,6 +11641,7 @@ Element meter({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -10915,9 +11660,11 @@ Element meter({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -10987,6 +11734,9 @@ Element meter({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -11041,6 +11791,9 @@ Element meter({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -11049,6 +11802,9 @@ Element meter({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -11082,6 +11838,7 @@ Element nav({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -11100,9 +11857,11 @@ Element nav({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -11153,6 +11912,9 @@ Element nav({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -11208,6 +11970,9 @@ Element nav({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -11216,6 +11981,9 @@ Element nav({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -11249,6 +12017,7 @@ Element noscript({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -11267,9 +12036,11 @@ Element noscript({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -11320,6 +12091,9 @@ Element noscript({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -11375,6 +12149,9 @@ Element noscript({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -11383,6 +12160,9 @@ Element noscript({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -11423,6 +12203,7 @@ Element object({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -11441,9 +12222,11 @@ Element object({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -11516,6 +12299,9 @@ Element object({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -11570,6 +12356,9 @@ Element object({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -11578,6 +12367,9 @@ Element object({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -11614,6 +12406,7 @@ Element ol({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -11632,9 +12425,11 @@ Element ol({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -11695,6 +12490,9 @@ Element ol({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -11749,6 +12547,9 @@ Element ol({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -11757,6 +12558,9 @@ Element ol({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -11792,6 +12596,7 @@ Element optgroup({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -11810,9 +12615,11 @@ Element optgroup({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -11870,6 +12677,9 @@ Element optgroup({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -11924,6 +12734,9 @@ Element optgroup({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -11932,6 +12745,9 @@ Element optgroup({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -11969,6 +12785,7 @@ Element option({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -11987,9 +12804,11 @@ Element option({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -12053,6 +12872,9 @@ Element option({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -12107,6 +12929,9 @@ Element option({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -12115,6 +12940,9 @@ Element option({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -12151,6 +12979,7 @@ Element output({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -12169,9 +12998,11 @@ Element output({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -12232,6 +13063,9 @@ Element output({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -12286,6 +13120,9 @@ Element output({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -12294,6 +13131,9 @@ Element output({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -12327,6 +13167,7 @@ Element p({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -12345,9 +13186,11 @@ Element p({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -12399,6 +13242,9 @@ Element p({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -12453,6 +13299,9 @@ Element p({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -12461,6 +13310,9 @@ Element p({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -12496,6 +13348,7 @@ Element param({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -12514,9 +13367,11 @@ Element param({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -12574,6 +13429,9 @@ Element param({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -12628,6 +13486,9 @@ Element param({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -12636,6 +13497,9 @@ Element param({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -12669,6 +13533,7 @@ Element picture({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -12687,9 +13552,11 @@ Element picture({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -12740,6 +13607,9 @@ Element picture({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -12795,6 +13665,9 @@ Element picture({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -12803,6 +13676,9 @@ Element picture({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -12836,6 +13712,7 @@ Element pre({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -12854,9 +13731,11 @@ Element pre({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -12907,6 +13786,9 @@ Element pre({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -12962,6 +13844,9 @@ Element pre({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -12970,6 +13855,9 @@ Element pre({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -13005,6 +13893,7 @@ Element progress({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -13023,9 +13912,11 @@ Element progress({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -13083,6 +13974,9 @@ Element progress({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -13137,6 +14031,9 @@ Element progress({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -13145,6 +14042,9 @@ Element progress({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -13179,6 +14079,7 @@ Element q({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -13197,9 +14098,11 @@ Element q({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -13254,6 +14157,9 @@ Element q({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -13308,6 +14214,9 @@ Element q({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -13316,6 +14225,9 @@ Element q({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -13349,6 +14261,7 @@ Element rb({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -13367,9 +14280,11 @@ Element rb({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -13420,6 +14335,9 @@ Element rb({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -13475,6 +14393,9 @@ Element rb({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -13483,6 +14404,9 @@ Element rb({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -13516,6 +14440,7 @@ Element rp({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -13534,9 +14459,11 @@ Element rp({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -13587,6 +14514,9 @@ Element rp({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -13642,6 +14572,9 @@ Element rp({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -13650,6 +14583,9 @@ Element rp({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -13683,6 +14619,7 @@ Element rt({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -13701,9 +14638,11 @@ Element rt({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -13754,6 +14693,9 @@ Element rt({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -13809,6 +14751,9 @@ Element rt({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -13817,6 +14762,9 @@ Element rt({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -13850,6 +14798,7 @@ Element rtc({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -13868,9 +14817,11 @@ Element rtc({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -13921,6 +14872,9 @@ Element rtc({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -13976,6 +14930,9 @@ Element rtc({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -13984,6 +14941,9 @@ Element rtc({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -14017,6 +14977,7 @@ Element ruby({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -14035,9 +14996,11 @@ Element ruby({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -14088,6 +15051,9 @@ Element ruby({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -14143,6 +15109,9 @@ Element ruby({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -14151,6 +15120,9 @@ Element ruby({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -14184,6 +15156,7 @@ Element s({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -14202,9 +15175,11 @@ Element s({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -14255,6 +15230,9 @@ Element s({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -14310,6 +15288,9 @@ Element s({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -14318,6 +15299,9 @@ Element s({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -14351,6 +15335,7 @@ Element samp({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -14369,9 +15354,11 @@ Element samp({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -14422,6 +15409,9 @@ Element samp({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -14477,6 +15467,9 @@ Element samp({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -14485,6 +15478,9 @@ Element samp({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -14525,6 +15521,7 @@ Element script({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -14543,9 +15540,11 @@ Element script({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -14618,6 +15617,9 @@ Element script({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -14672,6 +15674,9 @@ Element script({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -14680,6 +15685,9 @@ Element script({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -14713,6 +15721,7 @@ Element section({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -14731,9 +15740,11 @@ Element section({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -14785,6 +15796,9 @@ Element section({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -14839,6 +15853,9 @@ Element section({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -14847,6 +15864,9 @@ Element section({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -14888,6 +15908,7 @@ Element select({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -14906,9 +15927,11 @@ Element select({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -14984,6 +16007,9 @@ Element select({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -15038,6 +16064,9 @@ Element select({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -15046,6 +16075,9 @@ Element select({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -15079,6 +16111,7 @@ Element small({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -15097,9 +16130,11 @@ Element small({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -15151,6 +16186,9 @@ Element small({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -15205,6 +16243,9 @@ Element small({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -15213,6 +16254,9 @@ Element small({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -15251,6 +16295,7 @@ Element source({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -15269,9 +16314,11 @@ Element source({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -15338,6 +16385,9 @@ Element source({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -15392,6 +16442,9 @@ Element source({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -15400,6 +16453,9 @@ Element source({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -15433,6 +16489,7 @@ Element span({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -15451,9 +16508,11 @@ Element span({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -15504,6 +16563,9 @@ Element span({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -15559,6 +16621,9 @@ Element span({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -15567,6 +16632,9 @@ Element span({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -15600,6 +16668,7 @@ Element strong({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -15618,9 +16687,11 @@ Element strong({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -15671,6 +16742,9 @@ Element strong({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -15726,6 +16800,9 @@ Element strong({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -15734,6 +16811,9 @@ Element strong({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -15770,6 +16850,7 @@ Element style({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -15788,9 +16869,11 @@ Element style({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -15851,6 +16934,9 @@ Element style({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -15905,6 +16991,9 @@ Element style({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -15913,6 +17002,9 @@ Element style({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -15946,6 +17038,7 @@ Element sub({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -15964,9 +17057,11 @@ Element sub({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -16017,6 +17112,9 @@ Element sub({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -16072,6 +17170,9 @@ Element sub({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -16080,6 +17181,9 @@ Element sub({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -16113,6 +17217,7 @@ Element summary({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -16131,9 +17236,11 @@ Element summary({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -16184,6 +17291,9 @@ Element summary({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -16239,6 +17349,9 @@ Element summary({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -16247,6 +17360,9 @@ Element summary({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -16280,6 +17396,7 @@ Element sup({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -16298,9 +17415,11 @@ Element sup({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -16351,6 +17470,9 @@ Element sup({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -16406,6 +17528,9 @@ Element sup({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -16414,6 +17539,9 @@ Element sup({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -16448,6 +17576,7 @@ Element table({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -16466,9 +17595,11 @@ Element table({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -16523,6 +17654,9 @@ Element table({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -16577,6 +17711,9 @@ Element table({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -16585,6 +17722,9 @@ Element table({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -16618,6 +17758,7 @@ Element tbody({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -16636,9 +17777,11 @@ Element tbody({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -16690,6 +17833,9 @@ Element tbody({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -16744,6 +17890,9 @@ Element tbody({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -16752,6 +17901,9 @@ Element tbody({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -16788,6 +17940,7 @@ Element td({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -16806,9 +17959,11 @@ Element td({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -16869,6 +18024,9 @@ Element td({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -16923,6 +18081,9 @@ Element td({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -16931,6 +18092,9 @@ Element td({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -16964,6 +18128,7 @@ Element template({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -16982,9 +18147,11 @@ Element template({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -17036,6 +18203,9 @@ Element template({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -17090,6 +18260,9 @@ Element template({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -17098,6 +18271,9 @@ Element template({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -17144,6 +18320,7 @@ Element textarea({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -17162,9 +18339,11 @@ Element textarea({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -17255,6 +18434,9 @@ Element textarea({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -17309,6 +18491,9 @@ Element textarea({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -17317,6 +18502,9 @@ Element textarea({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -17350,6 +18538,7 @@ Element tfoot({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -17368,9 +18557,11 @@ Element tfoot({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -17422,6 +18613,9 @@ Element tfoot({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -17476,6 +18670,9 @@ Element tfoot({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -17484,6 +18681,9 @@ Element tfoot({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -17522,6 +18722,7 @@ Element th({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -17540,9 +18741,11 @@ Element th({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -17609,6 +18812,9 @@ Element th({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -17663,6 +18869,9 @@ Element th({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -17671,6 +18880,9 @@ Element th({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -17704,6 +18916,7 @@ Element thead({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -17722,9 +18935,11 @@ Element thead({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -17776,6 +18991,9 @@ Element thead({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -17830,6 +19048,9 @@ Element thead({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -17838,6 +19059,9 @@ Element thead({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -17872,6 +19096,7 @@ Element time({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -17890,9 +19115,11 @@ Element time({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -17947,6 +19174,9 @@ Element time({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -18001,6 +19231,9 @@ Element time({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -18009,6 +19242,9 @@ Element time({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -18042,6 +19278,7 @@ Element title({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -18060,9 +19297,11 @@ Element title({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -18113,6 +19352,9 @@ Element title({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -18168,6 +19410,9 @@ Element title({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -18176,6 +19421,9 @@ Element title({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -18209,6 +19457,7 @@ Element tr({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -18227,9 +19476,11 @@ Element tr({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -18280,6 +19531,9 @@ Element tr({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -18335,6 +19589,9 @@ Element tr({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -18343,6 +19600,9 @@ Element tr({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -18381,6 +19641,7 @@ Element track({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -18399,9 +19660,11 @@ Element track({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -18468,6 +19731,9 @@ Element track({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -18522,6 +19788,9 @@ Element track({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -18530,6 +19799,9 @@ Element track({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -18563,6 +19835,7 @@ Element u({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -18581,9 +19854,11 @@ Element u({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -18634,6 +19909,9 @@ Element u({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -18689,6 +19967,9 @@ Element u({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -18697,6 +19978,9 @@ Element u({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -18730,6 +20014,7 @@ Element ul({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -18748,9 +20033,11 @@ Element ul({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -18801,6 +20088,9 @@ Element ul({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -18856,6 +20146,9 @@ Element ul({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -18864,6 +20157,9 @@ Element ul({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -18897,6 +20193,7 @@ Element variable({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -18915,9 +20212,11 @@ Element variable({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -18968,6 +20267,9 @@ Element variable({
   }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
   }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
@@ -19023,6 +20325,9 @@ Element variable({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -19031,6 +20336,9 @@ Element variable({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -19074,6 +20382,7 @@ Element video({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -19092,9 +20401,11 @@ Element video({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -19176,6 +20487,9 @@ Element video({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -19230,6 +20544,9 @@ Element video({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -19238,6 +20555,9 @@ Element video({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
@@ -19271,6 +20591,7 @@ Element wbr({
   EventListener<UIEvent> onabort,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
@@ -19289,9 +20610,11 @@ Element wbr({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
   List<Node> children,
@@ -19343,6 +20666,9 @@ Element wbr({
   if (onclick != null) {
     listeners['onclick'] = onclick;
   }
+  if (onchange != null) {
+    listeners['onchange'] = onchange;
+  }
   if (oncompositionend != null) {
     listeners['oncompositionend'] = oncompositionend;
   }
@@ -19397,6 +20723,9 @@ Element wbr({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onreset != null) {
+    listeners['onreset'] = onreset;
+  }
   if (onresize != null) {
     listeners['onresize'] = onresize;
   }
@@ -19405,6 +20734,9 @@ Element wbr({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onsubmit != null) {
+    listeners['onsubmit'] = onsubmit;
   }
   if (onunload != null) {
     listeners['onunload'] = onunload;
