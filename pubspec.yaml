@@ -1,8 +1,7 @@
 name: deact
-description: A web UI framework inspired by React.
-version: 0.1.0
-author: Oliver Damm <oliver.damm@gmx.de>
-homepage: http://www.github.com/blimster/deact
+description: A web UI framework inspired by React. The main building blocks are components, which can be implemented as classes or functions.
+version: 1.0.0
+homepage: https://www.github.com/blimster/deact
 
 environment:
   sdk: '>=2.7.0 <3.0.0'
