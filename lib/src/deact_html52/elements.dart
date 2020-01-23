@@ -21,7 +21,32 @@ Element a({
   String hreflang,
   String type,
   String referrerpolicy,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -83,8 +108,83 @@ Element a({
     attributes['referrerpolicy'] = referrerpolicy;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'a',
@@ -109,7 +209,32 @@ Element abbr({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -150,8 +275,83 @@ Element abbr({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'abbr',
@@ -176,7 +376,32 @@ Element address({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -217,8 +442,83 @@ Element address({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'address',
@@ -253,7 +553,32 @@ Element area({
   String hreflang,
   String type,
   String referrerpolicy,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -324,8 +649,83 @@ Element area({
     attributes['referrerpolicy'] = referrerpolicy;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'area',
@@ -350,7 +750,32 @@ Element article({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -391,8 +816,83 @@ Element article({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'article',
@@ -417,7 +917,32 @@ Element aside({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -458,8 +983,83 @@ Element aside({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'aside',
@@ -491,7 +1091,32 @@ Element audio({
   String loop,
   String muted,
   String controls,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -553,8 +1178,83 @@ Element audio({
     attributes['controls'] = controls;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'audio',
@@ -579,7 +1279,32 @@ Element b({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -620,8 +1345,83 @@ Element b({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'b',
@@ -648,7 +1448,32 @@ Element base({
   String title,
   String href,
   String target,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -695,8 +1520,83 @@ Element base({
     attributes['target'] = target;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'base',
@@ -721,7 +1621,32 @@ Element bdi({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -762,8 +1687,83 @@ Element bdi({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'bdi',
@@ -788,7 +1788,32 @@ Element bdo({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -829,8 +1854,83 @@ Element bdo({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'bdo',
@@ -856,7 +1956,32 @@ Element blockquote({
   String tabindex,
   String title,
   String cite,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -900,8 +2025,83 @@ Element blockquote({
     attributes['cite'] = cite;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'blockquote',
@@ -926,7 +2126,32 @@ Element body({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -967,8 +2192,83 @@ Element body({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'body',
@@ -993,7 +2293,32 @@ Element br({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -1034,8 +2359,83 @@ Element br({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'br',
@@ -1071,7 +2471,32 @@ Element button({
   String name,
   String type,
   String value,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -1145,8 +2570,83 @@ Element button({
     attributes['value'] = value;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'button',
@@ -1173,7 +2673,32 @@ Element canvas({
   String title,
   String height,
   String width,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -1220,8 +2745,83 @@ Element canvas({
     attributes['width'] = width;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'canvas',
@@ -1246,7 +2846,32 @@ Element caption({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -1287,8 +2912,83 @@ Element caption({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'caption',
@@ -1313,7 +3013,32 @@ Element cite({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -1354,8 +3079,83 @@ Element cite({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'cite',
@@ -1380,7 +3180,32 @@ Element code({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -1421,8 +3246,83 @@ Element code({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'code',
@@ -1448,7 +3348,32 @@ Element col({
   String tabindex,
   String title,
   String span,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -1492,8 +3417,83 @@ Element col({
     attributes['span'] = span;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'col',
@@ -1519,7 +3519,32 @@ Element colgroup({
   String tabindex,
   String title,
   String span,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -1563,8 +3588,83 @@ Element colgroup({
     attributes['span'] = span;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'colgroup',
@@ -1590,7 +3690,32 @@ Element data({
   String tabindex,
   String title,
   String value,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -1634,8 +3759,83 @@ Element data({
     attributes['value'] = value;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'data',
@@ -1660,7 +3860,32 @@ Element datalist({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -1701,8 +3926,83 @@ Element datalist({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'datalist',
@@ -1727,7 +4027,32 @@ Element dd({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -1768,8 +4093,83 @@ Element dd({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'dd',
@@ -1796,7 +4196,32 @@ Element del({
   String title,
   String cite,
   String datetime,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -1843,8 +4268,83 @@ Element del({
     attributes['datetime'] = datetime;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'del',
@@ -1870,7 +4370,32 @@ Element details({
   String tabindex,
   String title,
   String open,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -1914,8 +4439,83 @@ Element details({
     attributes['open'] = open;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'details',
@@ -1940,7 +4540,32 @@ Element dfn({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -1981,8 +4606,83 @@ Element dfn({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'dfn',
@@ -2008,7 +4708,32 @@ Element dialog({
   String tabindex,
   String title,
   String open,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -2052,8 +4777,83 @@ Element dialog({
     attributes['open'] = open;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'dialog',
@@ -2078,7 +4878,32 @@ Element div({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -2119,8 +4944,83 @@ Element div({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'div',
@@ -2145,7 +5045,32 @@ Element dl({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -2186,8 +5111,83 @@ Element dl({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'dl',
@@ -2212,7 +5212,32 @@ Element dt({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -2253,8 +5278,83 @@ Element dt({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'dt',
@@ -2279,7 +5379,32 @@ Element em({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -2320,8 +5445,83 @@ Element em({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'em',
@@ -2350,7 +5550,32 @@ Element embed({
   String type,
   String width,
   String height,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -2403,8 +5628,83 @@ Element embed({
     attributes['height'] = height;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'embed',
@@ -2432,7 +5732,32 @@ Element fieldset({
   String disabled,
   String form,
   String name,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -2482,8 +5807,83 @@ Element fieldset({
     attributes['name'] = name;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'fieldset',
@@ -2508,7 +5908,32 @@ Element figcaption({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -2549,8 +5974,83 @@ Element figcaption({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'figcaption',
@@ -2575,7 +6075,32 @@ Element figure({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -2616,8 +6141,83 @@ Element figure({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'figure',
@@ -2642,7 +6242,32 @@ Element footer({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -2683,8 +6308,83 @@ Element footer({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'footer',
@@ -2717,7 +6417,32 @@ Element form({
   String name,
   String novalidate,
   String target,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -2782,8 +6507,83 @@ Element form({
     attributes['target'] = target;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'form',
@@ -2808,7 +6608,32 @@ Element h1({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -2849,8 +6674,83 @@ Element h1({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'h1',
@@ -2875,7 +6775,32 @@ Element h2({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -2916,8 +6841,83 @@ Element h2({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'h2',
@@ -2942,7 +6942,32 @@ Element h3({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -2983,8 +7008,83 @@ Element h3({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'h3',
@@ -3009,7 +7109,32 @@ Element h4({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -3050,8 +7175,83 @@ Element h4({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'h4',
@@ -3076,7 +7276,32 @@ Element h5({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -3117,8 +7342,83 @@ Element h5({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'h5',
@@ -3143,7 +7443,32 @@ Element h6({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -3184,8 +7509,83 @@ Element h6({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'h6',
@@ -3210,7 +7610,32 @@ Element head({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -3251,8 +7676,83 @@ Element head({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'head',
@@ -3277,7 +7777,32 @@ Element header({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -3318,8 +7843,83 @@ Element header({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'header',
@@ -3344,7 +7944,32 @@ Element hr({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -3385,8 +8010,83 @@ Element hr({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'hr',
@@ -3412,7 +8112,32 @@ Element html({
   String tabindex,
   String title,
   String manifest,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -3456,8 +8181,83 @@ Element html({
     attributes['manifest'] = manifest;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'html',
@@ -3482,7 +8282,32 @@ Element i({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -3523,8 +8348,83 @@ Element i({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'i',
@@ -3557,7 +8457,32 @@ Element iframe({
   String width,
   String height,
   String referrerpolicy,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -3622,8 +8547,83 @@ Element iframe({
     attributes['referrerpolicy'] = referrerpolicy;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'iframe',
@@ -3658,7 +8658,32 @@ Element img({
   String width,
   String height,
   String referrerpolicy,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -3729,8 +8754,83 @@ Element img({
     attributes['referrerpolicy'] = referrerpolicy;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'img',
@@ -3786,7 +8886,32 @@ Element input({
   String type,
   String value,
   String width,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -3920,8 +9045,83 @@ Element input({
     attributes['width'] = width;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'input',
@@ -3948,7 +9148,32 @@ Element ins({
   String title,
   String cite,
   String datetime,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -3995,8 +9220,83 @@ Element ins({
     attributes['datetime'] = datetime;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'ins',
@@ -4021,7 +9321,32 @@ Element kbd({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -4062,8 +9387,83 @@ Element kbd({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'kbd',
@@ -4089,7 +9489,32 @@ Element label({
   String tabindex,
   String title,
   String forId,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -4133,8 +9558,83 @@ Element label({
     attributes['for'] = forId;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'label',
@@ -4159,7 +9659,32 @@ Element legend({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -4200,8 +9725,83 @@ Element legend({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'legend',
@@ -4227,7 +9827,32 @@ Element li({
   String tabindex,
   String title,
   String value,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -4271,8 +9896,83 @@ Element li({
     attributes['value'] = value;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'li',
@@ -4306,7 +10006,32 @@ Element link({
   String hreflang,
   String type,
   String sizes,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -4374,8 +10099,83 @@ Element link({
     attributes['sizes'] = sizes;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'link',
@@ -4400,7 +10200,32 @@ Element main({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -4441,8 +10266,83 @@ Element main({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'main',
@@ -4468,7 +10368,32 @@ Element map({
   String tabindex,
   String title,
   String name,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -4512,8 +10437,83 @@ Element map({
     attributes['name'] = name;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'map',
@@ -4538,7 +10538,32 @@ Element mark({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -4579,8 +10604,83 @@ Element mark({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'mark',
@@ -4609,7 +10709,32 @@ Element meta({
   String httpEquiv,
   String content,
   String charset,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -4662,8 +10787,83 @@ Element meta({
     attributes['charset'] = charset;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'meta',
@@ -4694,7 +10894,32 @@ Element meter({
   String low,
   String high,
   String optimum,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -4753,8 +10978,83 @@ Element meter({
     attributes['optimum'] = optimum;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'meter',
@@ -4779,7 +11079,32 @@ Element nav({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -4820,8 +11145,83 @@ Element nav({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'nav',
@@ -4846,7 +11246,32 @@ Element noscript({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -4887,8 +11312,83 @@ Element noscript({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'noscript',
@@ -4920,7 +11420,32 @@ Element object({
   String form,
   String width,
   String height,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -4982,8 +11507,83 @@ Element object({
     attributes['height'] = height;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'object',
@@ -5011,7 +11611,32 @@ Element ol({
   String reversed,
   String start,
   String type,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -5061,8 +11686,83 @@ Element ol({
     attributes['type'] = type;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'ol',
@@ -5089,7 +11789,32 @@ Element optgroup({
   String title,
   String disabled,
   String label,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -5136,8 +11861,83 @@ Element optgroup({
     attributes['label'] = label;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'optgroup',
@@ -5166,7 +11966,32 @@ Element option({
   String label,
   String selected,
   String value,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -5219,8 +12044,83 @@ Element option({
     attributes['value'] = value;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'option',
@@ -5248,7 +12148,32 @@ Element output({
   String forId,
   String form,
   String name,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -5298,8 +12223,83 @@ Element output({
     attributes['name'] = name;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'output',
@@ -5324,7 +12324,32 @@ Element p({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -5365,8 +12390,83 @@ Element p({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'p',
@@ -5393,7 +12493,32 @@ Element param({
   String title,
   String name,
   String value,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -5440,8 +12565,83 @@ Element param({
     attributes['value'] = value;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'param',
@@ -5466,7 +12666,32 @@ Element picture({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -5507,8 +12732,83 @@ Element picture({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'picture',
@@ -5533,7 +12833,32 @@ Element pre({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -5574,8 +12899,83 @@ Element pre({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'pre',
@@ -5602,7 +13002,32 @@ Element progress({
   String title,
   String value,
   String max,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -5649,8 +13074,83 @@ Element progress({
     attributes['max'] = max;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'progress',
@@ -5676,7 +13176,32 @@ Element q({
   String tabindex,
   String title,
   String cite,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -5720,8 +13245,83 @@ Element q({
     attributes['cite'] = cite;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'q',
@@ -5746,7 +13346,32 @@ Element rb({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -5787,8 +13412,83 @@ Element rb({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'rb',
@@ -5813,7 +13513,32 @@ Element rp({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -5854,8 +13579,83 @@ Element rp({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'rp',
@@ -5880,7 +13680,32 @@ Element rt({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -5921,8 +13746,83 @@ Element rt({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'rt',
@@ -5947,7 +13847,32 @@ Element rtc({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -5988,8 +13913,83 @@ Element rtc({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'rtc',
@@ -6014,7 +14014,32 @@ Element ruby({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -6055,8 +14080,83 @@ Element ruby({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'ruby',
@@ -6081,7 +14181,32 @@ Element s({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -6122,8 +14247,83 @@ Element s({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     's',
@@ -6148,7 +14348,32 @@ Element samp({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -6189,8 +14414,83 @@ Element samp({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'samp',
@@ -6222,7 +14522,32 @@ Element script({
   String defer,
   String crossorigin,
   String nonce,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -6284,8 +14609,83 @@ Element script({
     attributes['nonce'] = nonce;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'script',
@@ -6310,7 +14710,32 @@ Element section({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -6351,8 +14776,83 @@ Element section({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'section',
@@ -6385,7 +14885,32 @@ Element select({
   String name,
   String required,
   String size,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -6450,8 +14975,83 @@ Element select({
     attributes['size'] = size;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'select',
@@ -6476,7 +15076,32 @@ Element small({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -6517,8 +15142,83 @@ Element small({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'small',
@@ -6548,7 +15248,32 @@ Element source({
   String srcset,
   String sizes,
   String media,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -6604,8 +15329,83 @@ Element source({
     attributes['media'] = media;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'source',
@@ -6630,7 +15430,32 @@ Element span({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -6671,8 +15496,83 @@ Element span({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'span',
@@ -6697,7 +15597,32 @@ Element strong({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -6738,8 +15663,83 @@ Element strong({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'strong',
@@ -6767,7 +15767,32 @@ Element style({
   String media,
   String nonce,
   String type,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -6817,8 +15842,83 @@ Element style({
     attributes['type'] = type;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'style',
@@ -6843,7 +15943,32 @@ Element sub({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -6884,8 +16009,83 @@ Element sub({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'sub',
@@ -6910,7 +16110,32 @@ Element summary({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -6951,8 +16176,83 @@ Element summary({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'summary',
@@ -6977,7 +16277,32 @@ Element sup({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -7018,8 +16343,83 @@ Element sup({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'sup',
@@ -7045,7 +16445,32 @@ Element table({
   String tabindex,
   String title,
   String border,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -7089,8 +16514,83 @@ Element table({
     attributes['border'] = border;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'table',
@@ -7115,7 +16615,32 @@ Element tbody({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -7156,8 +16681,83 @@ Element tbody({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'tbody',
@@ -7185,7 +16785,32 @@ Element td({
   String colspan,
   String rowspan,
   String headers,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -7235,8 +16860,83 @@ Element td({
     attributes['headers'] = headers;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'td',
@@ -7261,7 +16961,32 @@ Element template({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -7302,8 +17027,83 @@ Element template({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'template',
@@ -7341,7 +17141,32 @@ Element textarea({
   String required,
   String rows,
   String wrap,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -7421,8 +17246,83 @@ Element textarea({
     attributes['wrap'] = wrap;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'textarea',
@@ -7447,7 +17347,32 @@ Element tfoot({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -7488,8 +17413,83 @@ Element tfoot({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'tfoot',
@@ -7519,7 +17519,32 @@ Element th({
   String headers,
   String scope,
   String abbr,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -7575,8 +17600,83 @@ Element th({
     attributes['abbr'] = abbr;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'th',
@@ -7601,7 +17701,32 @@ Element thead({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -7642,8 +17767,83 @@ Element thead({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'thead',
@@ -7669,7 +17869,32 @@ Element time({
   String tabindex,
   String title,
   String datetime,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -7713,8 +17938,83 @@ Element time({
     attributes['datetime'] = datetime;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'time',
@@ -7739,7 +18039,32 @@ Element title({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -7780,8 +18105,83 @@ Element title({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'title',
@@ -7806,7 +18206,32 @@ Element tr({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -7847,8 +18272,83 @@ Element tr({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'tr',
@@ -7878,7 +18378,32 @@ Element track({
   String label,
   String src,
   String srclang,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -7934,8 +18459,83 @@ Element track({
     attributes['srclang'] = srclang;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'track',
@@ -7960,7 +18560,32 @@ Element u({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -8001,8 +18626,83 @@ Element u({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'u',
@@ -8027,7 +18727,32 @@ Element ul({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -8068,8 +18793,83 @@ Element ul({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'ul',
@@ -8094,7 +18894,32 @@ Element variable({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -8135,8 +18960,83 @@ Element variable({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'variable',
@@ -8171,7 +19071,32 @@ Element video({
   String controls,
   String width,
   String height,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -8242,8 +19167,83 @@ Element video({
     attributes['height'] = height;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'video',
@@ -8268,7 +19268,32 @@ Element wbr({
   String style,
   String tabindex,
   String title,
+  EventListener<UIEvent> onabort,
+  EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
+  EventListener<CompositionEvent> oncompositionend,
+  EventListener<CompositionEvent> oncompositionstart,
+  EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> ondblclick,
+  EventListener<UIEvent> onerror,
+  EventListener<FocusEvent> onfocus,
+  EventListener<FocusEvent> onfocusin,
+  EventListener<FocusEvent> onfocusout,
+  EventListener<KeyboardEvent> onkeydown,
+  EventListener<KeyboardEvent> onkeyup,
+  EventListener<UIEvent> onload,
+  EventListener<MouseEvent> onmousedown,
+  EventListener<MouseEvent> onmouseenter,
+  EventListener<MouseEvent> onmouseleave,
+  EventListener<MouseEvent> onmousemove,
+  EventListener<MouseEvent> onmouseout,
+  EventListener<MouseEvent> onmouseover,
+  EventListener<MouseEvent> onmouseup,
+  EventListener<UIEvent> onresize,
+  EventListener<UIEvent> onscroll,
+  EventListener<UIEvent> onselect,
+  EventListener<UIEvent> onunload,
+  EventListener<WheelEvent> onwheel,
   List<Node> children,
 }) {
   final attributes = <String, Object>{};
@@ -8309,8 +19334,83 @@ Element wbr({
     attributes['title'] = title;
   }
   final listeners = <String, Object>{};
+  if (onabort != null) {
+    listeners['onabort'] = onabort;
+  }
+  if (onblur != null) {
+    listeners['onblur'] = onblur;
+  }
   if (onclick != null) {
     listeners['onclick'] = onclick;
+  }
+  if (oncompositionend != null) {
+    listeners['oncompositionend'] = oncompositionend;
+  }
+  if (oncompositionstart != null) {
+    listeners['oncompositionstart'] = oncompositionstart;
+  }
+  if (oncompositionupdate != null) {
+    listeners['oncompositionupdate'] = oncompositionupdate;
+  }
+  if (ondblclick != null) {
+    listeners['ondblclick'] = ondblclick;
+  }
+  if (onerror != null) {
+    listeners['onerror'] = onerror;
+  }
+  if (onfocus != null) {
+    listeners['onfocus'] = onfocus;
+  }
+  if (onfocusin != null) {
+    listeners['onfocusin'] = onfocusin;
+  }
+  if (onfocusout != null) {
+    listeners['onfocusout'] = onfocusout;
+  }
+  if (onkeydown != null) {
+    listeners['onkeydown'] = onkeydown;
+  }
+  if (onkeyup != null) {
+    listeners['onkeyup'] = onkeyup;
+  }
+  if (onload != null) {
+    listeners['onload'] = onload;
+  }
+  if (onmousedown != null) {
+    listeners['onmousedown'] = onmousedown;
+  }
+  if (onmouseenter != null) {
+    listeners['onmouseenter'] = onmouseenter;
+  }
+  if (onmouseleave != null) {
+    listeners['onmouseleave'] = onmouseleave;
+  }
+  if (onmousemove != null) {
+    listeners['onmousemove'] = onmousemove;
+  }
+  if (onmouseout != null) {
+    listeners['onmouseout'] = onmouseout;
+  }
+  if (onmouseover != null) {
+    listeners['onmouseover'] = onmouseover;
+  }
+  if (onmouseup != null) {
+    listeners['onmouseup'] = onmouseup;
+  }
+  if (onresize != null) {
+    listeners['onresize'] = onresize;
+  }
+  if (onscroll != null) {
+    listeners['onscroll'] = onscroll;
+  }
+  if (onselect != null) {
+    listeners['onselect'] = onselect;
+  }
+  if (onunload != null) {
+    listeners['onunload'] = onunload;
+  }
+  if (onwheel != null) {
+    listeners['onwheel'] = onwheel;
   }
   return el(
     'wbr',
