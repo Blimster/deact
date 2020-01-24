@@ -22,19 +22,34 @@ Element a({
   String type,
   String referrerpolicy,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -43,10 +58,14 @@ Element a({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -114,6 +133,15 @@ Element a({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -132,8 +160,32 @@ Element a({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -147,11 +199,23 @@ Element a({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -177,6 +241,15 @@ Element a({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -188,6 +261,9 @@ Element a({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -222,19 +298,34 @@ Element abbr({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -243,10 +334,14 @@ Element abbr({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -293,6 +388,15 @@ Element abbr({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -311,8 +415,32 @@ Element abbr({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -326,11 +454,23 @@ Element abbr({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -356,6 +496,15 @@ Element abbr({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -367,6 +516,9 @@ Element abbr({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -401,19 +553,34 @@ Element address({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -422,10 +589,14 @@ Element address({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -472,6 +643,15 @@ Element address({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -490,8 +670,32 @@ Element address({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -505,11 +709,23 @@ Element address({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -535,6 +751,15 @@ Element address({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -546,6 +771,9 @@ Element address({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -590,19 +818,34 @@ Element area({
   String type,
   String referrerpolicy,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -611,10 +854,14 @@ Element area({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -691,6 +938,15 @@ Element area({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -709,8 +965,32 @@ Element area({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -724,11 +1004,23 @@ Element area({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -754,6 +1046,15 @@ Element area({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -765,6 +1066,9 @@ Element area({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -799,19 +1103,34 @@ Element article({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -820,10 +1139,14 @@ Element article({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -870,6 +1193,15 @@ Element article({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -888,8 +1220,32 @@ Element article({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -903,11 +1259,23 @@ Element article({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -933,6 +1301,15 @@ Element article({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -944,6 +1321,9 @@ Element article({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -978,19 +1358,34 @@ Element aside({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -999,10 +1394,14 @@ Element aside({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -1049,6 +1448,15 @@ Element aside({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -1067,8 +1475,32 @@ Element aside({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -1082,11 +1514,23 @@ Element aside({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -1112,6 +1556,15 @@ Element aside({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -1123,6 +1576,9 @@ Element aside({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -1164,19 +1620,34 @@ Element audio({
   String muted,
   String controls,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -1185,10 +1656,14 @@ Element audio({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -1256,6 +1731,15 @@ Element audio({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -1274,8 +1758,32 @@ Element audio({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -1289,11 +1797,23 @@ Element audio({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -1319,6 +1839,15 @@ Element audio({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -1330,6 +1859,9 @@ Element audio({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -1364,19 +1896,34 @@ Element b({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -1385,10 +1932,14 @@ Element b({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -1435,6 +1986,15 @@ Element b({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -1453,8 +2013,32 @@ Element b({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -1468,11 +2052,23 @@ Element b({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -1498,6 +2094,15 @@ Element b({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -1509,6 +2114,9 @@ Element b({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -1545,19 +2153,34 @@ Element base({
   String href,
   String target,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -1566,10 +2189,14 @@ Element base({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -1622,6 +2249,15 @@ Element base({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -1640,8 +2276,32 @@ Element base({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -1655,11 +2315,23 @@ Element base({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -1685,6 +2357,15 @@ Element base({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -1696,6 +2377,9 @@ Element base({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -1730,19 +2414,34 @@ Element bdi({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -1751,10 +2450,14 @@ Element bdi({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -1801,6 +2504,15 @@ Element bdi({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -1819,8 +2531,32 @@ Element bdi({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -1834,11 +2570,23 @@ Element bdi({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -1864,6 +2612,15 @@ Element bdi({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -1875,6 +2632,9 @@ Element bdi({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -1909,19 +2669,34 @@ Element bdo({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -1930,10 +2705,14 @@ Element bdo({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -1980,6 +2759,15 @@ Element bdo({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -1998,8 +2786,32 @@ Element bdo({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -2013,11 +2825,23 @@ Element bdo({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -2043,6 +2867,15 @@ Element bdo({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -2054,6 +2887,9 @@ Element bdo({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -2089,19 +2925,34 @@ Element blockquote({
   String title,
   String cite,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -2110,10 +2961,14 @@ Element blockquote({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -2163,6 +3018,15 @@ Element blockquote({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -2181,8 +3045,32 @@ Element blockquote({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -2196,11 +3084,23 @@ Element blockquote({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -2226,6 +3126,15 @@ Element blockquote({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -2237,6 +3146,9 @@ Element blockquote({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -2271,19 +3183,34 @@ Element body({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -2292,10 +3219,14 @@ Element body({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -2342,6 +3273,15 @@ Element body({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -2360,8 +3300,32 @@ Element body({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -2375,11 +3339,23 @@ Element body({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -2405,6 +3381,15 @@ Element body({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -2416,6 +3401,9 @@ Element body({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -2450,19 +3438,34 @@ Element br({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -2471,10 +3474,14 @@ Element br({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -2521,6 +3528,15 @@ Element br({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -2539,8 +3555,32 @@ Element br({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -2554,11 +3594,23 @@ Element br({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -2584,6 +3636,15 @@ Element br({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -2595,6 +3656,9 @@ Element br({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -2640,19 +3704,34 @@ Element button({
   String type,
   String value,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -2661,10 +3740,14 @@ Element button({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -2744,6 +3827,15 @@ Element button({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -2762,8 +3854,32 @@ Element button({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -2777,11 +3893,23 @@ Element button({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -2807,6 +3935,15 @@ Element button({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -2818,6 +3955,9 @@ Element button({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -2854,19 +3994,34 @@ Element canvas({
   String height,
   String width,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -2875,10 +4030,14 @@ Element canvas({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -2931,6 +4090,15 @@ Element canvas({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -2949,8 +4117,32 @@ Element canvas({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -2964,11 +4156,23 @@ Element canvas({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -2994,6 +4198,15 @@ Element canvas({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -3005,6 +4218,9 @@ Element canvas({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -3039,19 +4255,34 @@ Element caption({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -3060,10 +4291,14 @@ Element caption({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -3110,6 +4345,15 @@ Element caption({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -3128,8 +4372,32 @@ Element caption({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -3143,11 +4411,23 @@ Element caption({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -3173,6 +4453,15 @@ Element caption({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -3184,6 +4473,9 @@ Element caption({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -3218,19 +4510,34 @@ Element cite({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -3239,10 +4546,14 @@ Element cite({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -3289,6 +4600,15 @@ Element cite({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -3307,8 +4627,32 @@ Element cite({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -3322,11 +4666,23 @@ Element cite({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -3352,6 +4708,15 @@ Element cite({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -3363,6 +4728,9 @@ Element cite({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -3397,19 +4765,34 @@ Element code({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -3418,10 +4801,14 @@ Element code({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -3468,6 +4855,15 @@ Element code({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -3486,8 +4882,32 @@ Element code({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -3501,11 +4921,23 @@ Element code({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -3531,6 +4963,15 @@ Element code({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -3542,6 +4983,9 @@ Element code({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -3577,19 +5021,34 @@ Element col({
   String title,
   String span,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -3598,10 +5057,14 @@ Element col({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -3651,6 +5114,15 @@ Element col({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -3669,8 +5141,32 @@ Element col({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -3684,11 +5180,23 @@ Element col({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -3714,6 +5222,15 @@ Element col({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -3725,6 +5242,9 @@ Element col({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -3760,19 +5280,34 @@ Element colgroup({
   String title,
   String span,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -3781,10 +5316,14 @@ Element colgroup({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -3834,6 +5373,15 @@ Element colgroup({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -3852,8 +5400,32 @@ Element colgroup({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -3867,11 +5439,23 @@ Element colgroup({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -3897,6 +5481,15 @@ Element colgroup({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -3908,6 +5501,9 @@ Element colgroup({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -3943,19 +5539,34 @@ Element data({
   String title,
   String value,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -3964,10 +5575,14 @@ Element data({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -4017,6 +5632,15 @@ Element data({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -4035,8 +5659,32 @@ Element data({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -4050,11 +5698,23 @@ Element data({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -4080,6 +5740,15 @@ Element data({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -4091,6 +5760,9 @@ Element data({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -4125,19 +5797,34 @@ Element datalist({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -4146,10 +5833,14 @@ Element datalist({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -4196,6 +5887,15 @@ Element datalist({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -4214,8 +5914,32 @@ Element datalist({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -4229,11 +5953,23 @@ Element datalist({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -4259,6 +5995,15 @@ Element datalist({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -4270,6 +6015,9 @@ Element datalist({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -4304,19 +6052,34 @@ Element dd({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -4325,10 +6088,14 @@ Element dd({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -4375,6 +6142,15 @@ Element dd({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -4393,8 +6169,32 @@ Element dd({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -4408,11 +6208,23 @@ Element dd({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -4438,6 +6250,15 @@ Element dd({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -4449,6 +6270,9 @@ Element dd({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -4485,19 +6309,34 @@ Element del({
   String cite,
   String datetime,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -4506,10 +6345,14 @@ Element del({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -4562,6 +6405,15 @@ Element del({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -4580,8 +6432,32 @@ Element del({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -4595,11 +6471,23 @@ Element del({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -4625,6 +6513,15 @@ Element del({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -4636,6 +6533,9 @@ Element del({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -4671,19 +6571,34 @@ Element details({
   String title,
   String open,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -4692,10 +6607,14 @@ Element details({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -4745,6 +6664,15 @@ Element details({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -4763,8 +6691,32 @@ Element details({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -4778,11 +6730,23 @@ Element details({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -4808,6 +6772,15 @@ Element details({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -4819,6 +6792,9 @@ Element details({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -4853,19 +6829,34 @@ Element dfn({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -4874,10 +6865,14 @@ Element dfn({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -4924,6 +6919,15 @@ Element dfn({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -4942,8 +6946,32 @@ Element dfn({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -4957,11 +6985,23 @@ Element dfn({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -4987,6 +7027,15 @@ Element dfn({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -4998,6 +7047,9 @@ Element dfn({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -5033,19 +7085,34 @@ Element dialog({
   String title,
   String open,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -5054,10 +7121,14 @@ Element dialog({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -5107,6 +7178,15 @@ Element dialog({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -5125,8 +7205,32 @@ Element dialog({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -5140,11 +7244,23 @@ Element dialog({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -5170,6 +7286,15 @@ Element dialog({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -5181,6 +7306,9 @@ Element dialog({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -5215,19 +7343,34 @@ Element div({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -5236,10 +7379,14 @@ Element div({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -5286,6 +7433,15 @@ Element div({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -5304,8 +7460,32 @@ Element div({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -5319,11 +7499,23 @@ Element div({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -5349,6 +7541,15 @@ Element div({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -5360,6 +7561,9 @@ Element div({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -5394,19 +7598,34 @@ Element dl({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -5415,10 +7634,14 @@ Element dl({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -5465,6 +7688,15 @@ Element dl({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -5483,8 +7715,32 @@ Element dl({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -5498,11 +7754,23 @@ Element dl({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -5528,6 +7796,15 @@ Element dl({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -5539,6 +7816,9 @@ Element dl({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -5573,19 +7853,34 @@ Element dt({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -5594,10 +7889,14 @@ Element dt({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -5644,6 +7943,15 @@ Element dt({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -5662,8 +7970,32 @@ Element dt({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -5677,11 +8009,23 @@ Element dt({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -5707,6 +8051,15 @@ Element dt({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -5718,6 +8071,9 @@ Element dt({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -5752,19 +8108,34 @@ Element em({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -5773,10 +8144,14 @@ Element em({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -5823,6 +8198,15 @@ Element em({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -5841,8 +8225,32 @@ Element em({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -5856,11 +8264,23 @@ Element em({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -5886,6 +8306,15 @@ Element em({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -5897,6 +8326,9 @@ Element em({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -5935,19 +8367,34 @@ Element embed({
   String width,
   String height,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -5956,10 +8403,14 @@ Element embed({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -6018,6 +8469,15 @@ Element embed({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -6036,8 +8496,32 @@ Element embed({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -6051,11 +8535,23 @@ Element embed({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -6081,6 +8577,15 @@ Element embed({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -6092,6 +8597,9 @@ Element embed({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -6129,19 +8637,34 @@ Element fieldset({
   String form,
   String name,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -6150,10 +8673,14 @@ Element fieldset({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -6209,6 +8736,15 @@ Element fieldset({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -6227,8 +8763,32 @@ Element fieldset({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -6242,11 +8802,23 @@ Element fieldset({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -6272,6 +8844,15 @@ Element fieldset({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -6283,6 +8864,9 @@ Element fieldset({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -6317,19 +8901,34 @@ Element figcaption({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -6338,10 +8937,14 @@ Element figcaption({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -6388,6 +8991,15 @@ Element figcaption({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -6406,8 +9018,32 @@ Element figcaption({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -6421,11 +9057,23 @@ Element figcaption({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -6451,6 +9099,15 @@ Element figcaption({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -6462,6 +9119,9 @@ Element figcaption({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -6496,19 +9156,34 @@ Element figure({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -6517,10 +9192,14 @@ Element figure({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -6567,6 +9246,15 @@ Element figure({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -6585,8 +9273,32 @@ Element figure({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -6600,11 +9312,23 @@ Element figure({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -6630,6 +9354,15 @@ Element figure({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -6641,6 +9374,9 @@ Element figure({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -6675,19 +9411,34 @@ Element footer({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -6696,10 +9447,14 @@ Element footer({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -6746,6 +9501,15 @@ Element footer({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -6764,8 +9528,32 @@ Element footer({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -6779,11 +9567,23 @@ Element footer({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -6809,6 +9609,15 @@ Element footer({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -6820,6 +9629,9 @@ Element footer({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -6862,19 +9674,34 @@ Element form({
   String novalidate,
   String target,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -6883,10 +9710,14 @@ Element form({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -6957,6 +9788,15 @@ Element form({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -6975,8 +9815,32 @@ Element form({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -6990,11 +9854,23 @@ Element form({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -7020,6 +9896,15 @@ Element form({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -7031,6 +9916,9 @@ Element form({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -7065,19 +9953,34 @@ Element h1({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -7086,10 +9989,14 @@ Element h1({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -7136,6 +10043,15 @@ Element h1({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -7154,8 +10070,32 @@ Element h1({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -7169,11 +10109,23 @@ Element h1({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -7199,6 +10151,15 @@ Element h1({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -7210,6 +10171,9 @@ Element h1({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -7244,19 +10208,34 @@ Element h2({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -7265,10 +10244,14 @@ Element h2({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -7315,6 +10298,15 @@ Element h2({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -7333,8 +10325,32 @@ Element h2({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -7348,11 +10364,23 @@ Element h2({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -7378,6 +10406,15 @@ Element h2({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -7389,6 +10426,9 @@ Element h2({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -7423,19 +10463,34 @@ Element h3({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -7444,10 +10499,14 @@ Element h3({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -7494,6 +10553,15 @@ Element h3({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -7512,8 +10580,32 @@ Element h3({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -7527,11 +10619,23 @@ Element h3({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -7557,6 +10661,15 @@ Element h3({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -7568,6 +10681,9 @@ Element h3({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -7602,19 +10718,34 @@ Element h4({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -7623,10 +10754,14 @@ Element h4({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -7673,6 +10808,15 @@ Element h4({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -7691,8 +10835,32 @@ Element h4({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -7706,11 +10874,23 @@ Element h4({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -7736,6 +10916,15 @@ Element h4({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -7747,6 +10936,9 @@ Element h4({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -7781,19 +10973,34 @@ Element h5({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -7802,10 +11009,14 @@ Element h5({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -7852,6 +11063,15 @@ Element h5({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -7870,8 +11090,32 @@ Element h5({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -7885,11 +11129,23 @@ Element h5({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -7915,6 +11171,15 @@ Element h5({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -7926,6 +11191,9 @@ Element h5({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -7960,19 +11228,34 @@ Element h6({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -7981,10 +11264,14 @@ Element h6({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -8031,6 +11318,15 @@ Element h6({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -8049,8 +11345,32 @@ Element h6({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -8064,11 +11384,23 @@ Element h6({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -8094,6 +11426,15 @@ Element h6({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -8105,6 +11446,9 @@ Element h6({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -8139,19 +11483,34 @@ Element head({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -8160,10 +11519,14 @@ Element head({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -8210,6 +11573,15 @@ Element head({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -8228,8 +11600,32 @@ Element head({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -8243,11 +11639,23 @@ Element head({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -8273,6 +11681,15 @@ Element head({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -8284,6 +11701,9 @@ Element head({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -8318,19 +11738,34 @@ Element header({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -8339,10 +11774,14 @@ Element header({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -8389,6 +11828,15 @@ Element header({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -8407,8 +11855,32 @@ Element header({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -8422,11 +11894,23 @@ Element header({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -8452,6 +11936,15 @@ Element header({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -8463,6 +11956,9 @@ Element header({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -8497,19 +11993,34 @@ Element hr({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -8518,10 +12029,14 @@ Element hr({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -8568,6 +12083,15 @@ Element hr({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -8586,8 +12110,32 @@ Element hr({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -8601,11 +12149,23 @@ Element hr({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -8631,6 +12191,15 @@ Element hr({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -8642,6 +12211,9 @@ Element hr({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -8677,19 +12249,34 @@ Element html({
   String title,
   String manifest,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -8698,10 +12285,14 @@ Element html({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -8751,6 +12342,15 @@ Element html({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -8769,8 +12369,32 @@ Element html({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -8784,11 +12408,23 @@ Element html({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -8814,6 +12450,15 @@ Element html({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -8825,6 +12470,9 @@ Element html({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -8859,19 +12507,34 @@ Element i({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -8880,10 +12543,14 @@ Element i({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -8930,6 +12597,15 @@ Element i({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -8948,8 +12624,32 @@ Element i({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -8963,11 +12663,23 @@ Element i({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -8993,6 +12705,15 @@ Element i({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -9004,6 +12725,9 @@ Element i({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -9046,19 +12770,34 @@ Element iframe({
   String height,
   String referrerpolicy,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -9067,10 +12806,14 @@ Element iframe({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -9141,6 +12884,15 @@ Element iframe({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -9159,8 +12911,32 @@ Element iframe({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -9174,11 +12950,23 @@ Element iframe({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -9204,6 +12992,15 @@ Element iframe({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -9215,6 +13012,9 @@ Element iframe({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -9259,19 +13059,34 @@ Element img({
   String height,
   String referrerpolicy,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -9280,10 +13095,14 @@ Element img({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -9360,6 +13179,15 @@ Element img({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -9378,8 +13206,32 @@ Element img({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -9393,11 +13245,23 @@ Element img({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -9423,6 +13287,15 @@ Element img({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -9434,6 +13307,9 @@ Element img({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -9499,19 +13375,34 @@ Element input({
   String value,
   String width,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -9520,10 +13411,14 @@ Element input({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -9663,6 +13558,15 @@ Element input({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -9681,8 +13585,32 @@ Element input({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -9696,11 +13624,23 @@ Element input({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -9726,6 +13666,15 @@ Element input({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -9737,6 +13686,9 @@ Element input({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -9773,19 +13725,34 @@ Element ins({
   String cite,
   String datetime,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -9794,10 +13761,14 @@ Element ins({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -9850,6 +13821,15 @@ Element ins({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -9868,8 +13848,32 @@ Element ins({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -9883,11 +13887,23 @@ Element ins({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -9913,6 +13929,15 @@ Element ins({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -9924,6 +13949,9 @@ Element ins({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -9958,19 +13986,34 @@ Element kbd({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -9979,10 +14022,14 @@ Element kbd({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -10029,6 +14076,15 @@ Element kbd({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -10047,8 +14103,32 @@ Element kbd({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -10062,11 +14142,23 @@ Element kbd({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -10092,6 +14184,15 @@ Element kbd({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -10103,6 +14204,9 @@ Element kbd({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -10138,19 +14242,34 @@ Element label({
   String title,
   String forId,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -10159,10 +14278,14 @@ Element label({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -10212,6 +14335,15 @@ Element label({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -10230,8 +14362,32 @@ Element label({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -10245,11 +14401,23 @@ Element label({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -10275,6 +14443,15 @@ Element label({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -10286,6 +14463,9 @@ Element label({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -10320,19 +14500,34 @@ Element legend({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -10341,10 +14536,14 @@ Element legend({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -10391,6 +14590,15 @@ Element legend({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -10409,8 +14617,32 @@ Element legend({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -10424,11 +14656,23 @@ Element legend({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -10454,6 +14698,15 @@ Element legend({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -10465,6 +14718,9 @@ Element legend({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -10500,19 +14756,34 @@ Element li({
   String title,
   String value,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -10521,10 +14792,14 @@ Element li({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -10574,6 +14849,15 @@ Element li({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -10592,8 +14876,32 @@ Element li({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -10607,11 +14915,23 @@ Element li({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -10637,6 +14957,15 @@ Element li({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -10648,6 +14977,9 @@ Element li({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -10691,19 +15023,34 @@ Element link({
   String type,
   String sizes,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -10712,10 +15059,14 @@ Element link({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -10789,6 +15140,15 @@ Element link({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -10807,8 +15167,32 @@ Element link({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -10822,11 +15206,23 @@ Element link({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -10852,6 +15248,15 @@ Element link({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -10863,6 +15268,9 @@ Element link({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -10897,19 +15305,34 @@ Element main({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -10918,10 +15341,14 @@ Element main({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -10968,6 +15395,15 @@ Element main({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -10986,8 +15422,32 @@ Element main({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -11001,11 +15461,23 @@ Element main({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -11031,6 +15503,15 @@ Element main({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -11042,6 +15523,9 @@ Element main({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -11077,19 +15561,34 @@ Element map({
   String title,
   String name,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -11098,10 +15597,14 @@ Element map({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -11151,6 +15654,15 @@ Element map({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -11169,8 +15681,32 @@ Element map({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -11184,11 +15720,23 @@ Element map({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -11214,6 +15762,15 @@ Element map({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -11225,6 +15782,9 @@ Element map({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -11259,19 +15819,34 @@ Element mark({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -11280,10 +15855,14 @@ Element mark({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -11330,6 +15909,15 @@ Element mark({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -11348,8 +15936,32 @@ Element mark({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -11363,11 +15975,23 @@ Element mark({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -11393,6 +16017,15 @@ Element mark({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -11404,6 +16037,9 @@ Element mark({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -11442,19 +16078,34 @@ Element meta({
   String content,
   String charset,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -11463,10 +16114,14 @@ Element meta({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -11525,6 +16180,15 @@ Element meta({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -11543,8 +16207,32 @@ Element meta({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -11558,11 +16246,23 @@ Element meta({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -11588,6 +16288,15 @@ Element meta({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -11599,6 +16308,9 @@ Element meta({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -11639,19 +16351,34 @@ Element meter({
   String high,
   String optimum,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -11660,10 +16387,14 @@ Element meter({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -11728,6 +16459,15 @@ Element meter({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -11746,8 +16486,32 @@ Element meter({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -11761,11 +16525,23 @@ Element meter({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -11791,6 +16567,15 @@ Element meter({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -11802,6 +16587,9 @@ Element meter({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -11836,19 +16624,34 @@ Element nav({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -11857,10 +16660,14 @@ Element nav({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -11907,6 +16714,15 @@ Element nav({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -11925,8 +16741,32 @@ Element nav({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -11940,11 +16780,23 @@ Element nav({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -11970,6 +16822,15 @@ Element nav({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -11981,6 +16842,9 @@ Element nav({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -12015,19 +16879,34 @@ Element noscript({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -12036,10 +16915,14 @@ Element noscript({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -12086,6 +16969,15 @@ Element noscript({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -12104,8 +16996,32 @@ Element noscript({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -12119,11 +17035,23 @@ Element noscript({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -12149,6 +17077,15 @@ Element noscript({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -12160,6 +17097,9 @@ Element noscript({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -12201,19 +17141,34 @@ Element object({
   String width,
   String height,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -12222,10 +17177,14 @@ Element object({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -12293,6 +17252,15 @@ Element object({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -12311,8 +17279,32 @@ Element object({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -12326,11 +17318,23 @@ Element object({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -12356,6 +17360,15 @@ Element object({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -12367,6 +17380,9 @@ Element object({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -12404,19 +17420,34 @@ Element ol({
   String start,
   String type,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -12425,10 +17456,14 @@ Element ol({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -12484,6 +17519,15 @@ Element ol({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -12502,8 +17546,32 @@ Element ol({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -12517,11 +17585,23 @@ Element ol({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -12547,6 +17627,15 @@ Element ol({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -12558,6 +17647,9 @@ Element ol({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -12594,19 +17686,34 @@ Element optgroup({
   String disabled,
   String label,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -12615,10 +17722,14 @@ Element optgroup({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -12671,6 +17782,15 @@ Element optgroup({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -12689,8 +17809,32 @@ Element optgroup({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -12704,11 +17848,23 @@ Element optgroup({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -12734,6 +17890,15 @@ Element optgroup({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -12745,6 +17910,9 @@ Element optgroup({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -12783,19 +17951,34 @@ Element option({
   String selected,
   String value,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -12804,10 +17987,14 @@ Element option({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -12866,6 +18053,15 @@ Element option({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -12884,8 +18080,32 @@ Element option({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -12899,11 +18119,23 @@ Element option({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -12929,6 +18161,15 @@ Element option({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -12940,6 +18181,9 @@ Element option({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -12977,19 +18221,34 @@ Element output({
   String form,
   String name,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -12998,10 +18257,14 @@ Element output({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -13057,6 +18320,15 @@ Element output({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -13075,8 +18347,32 @@ Element output({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -13090,11 +18386,23 @@ Element output({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -13120,6 +18428,15 @@ Element output({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -13131,6 +18448,9 @@ Element output({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -13165,19 +18485,34 @@ Element p({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -13186,10 +18521,14 @@ Element p({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -13236,6 +18575,15 @@ Element p({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -13254,8 +18602,32 @@ Element p({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -13269,11 +18641,23 @@ Element p({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -13299,6 +18683,15 @@ Element p({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -13310,6 +18703,9 @@ Element p({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -13346,19 +18742,34 @@ Element param({
   String name,
   String value,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -13367,10 +18778,14 @@ Element param({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -13423,6 +18838,15 @@ Element param({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -13441,8 +18865,32 @@ Element param({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -13456,11 +18904,23 @@ Element param({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -13486,6 +18946,15 @@ Element param({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -13497,6 +18966,9 @@ Element param({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -13531,19 +19003,34 @@ Element picture({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -13552,10 +19039,14 @@ Element picture({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -13602,6 +19093,15 @@ Element picture({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -13620,8 +19120,32 @@ Element picture({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -13635,11 +19159,23 @@ Element picture({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -13665,6 +19201,15 @@ Element picture({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -13676,6 +19221,9 @@ Element picture({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -13710,19 +19258,34 @@ Element pre({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -13731,10 +19294,14 @@ Element pre({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -13781,6 +19348,15 @@ Element pre({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -13799,8 +19375,32 @@ Element pre({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -13814,11 +19414,23 @@ Element pre({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -13844,6 +19456,15 @@ Element pre({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -13855,6 +19476,9 @@ Element pre({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -13891,19 +19515,34 @@ Element progress({
   String value,
   String max,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -13912,10 +19551,14 @@ Element progress({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -13968,6 +19611,15 @@ Element progress({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -13986,8 +19638,32 @@ Element progress({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -14001,11 +19677,23 @@ Element progress({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -14031,6 +19719,15 @@ Element progress({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -14042,6 +19739,9 @@ Element progress({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -14077,19 +19777,34 @@ Element q({
   String title,
   String cite,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -14098,10 +19813,14 @@ Element q({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -14151,6 +19870,15 @@ Element q({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -14169,8 +19897,32 @@ Element q({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -14184,11 +19936,23 @@ Element q({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -14214,6 +19978,15 @@ Element q({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -14225,6 +19998,9 @@ Element q({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -14259,19 +20035,34 @@ Element rb({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -14280,10 +20071,14 @@ Element rb({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -14330,6 +20125,15 @@ Element rb({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -14348,8 +20152,32 @@ Element rb({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -14363,11 +20191,23 @@ Element rb({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -14393,6 +20233,15 @@ Element rb({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -14404,6 +20253,9 @@ Element rb({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -14438,19 +20290,34 @@ Element rp({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -14459,10 +20326,14 @@ Element rp({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -14509,6 +20380,15 @@ Element rp({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -14527,8 +20407,32 @@ Element rp({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -14542,11 +20446,23 @@ Element rp({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -14572,6 +20488,15 @@ Element rp({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -14583,6 +20508,9 @@ Element rp({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -14617,19 +20545,34 @@ Element rt({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -14638,10 +20581,14 @@ Element rt({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -14688,6 +20635,15 @@ Element rt({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -14706,8 +20662,32 @@ Element rt({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -14721,11 +20701,23 @@ Element rt({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -14751,6 +20743,15 @@ Element rt({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -14762,6 +20763,9 @@ Element rt({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -14796,19 +20800,34 @@ Element rtc({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -14817,10 +20836,14 @@ Element rtc({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -14867,6 +20890,15 @@ Element rtc({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -14885,8 +20917,32 @@ Element rtc({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -14900,11 +20956,23 @@ Element rtc({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -14930,6 +20998,15 @@ Element rtc({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -14941,6 +21018,9 @@ Element rtc({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -14975,19 +21055,34 @@ Element ruby({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -14996,10 +21091,14 @@ Element ruby({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -15046,6 +21145,15 @@ Element ruby({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -15064,8 +21172,32 @@ Element ruby({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -15079,11 +21211,23 @@ Element ruby({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -15109,6 +21253,15 @@ Element ruby({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -15120,6 +21273,9 @@ Element ruby({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -15154,19 +21310,34 @@ Element s({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -15175,10 +21346,14 @@ Element s({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -15225,6 +21400,15 @@ Element s({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -15243,8 +21427,32 @@ Element s({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -15258,11 +21466,23 @@ Element s({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -15288,6 +21508,15 @@ Element s({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -15299,6 +21528,9 @@ Element s({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -15333,19 +21565,34 @@ Element samp({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -15354,10 +21601,14 @@ Element samp({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -15404,6 +21655,15 @@ Element samp({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -15422,8 +21682,32 @@ Element samp({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -15437,11 +21721,23 @@ Element samp({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -15467,6 +21763,15 @@ Element samp({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -15478,6 +21783,9 @@ Element samp({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -15519,19 +21827,34 @@ Element script({
   String crossorigin,
   String nonce,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -15540,10 +21863,14 @@ Element script({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -15611,6 +21938,15 @@ Element script({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -15629,8 +21965,32 @@ Element script({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -15644,11 +22004,23 @@ Element script({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -15674,6 +22046,15 @@ Element script({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -15685,6 +22066,9 @@ Element script({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -15719,19 +22103,34 @@ Element section({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -15740,10 +22139,14 @@ Element section({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -15790,6 +22193,15 @@ Element section({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -15808,8 +22220,32 @@ Element section({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -15823,11 +22259,23 @@ Element section({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -15853,6 +22301,15 @@ Element section({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -15864,6 +22321,9 @@ Element section({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -15906,19 +22366,34 @@ Element select({
   String required,
   String size,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -15927,10 +22402,14 @@ Element select({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -16001,6 +22480,15 @@ Element select({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -16019,8 +22507,32 @@ Element select({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -16034,11 +22546,23 @@ Element select({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -16064,6 +22588,15 @@ Element select({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -16075,6 +22608,9 @@ Element select({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -16109,19 +22645,34 @@ Element small({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -16130,10 +22681,14 @@ Element small({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -16180,6 +22735,15 @@ Element small({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -16198,8 +22762,32 @@ Element small({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -16213,11 +22801,23 @@ Element small({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -16243,6 +22843,15 @@ Element small({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -16254,6 +22863,9 @@ Element small({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -16293,19 +22905,34 @@ Element source({
   String sizes,
   String media,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -16314,10 +22941,14 @@ Element source({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -16379,6 +23010,15 @@ Element source({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -16397,8 +23037,32 @@ Element source({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -16412,11 +23076,23 @@ Element source({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -16442,6 +23118,15 @@ Element source({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -16453,6 +23138,9 @@ Element source({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -16487,19 +23175,34 @@ Element span({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -16508,10 +23211,14 @@ Element span({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -16558,6 +23265,15 @@ Element span({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -16576,8 +23292,32 @@ Element span({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -16591,11 +23331,23 @@ Element span({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -16621,6 +23373,15 @@ Element span({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -16632,6 +23393,9 @@ Element span({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -16666,19 +23430,34 @@ Element strong({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -16687,10 +23466,14 @@ Element strong({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -16737,6 +23520,15 @@ Element strong({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -16755,8 +23547,32 @@ Element strong({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -16770,11 +23586,23 @@ Element strong({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -16800,6 +23628,15 @@ Element strong({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -16811,6 +23648,9 @@ Element strong({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -16848,19 +23688,34 @@ Element style({
   String nonce,
   String type,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -16869,10 +23724,14 @@ Element style({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -16928,6 +23787,15 @@ Element style({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -16946,8 +23814,32 @@ Element style({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -16961,11 +23853,23 @@ Element style({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -16991,6 +23895,15 @@ Element style({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -17002,6 +23915,9 @@ Element style({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -17036,19 +23952,34 @@ Element sub({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -17057,10 +23988,14 @@ Element sub({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -17107,6 +24042,15 @@ Element sub({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -17125,8 +24069,32 @@ Element sub({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -17140,11 +24108,23 @@ Element sub({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -17170,6 +24150,15 @@ Element sub({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -17181,6 +24170,9 @@ Element sub({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -17215,19 +24207,34 @@ Element summary({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -17236,10 +24243,14 @@ Element summary({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -17286,6 +24297,15 @@ Element summary({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -17304,8 +24324,32 @@ Element summary({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -17319,11 +24363,23 @@ Element summary({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -17349,6 +24405,15 @@ Element summary({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -17360,6 +24425,9 @@ Element summary({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -17394,19 +24462,34 @@ Element sup({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -17415,10 +24498,14 @@ Element sup({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -17465,6 +24552,15 @@ Element sup({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -17483,8 +24579,32 @@ Element sup({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -17498,11 +24618,23 @@ Element sup({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -17528,6 +24660,15 @@ Element sup({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -17539,6 +24680,9 @@ Element sup({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -17574,19 +24718,34 @@ Element table({
   String title,
   String border,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -17595,10 +24754,14 @@ Element table({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -17648,6 +24811,15 @@ Element table({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -17666,8 +24838,32 @@ Element table({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -17681,11 +24877,23 @@ Element table({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -17711,6 +24919,15 @@ Element table({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -17722,6 +24939,9 @@ Element table({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -17756,19 +24976,34 @@ Element tbody({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -17777,10 +25012,14 @@ Element tbody({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -17827,6 +25066,15 @@ Element tbody({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -17845,8 +25093,32 @@ Element tbody({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -17860,11 +25132,23 @@ Element tbody({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -17890,6 +25174,15 @@ Element tbody({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -17901,6 +25194,9 @@ Element tbody({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -17938,19 +25234,34 @@ Element td({
   String rowspan,
   String headers,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -17959,10 +25270,14 @@ Element td({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -18018,6 +25333,15 @@ Element td({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -18036,8 +25360,32 @@ Element td({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -18051,11 +25399,23 @@ Element td({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -18081,6 +25441,15 @@ Element td({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -18092,6 +25461,9 @@ Element td({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -18126,19 +25498,34 @@ Element template({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -18147,10 +25534,14 @@ Element template({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -18197,6 +25588,15 @@ Element template({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -18215,8 +25615,32 @@ Element template({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -18230,11 +25654,23 @@ Element template({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -18260,6 +25696,15 @@ Element template({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -18271,6 +25716,9 @@ Element template({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -18318,19 +25766,34 @@ Element textarea({
   String rows,
   String wrap,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -18339,10 +25802,14 @@ Element textarea({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -18428,6 +25895,15 @@ Element textarea({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -18446,8 +25922,32 @@ Element textarea({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -18461,11 +25961,23 @@ Element textarea({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -18491,6 +26003,15 @@ Element textarea({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -18502,6 +26023,9 @@ Element textarea({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -18536,19 +26060,34 @@ Element tfoot({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -18557,10 +26096,14 @@ Element tfoot({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -18607,6 +26150,15 @@ Element tfoot({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -18625,8 +26177,32 @@ Element tfoot({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -18640,11 +26216,23 @@ Element tfoot({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -18670,6 +26258,15 @@ Element tfoot({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -18681,6 +26278,9 @@ Element tfoot({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -18720,19 +26320,34 @@ Element th({
   String scope,
   String abbr,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -18741,10 +26356,14 @@ Element th({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -18806,6 +26425,15 @@ Element th({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -18824,8 +26452,32 @@ Element th({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -18839,11 +26491,23 @@ Element th({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -18869,6 +26533,15 @@ Element th({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -18880,6 +26553,9 @@ Element th({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -18914,19 +26590,34 @@ Element thead({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -18935,10 +26626,14 @@ Element thead({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -18985,6 +26680,15 @@ Element thead({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -19003,8 +26707,32 @@ Element thead({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -19018,11 +26746,23 @@ Element thead({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -19048,6 +26788,15 @@ Element thead({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -19059,6 +26808,9 @@ Element thead({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -19094,19 +26846,34 @@ Element time({
   String title,
   String datetime,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -19115,10 +26882,14 @@ Element time({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -19168,6 +26939,15 @@ Element time({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -19186,8 +26966,32 @@ Element time({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -19201,11 +27005,23 @@ Element time({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -19231,6 +27047,15 @@ Element time({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -19242,6 +27067,9 @@ Element time({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -19276,19 +27104,34 @@ Element title({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -19297,10 +27140,14 @@ Element title({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -19347,6 +27194,15 @@ Element title({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -19365,8 +27221,32 @@ Element title({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -19380,11 +27260,23 @@ Element title({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -19410,6 +27302,15 @@ Element title({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -19421,6 +27322,9 @@ Element title({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -19455,19 +27359,34 @@ Element tr({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -19476,10 +27395,14 @@ Element tr({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -19526,6 +27449,15 @@ Element tr({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -19544,8 +27476,32 @@ Element tr({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -19559,11 +27515,23 @@ Element tr({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -19589,6 +27557,15 @@ Element tr({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -19600,6 +27577,9 @@ Element tr({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -19639,19 +27619,34 @@ Element track({
   String src,
   String srclang,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -19660,10 +27655,14 @@ Element track({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -19725,6 +27724,15 @@ Element track({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -19743,8 +27751,32 @@ Element track({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -19758,11 +27790,23 @@ Element track({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -19788,6 +27832,15 @@ Element track({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -19799,6 +27852,9 @@ Element track({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -19833,19 +27889,34 @@ Element u({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -19854,10 +27925,14 @@ Element u({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -19904,6 +27979,15 @@ Element u({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -19922,8 +28006,32 @@ Element u({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -19937,11 +28045,23 @@ Element u({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -19967,6 +28087,15 @@ Element u({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -19978,6 +28107,9 @@ Element u({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -20012,19 +28144,34 @@ Element ul({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -20033,10 +28180,14 @@ Element ul({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -20083,6 +28234,15 @@ Element ul({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -20101,8 +28261,32 @@ Element ul({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -20116,11 +28300,23 @@ Element ul({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -20146,6 +28342,15 @@ Element ul({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -20157,6 +28362,9 @@ Element ul({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -20191,19 +28399,34 @@ Element variable({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -20212,10 +28435,14 @@ Element variable({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -20262,6 +28489,15 @@ Element variable({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -20280,8 +28516,32 @@ Element variable({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -20295,11 +28555,23 @@ Element variable({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -20325,6 +28597,15 @@ Element variable({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -20336,6 +28617,9 @@ Element variable({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -20380,19 +28664,34 @@ Element video({
   String width,
   String height,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -20401,10 +28700,14 @@ Element video({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -20481,6 +28784,15 @@ Element video({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -20499,8 +28811,32 @@ Element video({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -20514,11 +28850,23 @@ Element video({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -20544,6 +28892,15 @@ Element video({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -20555,6 +28912,9 @@ Element video({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
@@ -20589,19 +28949,34 @@ Element wbr({
   String tabindex,
   String title,
   EventListener<UIEvent> onabort,
+  EventListener<Event> onafterprint,
+  EventListener<Event> onbeforeprint,
+  EventListener<BeforeUnloadEvent> onbeforeunload,
   EventListener<FocusEvent> onblur,
   EventListener<MouseEvent> onclick,
   EventListener<Event> onchange,
   EventListener<CompositionEvent> oncompositionend,
   EventListener<CompositionEvent> oncompositionstart,
   EventListener<CompositionEvent> oncompositionupdate,
+  EventListener<MouseEvent> oncontextmenu,
   EventListener<MouseEvent> ondblclick,
+  EventListener<MouseEvent> ondrag,
+  EventListener<MouseEvent> ondragend,
+  EventListener<MouseEvent> ondragenter,
+  EventListener<MouseEvent> ondragleave,
+  EventListener<MouseEvent> ondragover,
+  EventListener<MouseEvent> ondragstart,
+  EventListener<MouseEvent> ondrop,
   EventListener<UIEvent> onerror,
   EventListener<FocusEvent> onfocus,
   EventListener<FocusEvent> onfocusin,
   EventListener<FocusEvent> onfocusout,
+  EventListener<HashChangeEvent> onhashchange,
+  EventListener<Event> oninput,
+  EventListener<Event> oninvalid,
   EventListener<KeyboardEvent> onkeydown,
   EventListener<KeyboardEvent> onkeyup,
+  EventListener<Event> onlanguagechange,
   EventListener<UIEvent> onload,
   EventListener<MouseEvent> onmousedown,
   EventListener<MouseEvent> onmouseenter,
@@ -20610,10 +28985,14 @@ Element wbr({
   EventListener<MouseEvent> onmouseout,
   EventListener<MouseEvent> onmouseover,
   EventListener<MouseEvent> onmouseup,
+  EventListener<PageTransitionEvent> onpagehide,
+  EventListener<PageTransitionEvent> onpageshow,
+  EventListener<PopStateEvent> onpopstate,
   EventListener<Event> onreset,
   EventListener<UIEvent> onresize,
   EventListener<UIEvent> onscroll,
   EventListener<UIEvent> onselect,
+  EventListener<MouseEvent> onshow,
   EventListener<Event> onsubmit,
   EventListener<UIEvent> onunload,
   EventListener<WheelEvent> onwheel,
@@ -20660,6 +29039,15 @@ Element wbr({
   if (onabort != null) {
     listeners['onabort'] = onabort;
   }
+  if (onafterprint != null) {
+    listeners['onafterprint'] = onafterprint;
+  }
+  if (onbeforeprint != null) {
+    listeners['onbeforeprint'] = onbeforeprint;
+  }
+  if (onbeforeunload != null) {
+    listeners['onbeforeunload'] = onbeforeunload;
+  }
   if (onblur != null) {
     listeners['onblur'] = onblur;
   }
@@ -20678,8 +29066,32 @@ Element wbr({
   if (oncompositionupdate != null) {
     listeners['oncompositionupdate'] = oncompositionupdate;
   }
+  if (oncontextmenu != null) {
+    listeners['oncontextmenu'] = oncontextmenu;
+  }
   if (ondblclick != null) {
     listeners['ondblclick'] = ondblclick;
+  }
+  if (ondrag != null) {
+    listeners['ondrag'] = ondrag;
+  }
+  if (ondragend != null) {
+    listeners['ondragend'] = ondragend;
+  }
+  if (ondragenter != null) {
+    listeners['ondragenter'] = ondragenter;
+  }
+  if (ondragleave != null) {
+    listeners['ondragleave'] = ondragleave;
+  }
+  if (ondragover != null) {
+    listeners['ondragover'] = ondragover;
+  }
+  if (ondragstart != null) {
+    listeners['ondragstart'] = ondragstart;
+  }
+  if (ondrop != null) {
+    listeners['ondrop'] = ondrop;
   }
   if (onerror != null) {
     listeners['onerror'] = onerror;
@@ -20693,11 +29105,23 @@ Element wbr({
   if (onfocusout != null) {
     listeners['onfocusout'] = onfocusout;
   }
+  if (onhashchange != null) {
+    listeners['onhashchange'] = onhashchange;
+  }
+  if (oninput != null) {
+    listeners['oninput'] = oninput;
+  }
+  if (oninvalid != null) {
+    listeners['oninvalid'] = oninvalid;
+  }
   if (onkeydown != null) {
     listeners['onkeydown'] = onkeydown;
   }
   if (onkeyup != null) {
     listeners['onkeyup'] = onkeyup;
+  }
+  if (onlanguagechange != null) {
+    listeners['onlanguagechange'] = onlanguagechange;
   }
   if (onload != null) {
     listeners['onload'] = onload;
@@ -20723,6 +29147,15 @@ Element wbr({
   if (onmouseup != null) {
     listeners['onmouseup'] = onmouseup;
   }
+  if (onpagehide != null) {
+    listeners['onpagehide'] = onpagehide;
+  }
+  if (onpageshow != null) {
+    listeners['onpageshow'] = onpageshow;
+  }
+  if (onpopstate != null) {
+    listeners['onpopstate'] = onpopstate;
+  }
   if (onreset != null) {
     listeners['onreset'] = onreset;
   }
@@ -20734,6 +29167,9 @@ Element wbr({
   }
   if (onselect != null) {
     listeners['onselect'] = onselect;
+  }
+  if (onshow != null) {
+    listeners['onshow'] = onshow;
   }
   if (onsubmit != null) {
     listeners['onsubmit'] = onsubmit;
