@@ -44,6 +44,15 @@ class State<T> {
     _renderInstance(_instance);
   }
 
+  /// Sets a new state. After the new state is applied,
+  /// the component and its children will be rerendered
+  /// using the new state.
+  set value(T value) {
+    _value = value;
+    _valueChanged = true;
+    _renderInstance(_instance);
+  }
+
   /// Returns the actual state object.
   T get value => _value;
 }
@@ -119,8 +128,9 @@ class ComponentRenderContext {
   /// [dependsOn] is an empty list, the component is only
   /// rendered after it was mounted (first rendered). If
   /// [dependsOn] is not empty, the effect is only executed
-  /// when ones of the states in the list has changed since
-  /// the last time the component was renderer.
+  /// when one of the states in the list has changed since
+  /// the last time the component was renderer and when the
+  /// components mounts.
   ///
   /// If the effect return a [Cleanup] function, the
   /// cleanup will be executed when the component is
@@ -170,7 +180,7 @@ class Functional extends Component {
   Functional._({Object key, this.builder}) : super(key: key);
 
   @override
-  Element render(ComponentRenderContext context) {
+  Node render(ComponentRenderContext context) {
     return builder(context);
   }
 }
@@ -195,6 +205,6 @@ class Functional extends Component {
 /// you can provided a key to a component (e.g. a technical
 /// id or a name). When a component with a key is moved its
 /// states and effects will also move.
-Component fc({Object key, FunctionalComponent builder}) {
+Node fc(FunctionalComponent builder, [Object key]) {
   return Functional._(key: key, builder: builder);
 }
