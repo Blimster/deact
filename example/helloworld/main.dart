@@ -3,8 +3,7 @@ import 'package:deact/deact_html52.dart';
 
 void main() {
   deact(
-      '#root',
-      div(children: [
-        'Hello World'.txt,
-      ]));
+    '#root',
+    div(children: [txt('Hello World')]),
+  );
 }
