@@ -106,7 +106,44 @@ Above, a global state with name ```counter``` and the initial value ```0``` is i
 
 ## Effects
 
-TBD
+An effect is a function, that may be called if
+
+- a component is added to the node hierarchy
+- a component is rerendered
+- the state of a component has changed
+
+A component can have multiple effects and for each effect, it can be configured on which event it will be triggered.
+
+An effect can have a cleanup function. The cleanup is called depending how the corresponding effect is configured.
+
+If the effect is called when the component was added to the node hierarchy, the cleanup will called, when the component was removed from the hierarchy. If the effect is called on every rerender or in succession to a state change, the cleanup will be called before the effect is called the next time.
+
+```dart
+Node componentWithEffect() => fc((ctx) {
+      final counter = ctx.state<int>('counter', 0);
+      ctx.effect('myEffect', () {
+          // do something...
+          ...
+
+          return () {
+            // do some cleanup...
+            ...
+          };
+      }, [counter]);
+
+      ...
+    });
+```
+
+In the example above, the effect ```myEffect``` is executed every time the state ```counter``` has changed. The effect depends on the state ```counter```. The function return by the effect is the cleanup function. The cleanup is executed before the next time, the effect is executed.
+
+If the effect depends on an empty list of states, the effect is only executed, when the component is added to the node hierarchy. The cleanup function is called, when the component is removed from the node hierarchy.
+
+If ```null```is provided as the list of dependencies, the effect is executed every time the component rerenders. The cleanup is executed before the next time, the effect is executed (but not before the first time the effect is executed).
+
+Examples for the usage of effects are
+- executed HTTP requests
+- acquire and release resources
 
 ## Experimental
 
