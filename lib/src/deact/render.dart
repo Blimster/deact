@@ -103,6 +103,8 @@ void _renderNode(_DeactInstance instance, Node node, _TreeLocation parentLocatio
       }
     });
     context._states.values.forEach((state) => state._valueChanged = false);
+  } else if (node == null) {
+    // null means nothing should be rendered
   } else {
     throw ArgumentError('unsupported type ${node.runtimeType} of node!');
   }
