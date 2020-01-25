@@ -1,7 +1,7 @@
 library deact;
 
 import 'dart:async';
-import 'dart:html' as Html;
+import 'dart:html' as html;
 
 import 'package:incremental_dom_bindings/incremental_dom_bindings.dart';
 import 'package:logging/logging.dart';

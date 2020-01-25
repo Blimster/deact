@@ -1,7 +1,7 @@
 part of deact;
 
 /// A listener for an HTML event.
-typedef EventListener<E extends Html.Event> = void Function(E event);
+typedef EventListener<E extends html.Event> = void Function(E event);
 
 /// A [Element] is a [Node] that represents a DOM element.
 ///
