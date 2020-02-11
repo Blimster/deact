@@ -11,10 +11,11 @@ typedef EventListener<E extends html.Event> = void Function(E event);
 class Element extends Node {
   final String name;
   final Object key;
+  final Ref<html.Element> ref;
   final Map<String, Object> attributes;
   final Map<String, Object> listeners;
 
-  Element._(this.name, this.key, this.attributes, this.listeners, List<Node> children) : super._(children) {
+  Element._(this.name, this.key, this.ref, this.attributes, this.listeners, List<Node> children) : super._(children) {
     if (this.name == null) {
       throw ArgumentError('parameter "name" is required!');
     }
@@ -33,6 +34,9 @@ class Element extends Node {
 /// that different logical subtrees will be reused and
 /// the focus will correctly maintened.
 ///
+/// When providing a [Ref<Element>], the value of the
+/// reference will be set with the created element node.
+///
 /// Attributes of an element are provided as a map from
 /// an attribute name to the attribute value.
 ///
@@ -45,9 +49,10 @@ class Element extends Node {
 Element el(
   String name, {
   Object key,
+  Ref<html.Element> ref,
   Map<String, Object> attributes,
   Map<String, Object> listeners,
   List<Node> children,
 }) {
-  return Element._(name, key, attributes, listeners, children);
+  return Element._(name, key, ref, attributes, listeners, children);
 }

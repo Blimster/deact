@@ -145,6 +145,30 @@ Examples for the usage of effects are
 - executed HTTP requests
 - acquire and release resources
 
+## References
+
+A reference holds a reference to a value. A reference is local to a component. A reference persists until the component,
+which has created the reference is removed from the node hierarchy. Changing the reference  value will force the 
+component to rerender.
+
+A special way to set the value of a reference is to provide the reference to the ref parameter of an element node.
+
+```dart
+Node refs() => fc((ctx) {
+      final inputRef = ctx.ref<InputElement>('input', null);
+
+      return fragment([
+        button(
+          onclick: (_) => inputRef.value.focus(),
+          children: [txt('Click me to focus the input element!')],
+        ),
+        input(ref: inputRef),
+      ]);
+    });
+```
+
+In this example, a reference to a ```InputElement``` is created. The initial value is ```null```. The reference is provided as parameter to the ```input(``` function. When the underlying DOM element is created, it is assigned to value of the reference.
+
 ## Experimental
 
 Deact has no stable release yet. Functionality is not yet complete. The API may change and maybe in a breaking way. 

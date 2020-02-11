@@ -4,6 +4,19 @@ class _TypeLiteral<T> {
   Type type() => T;
 }
 
+/// A reference to a value.
+///
+/// The reference will persist the component is removed
+/// from the node hierarchy.
+///
+/// Changing the value of the reference does not force a
+/// rerender of the component.
+class Ref<T> {
+  T value;
+
+  Ref._(T value);
+}
+
 /// A state for a component or a state provider.
 ///
 /// If a state of a component changes, the component and
@@ -72,6 +85,7 @@ class ComponentRenderContext {
   final ComponentRenderContext _parent;
   final _TreeLocation _location;
   final Component _component;
+  final Map<String, Ref> _refs = {};
   final Map<String, State> _states = {};
   final Map<String, Effect> _effects = {};
   final Map<String, Cleanup> _cleanups = {};
@@ -79,16 +93,33 @@ class ComponentRenderContext {
 
   ComponentRenderContext._(this._parent, this._instance, this._location, this._component);
 
+  /// Creates a reference with the given [name] and
+  /// [intialValue].
+  ///
+  /// If no reference is registered with the given
+  /// [name], a new reference is created with
+  /// [initialValue] as initial value. The next time the
+  /// reference is accessed, this value will be returned.
+  /// A reference will persist until the component is
+  /// removed from the node hierarchy.
+  Ref<T> ref<T>(String name, [T initialValue]) {
+    return _refs.putIfAbsent(name, () {
+      final ref = Ref<T>._(initialValue);
+      _instance.logger.fine('${_location}: created ref with name ${name} with initial value ${initialValue}');
+      return ref;
+    });
+  }
+
   /// Creates a state with the given [name] and
   /// [intialValue]. This state is local to the component.
   ///
-  /// If no state if registers with the given
+  /// If no state is registered with the given
   /// [name], a new state is created with [initialValue]
   /// as initial state. The next time the state is
   /// accessed, this state will be returned. A
   /// state will persist until the component is removed
-  /// from the DOM.
-  State<T> state<T>(String name, T initialValue) {
+  /// from the node hierarchy.
+  State<T> state<T>(String name, [T initialValue]) {
     return _states.putIfAbsent(name, () {
       final state = State<T>._(_instance, initialValue);
       _instance.logger.fine('${_location}: created state with name ${name} with initial value ${initialValue}');

@@ -51,7 +51,10 @@ void _renderNode(_DeactInstance instance, Node node, _TreeLocation parentLocatio
     if (node.children != null) {
       node.children.forEach((child) => _renderNode(instance, child, node._location, parentContext, usedLocations));
     }
-    elementClose(node.name);
+    final el = elementClose(node.name);
+    if (node.ref != null && node.ref.value != el) {
+      node.ref.value = el;
+    }
   } else if (node is Fragment) {
     if (node.children != null) {
       node.children.forEach((child) => _renderNode(instance, child, node._location, parentContext, usedLocations));

@@ -19,3 +19,7 @@ Shows the usage of global state.
 ## effects
 
 Shows the usage of effects.
+
+## refs
+
+Shows the usage of references.
