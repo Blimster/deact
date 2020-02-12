@@ -148,10 +148,10 @@ Examples for the usage of effects are
 ## References
 
 A reference holds a reference to a value. A reference is local to a component. A reference persists until the component,
-which has created the reference is removed from the node hierarchy. Changing the reference  value will force the 
+which has created the reference is removed from the node hierarchy. Changing the reference value will NOT force the 
 component to rerender.
 
-A special way to set the value of a reference is to provide the reference to the ref parameter of an element node.
+A special way to set the value of a reference is to provide the reference to the ```ref``` parameter of an element node.
 
 ```dart
 Node refs() => fc((ctx) {
