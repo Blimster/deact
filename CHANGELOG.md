@@ -11,3 +11,7 @@
 ## v0.1.1
 
 - Added references
+
+## v0.1.1+1
+
+- Fixed documentation
