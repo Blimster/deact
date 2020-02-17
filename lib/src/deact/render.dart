@@ -36,7 +36,7 @@ void _renderInstance(_DeactInstance instance) {
 
 void _renderNode(_DeactInstance instance, Node node, _TreeLocation parentLocation, ComponentRenderContext parentContext,
     Set<_TreeLocation> usedLocations) {
-  if (node is Element) {
+  if (node is ElementNode) {
     node._location = _TreeLocation(parentLocation, 'e:${node.name}');
     instance.logger.finest('${node._location}: processing node');
     final props = [];
@@ -48,22 +48,22 @@ void _renderNode(_DeactInstance instance, Node node, _TreeLocation parentLocatio
     }
 
     elementOpen(node.name, null, null, props);
-    if (node.children != null) {
-      node.children.forEach((child) => _renderNode(instance, child, node._location, parentContext, usedLocations));
+    if (node._children != null) {
+      node._children.forEach((child) => _renderNode(instance, child, node._location, parentContext, usedLocations));
     }
     final el = elementClose(node.name);
     if (node.ref != null && node.ref.value != el) {
       node.ref.value = el;
     }
-  } else if (node is Fragment) {
-    if (node.children != null) {
-      node.children.forEach((child) => _renderNode(instance, child, node._location, parentContext, usedLocations));
+  } else if (node is FragmentNode) {
+    if (node._children != null) {
+      node._children.forEach((child) => _renderNode(instance, child, node._location, parentContext, usedLocations));
     }
-  } else if (node is Text) {
+  } else if (node is TextNode) {
     node._location = _TreeLocation(parentLocation, 't');
     instance.logger.finest('${node._location}: processing node');
     text(node.text);
-  } else if (node is Component) {
+  } else if (node is ComponentNode) {
     node._location = _TreeLocation(parentLocation, 'c:${node.runtimeType}', key: node.key);
     usedLocations.add(node._location);
     instance.logger.finest('${node._location}: processing node');

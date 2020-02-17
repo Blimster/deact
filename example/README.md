@@ -23,3 +23,7 @@ Shows the usage of effects.
 ## refs
 
 Shows the usage of references.
+
+## refs
+
+Shows the usage of global references.

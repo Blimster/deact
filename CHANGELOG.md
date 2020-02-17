@@ -15,3 +15,14 @@
 ## v0.1.1+1
 
 - Fixed documentation
+
+## v0.1.1+2
+
+- Bug fix for references
+
+## v0.2.0
+
+- Added global references (see ```globalRef()```and ```ComponentRenderContext.globalRef()```)
+- A ```Ref``` now provides a stream of change events
+- BREAKING CHANGE: Renamed ```globalStateProvider()```to ```globalState()```
+- BREAKING CHANGE: Renamed ```Component``` to ```ComponentNode```, ```Element``` to ```ElementNode```, ```Text``` to ```TextNode``` and ```Fragment``` to ```FragmentNode``` to avoid name conflicts with the ```dart:html``` package

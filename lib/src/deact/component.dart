@@ -10,11 +10,33 @@ class _TypeLiteral<T> {
 /// from the node hierarchy.
 ///
 /// Changing the value of the reference does not force a
-/// rerender of the component.
+/// rerender of the component. But it is possible to add
+/// a listener to the stream of change events.
+///
+/// If the initial value of the reference is not null,
+/// then this value will be added to the stream of change
+/// events.
 class Ref<T> {
-  T value;
+  final _TypeLiteral<T> _type;
+  final StreamController<T> _streamController = StreamController<T>();
+  T _value;
 
-  Ref._(T value);
+  Ref._(this._value) : _type = _TypeLiteral<T>() {
+    if (_value != null) {
+      _streamController.add(_value);
+    }
+  }
+
+  T get value => _value;
+
+  set value(T value) {
+    _value = value;
+    _streamController.add(_value);
+  }
+
+  /// Returns a stream of events of changes to the value
+  /// of the reference.
+  Stream<T> get onChange => _streamController.stream;
 }
 
 /// A state for a component or a state provider.
@@ -84,7 +106,7 @@ class ComponentRenderContext {
   final _DeactInstance _instance;
   final ComponentRenderContext _parent;
   final _TreeLocation _location;
-  final Component _component;
+  final ComponentNode _component;
   final Map<String, Ref> _refs = {};
   final Map<String, State> _states = {};
   final Map<String, Effect> _effects = {};
@@ -108,6 +130,29 @@ class ComponentRenderContext {
       _instance.logger.fine('${_location}: created ref with name ${name} with initial value ${initialValue}');
       return ref;
     });
+  }
+
+  /// Returns a state provided by a [GlobalRefProvider].
+  ///
+  /// If no state with the given [name] and type [S] is
+  /// found, an [StateError] is thrown. The search starts
+  /// at the nearest state provider of the compoent and
+  /// proceeds in direction to the root of the node
+  /// hierarchy.
+  Ref<R> globalRef<R>(String name) {
+    var parent = _parent;
+    while (parent != null) {
+      if (parent._component is GlobalRefProvider<R>) {
+        final GlobalRefProvider<R> grp = parent._component;
+        if (grp._name == name) {
+          if (grp._ref._type.type() == R) {
+            return grp._ref;
+          }
+        }
+      }
+      parent = parent._parent;
+    }
+    return throw StateError('no global ref with name $name and type $R found!');
   }
 
   /// Creates a state with the given [name] and
@@ -137,8 +182,8 @@ class ComponentRenderContext {
   State<S> globalState<S>(String name) {
     var parent = _parent;
     while (parent != null) {
-      if (parent._component is _GlobalStateProvider<S>) {
-        final _GlobalStateProvider<S> gsp = parent._component;
+      if (parent._component is GlobalStateProvider<S>) {
+        final GlobalStateProvider<S> gsp = parent._component;
         if (gsp._name == name) {
           if (gsp._state._type.type() == S) {
             return gsp._state;
@@ -177,7 +222,7 @@ class ComponentRenderContext {
 typedef FunctionalComponent = Node Function(ComponentRenderContext ctx);
 
 /// Super class for class-based components.
-abstract class Component extends Node {
+abstract class ComponentNode extends Node {
   final Object key;
 
   /// States and effects are not bound to a component but to
@@ -194,7 +239,7 @@ abstract class Component extends Node {
   /// you can provided a key to a component (e.g. a technical
   /// id or a name). When a component with a key is moved its
   /// states and effects will also move.
-  Component({Object key})
+  ComponentNode({Object key})
       : this.key = key,
         super._(null);
 
@@ -205,7 +250,7 @@ abstract class Component extends Node {
 
 /// Deact internally stores a functional component as a
 /// class of this type.
-class Functional extends Component {
+class Functional extends ComponentNode {
   final FunctionalComponent builder;
 
   Functional._({Object key, this.builder}) : super(key: key);

@@ -3,26 +3,26 @@ part of deact;
 /// A listener for an HTML event.
 typedef EventListener<E extends html.Event> = void Function(E event);
 
-/// A [Element] is a [Node] that represents a DOM element.
+/// A [ElementNode] is a [Node] that represents a DOM element.
 ///
 /// Every element has a required name (e.g. div or span),
 /// an optional key, optional attributes, optional event
 /// listeners and optional children.
-class Element extends Node {
+class ElementNode extends Node {
   final String name;
   final Object key;
   final Ref<html.Element> ref;
   final Map<String, Object> attributes;
   final Map<String, Object> listeners;
 
-  Element._(this.name, this.key, this.ref, this.attributes, this.listeners, List<Node> children) : super._(children) {
+  ElementNode._(this.name, this.key, this.ref, this.attributes, this.listeners, List<Node> children) : super._(children) {
     if (this.name == null) {
       throw ArgumentError('parameter "name" is required!');
     }
   }
 }
 
-/// Creates an [Element] node.
+/// Creates an [ElementNode] node.
 ///
 /// Every element has a name (e.g. 'div' or 'span'). This
 /// is a required parameter.
@@ -46,7 +46,7 @@ class Element extends Node {
 ///
 /// The children of an element are provided as a list of
 /// [Node]s.
-Element el(
+ElementNode el(
   String name, {
   Object key,
   Ref<html.Element> ref,
@@ -54,5 +54,5 @@ Element el(
   Map<String, Object> listeners,
   List<Node> children,
 }) {
-  return Element._(name, key, ref, attributes, listeners, children);
+  return ElementNode._(name, key, ref, attributes, listeners, children);
 }

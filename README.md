@@ -81,7 +81,7 @@ State created by the function ```state()```is local to the component. If it is r
 void main() {
   deact(
       '#root',
-      globalStateProvider<int>(
+      globalState<int>(
         name: 'counter',
         initialValue: 0,
         children: [
@@ -147,15 +147,19 @@ Examples for the usage of effects are
 
 ## References
 
-A reference holds a reference to a value. A reference is local to a component. A reference persists until the component,
+A reference holds a reference to a value. A reference can be local or global. A reference persists until the component,
 which has created the reference is removed from the node hierarchy. Changing the reference value will NOT force the 
 component to rerender.
+
+### Local references
+
+A local reference is created by calling the ```ref()``` method of the ```ComponentRenderContext```. A reference has a name and an optional initial value. The value of the reference can be accessed by ```value``` memeber.
 
 A special way to set the value of a reference is to provide the reference to the ```ref``` parameter of an element node.
 
 ```dart
 Node refs() => fc((ctx) {
-      final inputRef = ctx.ref<InputElement>('input', null);
+      final inputRef = ctx.ref<InputElement>('input');
 
       return fragment([
         button(
@@ -167,7 +171,51 @@ Node refs() => fc((ctx) {
     });
 ```
 
-In this example, a reference to a ```InputElement``` is created. The initial value is ```null```. The reference is provided as parameter to the ```input(``` function. When the underlying DOM element is created, it is assigned to value of the reference.
+In this example, a reference to a ```InputElement``` is created. The initial value is ```null```. The reference is provided as parameter to the ```input()``` function. When the underlying DOM element is created, it is assigned to value of the reference.
+
+### Global references
+
+A global reference is introduced using the function ```globalRef()``` which creates an instance of a ```GloablRefProvider``` component. All children of this component can access the global reference by calling the ```gloablRef<T>(String)``` method of the ```ComponentRenderContext```. The same rules of how to find a global state apply here.
+
+```dart
+void main() {
+  deact(
+      '#root',
+      globalRef<int>(
+        name: 'counter',
+        initialValue: 0,
+        children: [
+          incrementor(),
+          display(),
+        ],
+      ));
+}
+
+Node incrementor() => fc((ctx) {
+      final counter = ctx.globalRef<int>('counter');
+      return button(
+        onclick: (_) => counter.value = counter.value + 1,
+        children: [txt('Click me to increment to counter')],
+      );
+    });
+
+Node display() => fc((ctx) {
+      final counter = ctx.state<int>('counter', null);
+      ctx.effect('init', () {
+        // listen to changes of the value of the 'counter' reference
+        ctx.globalRef<int>('counter').onChange.listen((c) {
+          // update the internal state of the display component.
+          // this forces the component to be rerendered. but you
+          // do some stuff, that do not force a rerender.
+          counter.value = c;
+        });
+        return null;
+      }, dependsOn: []);
+      return div(children: [txt('Counter: ${counter.value}')]);
+    }, 'display');
+```
+
+As you can see, a reference provices a stream of value change events.
 
 ## Experimental
 

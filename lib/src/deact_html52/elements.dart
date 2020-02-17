@@ -1,6 +1,6 @@
 part of deact_html52;
 
-Element a({
+ElementNode a({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -285,7 +285,7 @@ Element a({
   );
 }
 
-Element abbr({
+ElementNode abbr({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -542,7 +542,7 @@ Element abbr({
   );
 }
 
-Element address({
+ElementNode address({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -799,7 +799,7 @@ Element address({
   );
 }
 
-Element area({
+ElementNode area({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -1096,7 +1096,7 @@ Element area({
   );
 }
 
-Element article({
+ElementNode article({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -1353,7 +1353,7 @@ Element article({
   );
 }
 
-Element aside({
+ElementNode aside({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -1610,7 +1610,7 @@ Element aside({
   );
 }
 
-Element audio({
+ElementNode audio({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -1895,7 +1895,7 @@ Element audio({
   );
 }
 
-Element b({
+ElementNode b({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -2152,7 +2152,7 @@ Element b({
   );
 }
 
-Element base({
+ElementNode base({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -2417,7 +2417,7 @@ Element base({
   );
 }
 
-Element bdi({
+ElementNode bdi({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -2674,7 +2674,7 @@ Element bdi({
   );
 }
 
-Element bdo({
+ElementNode bdo({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -2931,7 +2931,7 @@ Element bdo({
   );
 }
 
-Element blockquote({
+ElementNode blockquote({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -3192,7 +3192,7 @@ Element blockquote({
   );
 }
 
-Element body({
+ElementNode body({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -3449,7 +3449,7 @@ Element body({
   );
 }
 
-Element br({
+ElementNode br({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -3706,7 +3706,7 @@ Element br({
   );
 }
 
-Element button({
+ElementNode button({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -4007,7 +4007,7 @@ Element button({
   );
 }
 
-Element canvas({
+ElementNode canvas({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -4272,7 +4272,7 @@ Element canvas({
   );
 }
 
-Element caption({
+ElementNode caption({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -4529,7 +4529,7 @@ Element caption({
   );
 }
 
-Element cite({
+ElementNode cite({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -4786,7 +4786,7 @@ Element cite({
   );
 }
 
-Element code({
+ElementNode code({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -5043,7 +5043,7 @@ Element code({
   );
 }
 
-Element col({
+ElementNode col({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -5304,7 +5304,7 @@ Element col({
   );
 }
 
-Element colgroup({
+ElementNode colgroup({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -5565,7 +5565,7 @@ Element colgroup({
   );
 }
 
-Element data({
+ElementNode data({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -5826,7 +5826,7 @@ Element data({
   );
 }
 
-Element datalist({
+ElementNode datalist({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -6083,7 +6083,7 @@ Element datalist({
   );
 }
 
-Element dd({
+ElementNode dd({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -6340,7 +6340,7 @@ Element dd({
   );
 }
 
-Element del({
+ElementNode del({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -6605,7 +6605,7 @@ Element del({
   );
 }
 
-Element details({
+ElementNode details({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -6866,7 +6866,7 @@ Element details({
   );
 }
 
-Element dfn({
+ElementNode dfn({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -7123,7 +7123,7 @@ Element dfn({
   );
 }
 
-Element dialog({
+ElementNode dialog({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -7384,7 +7384,7 @@ Element dialog({
   );
 }
 
-Element div({
+ElementNode div({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -7641,7 +7641,7 @@ Element div({
   );
 }
 
-Element dl({
+ElementNode dl({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -7898,7 +7898,7 @@ Element dl({
   );
 }
 
-Element dt({
+ElementNode dt({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -8155,7 +8155,7 @@ Element dt({
   );
 }
 
-Element em({
+ElementNode em({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -8412,7 +8412,7 @@ Element em({
   );
 }
 
-Element embed({
+ElementNode embed({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -8685,7 +8685,7 @@ Element embed({
   );
 }
 
-Element fieldset({
+ElementNode fieldset({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -8954,7 +8954,7 @@ Element fieldset({
   );
 }
 
-Element figcaption({
+ElementNode figcaption({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -9211,7 +9211,7 @@ Element figcaption({
   );
 }
 
-Element figure({
+ElementNode figure({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -9468,7 +9468,7 @@ Element figure({
   );
 }
 
-Element footer({
+ElementNode footer({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -9725,7 +9725,7 @@ Element footer({
   );
 }
 
-Element form({
+ElementNode form({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -10014,7 +10014,7 @@ Element form({
   );
 }
 
-Element h1({
+ElementNode h1({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -10271,7 +10271,7 @@ Element h1({
   );
 }
 
-Element h2({
+ElementNode h2({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -10528,7 +10528,7 @@ Element h2({
   );
 }
 
-Element h3({
+ElementNode h3({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -10785,7 +10785,7 @@ Element h3({
   );
 }
 
-Element h4({
+ElementNode h4({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -11042,7 +11042,7 @@ Element h4({
   );
 }
 
-Element h5({
+ElementNode h5({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -11299,7 +11299,7 @@ Element h5({
   );
 }
 
-Element h6({
+ElementNode h6({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -11556,7 +11556,7 @@ Element h6({
   );
 }
 
-Element head({
+ElementNode head({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -11813,7 +11813,7 @@ Element head({
   );
 }
 
-Element header({
+ElementNode header({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -12070,7 +12070,7 @@ Element header({
   );
 }
 
-Element hr({
+ElementNode hr({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -12327,7 +12327,7 @@ Element hr({
   );
 }
 
-Element html({
+ElementNode html({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -12588,7 +12588,7 @@ Element html({
   );
 }
 
-Element i({
+ElementNode i({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -12845,7 +12845,7 @@ Element i({
   );
 }
 
-Element iframe({
+ElementNode iframe({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -13134,7 +13134,7 @@ Element iframe({
   );
 }
 
-Element img({
+ElementNode img({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -13431,7 +13431,7 @@ Element img({
   );
 }
 
-Element input({
+ElementNode input({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -13812,7 +13812,7 @@ Element input({
   );
 }
 
-Element ins({
+ElementNode ins({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -14077,7 +14077,7 @@ Element ins({
   );
 }
 
-Element kbd({
+ElementNode kbd({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -14334,7 +14334,7 @@ Element kbd({
   );
 }
 
-Element label({
+ElementNode label({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -14595,7 +14595,7 @@ Element label({
   );
 }
 
-Element legend({
+ElementNode legend({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -14852,7 +14852,7 @@ Element legend({
   );
 }
 
-Element li({
+ElementNode li({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -15113,7 +15113,7 @@ Element li({
   );
 }
 
-Element link({
+ElementNode link({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -15406,7 +15406,7 @@ Element link({
   );
 }
 
-Element main({
+ElementNode main({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -15663,7 +15663,7 @@ Element main({
   );
 }
 
-Element map({
+ElementNode map({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -15924,7 +15924,7 @@ Element map({
   );
 }
 
-Element mark({
+ElementNode mark({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -16181,7 +16181,7 @@ Element mark({
   );
 }
 
-Element meta({
+ElementNode meta({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -16454,7 +16454,7 @@ Element meta({
   );
 }
 
-Element meter({
+ElementNode meter({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -16735,7 +16735,7 @@ Element meter({
   );
 }
 
-Element nav({
+ElementNode nav({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -16992,7 +16992,7 @@ Element nav({
   );
 }
 
-Element noscript({
+ElementNode noscript({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -17249,7 +17249,7 @@ Element noscript({
   );
 }
 
-Element object({
+ElementNode object({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -17534,7 +17534,7 @@ Element object({
   );
 }
 
-Element ol({
+ElementNode ol({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -17803,7 +17803,7 @@ Element ol({
   );
 }
 
-Element optgroup({
+ElementNode optgroup({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -18068,7 +18068,7 @@ Element optgroup({
   );
 }
 
-Element option({
+ElementNode option({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -18341,7 +18341,7 @@ Element option({
   );
 }
 
-Element output({
+ElementNode output({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -18610,7 +18610,7 @@ Element output({
   );
 }
 
-Element p({
+ElementNode p({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -18867,7 +18867,7 @@ Element p({
   );
 }
 
-Element param({
+ElementNode param({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -19132,7 +19132,7 @@ Element param({
   );
 }
 
-Element picture({
+ElementNode picture({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -19389,7 +19389,7 @@ Element picture({
   );
 }
 
-Element pre({
+ElementNode pre({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -19646,7 +19646,7 @@ Element pre({
   );
 }
 
-Element progress({
+ElementNode progress({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -19911,7 +19911,7 @@ Element progress({
   );
 }
 
-Element q({
+ElementNode q({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -20172,7 +20172,7 @@ Element q({
   );
 }
 
-Element rb({
+ElementNode rb({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -20429,7 +20429,7 @@ Element rb({
   );
 }
 
-Element rp({
+ElementNode rp({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -20686,7 +20686,7 @@ Element rp({
   );
 }
 
-Element rt({
+ElementNode rt({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -20943,7 +20943,7 @@ Element rt({
   );
 }
 
-Element rtc({
+ElementNode rtc({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -21200,7 +21200,7 @@ Element rtc({
   );
 }
 
-Element ruby({
+ElementNode ruby({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -21457,7 +21457,7 @@ Element ruby({
   );
 }
 
-Element s({
+ElementNode s({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -21714,7 +21714,7 @@ Element s({
   );
 }
 
-Element samp({
+ElementNode samp({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -21971,7 +21971,7 @@ Element samp({
   );
 }
 
-Element script({
+ElementNode script({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -22256,7 +22256,7 @@ Element script({
   );
 }
 
-Element section({
+ElementNode section({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -22513,7 +22513,7 @@ Element section({
   );
 }
 
-Element select({
+ElementNode select({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -22802,7 +22802,7 @@ Element select({
   );
 }
 
-Element small({
+ElementNode small({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -23059,7 +23059,7 @@ Element small({
   );
 }
 
-Element source({
+ElementNode source({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -23336,7 +23336,7 @@ Element source({
   );
 }
 
-Element span({
+ElementNode span({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -23593,7 +23593,7 @@ Element span({
   );
 }
 
-Element strong({
+ElementNode strong({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -23850,7 +23850,7 @@ Element strong({
   );
 }
 
-Element style({
+ElementNode style({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -24119,7 +24119,7 @@ Element style({
   );
 }
 
-Element sub({
+ElementNode sub({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -24376,7 +24376,7 @@ Element sub({
   );
 }
 
-Element summary({
+ElementNode summary({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -24633,7 +24633,7 @@ Element summary({
   );
 }
 
-Element sup({
+ElementNode sup({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -24890,7 +24890,7 @@ Element sup({
   );
 }
 
-Element table({
+ElementNode table({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -25151,7 +25151,7 @@ Element table({
   );
 }
 
-Element tbody({
+ElementNode tbody({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -25408,7 +25408,7 @@ Element tbody({
   );
 }
 
-Element td({
+ElementNode td({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -25677,7 +25677,7 @@ Element td({
   );
 }
 
-Element template({
+ElementNode template({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -25934,7 +25934,7 @@ Element template({
   );
 }
 
-Element textarea({
+ElementNode textarea({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -26243,7 +26243,7 @@ Element textarea({
   );
 }
 
-Element tfoot({
+ElementNode tfoot({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -26500,7 +26500,7 @@ Element tfoot({
   );
 }
 
-Element th({
+ElementNode th({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -26777,7 +26777,7 @@ Element th({
   );
 }
 
-Element thead({
+ElementNode thead({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -27034,7 +27034,7 @@ Element thead({
   );
 }
 
-Element time({
+ElementNode time({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -27295,7 +27295,7 @@ Element time({
   );
 }
 
-Element title({
+ElementNode title({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -27552,7 +27552,7 @@ Element title({
   );
 }
 
-Element tr({
+ElementNode tr({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -27809,7 +27809,7 @@ Element tr({
   );
 }
 
-Element track({
+ElementNode track({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -28086,7 +28086,7 @@ Element track({
   );
 }
 
-Element u({
+ElementNode u({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -28343,7 +28343,7 @@ Element u({
   );
 }
 
-Element ul({
+ElementNode ul({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -28600,7 +28600,7 @@ Element ul({
   );
 }
 
-Element variable({
+ElementNode variable({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -28857,7 +28857,7 @@ Element variable({
   );
 }
 
-Element video({
+ElementNode video({
   Object key,
   Ref<h.Element> ref,
   String accesskey,
@@ -29154,7 +29154,7 @@ Element video({
   );
 }
 
-Element wbr({
+ElementNode wbr({
   Object key,
   Ref<h.Element> ref,
   String accesskey,

@@ -6,7 +6,7 @@ import 'package:deact/deact_html52.dart';
 void main() {
   deact(
       '#root',
-      globalStateProvider<int>(
+      globalState<int>(
         name: 'counter',
         initialValue: 0,
         children: [

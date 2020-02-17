@@ -10,6 +10,7 @@ part 'src/deact/component.dart';
 part 'src/deact/deact_instance.dart';
 part 'src/deact/element.dart';
 part 'src/deact/fragment.dart';
+part 'src/deact/global_ref_provider.dart';
 part 'src/deact/global_state_provider.dart';
 part 'src/deact/node.dart';
 part 'src/deact/render.dart';

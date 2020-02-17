@@ -1,18 +1,18 @@
 part of deact;
 
-/// A [Text] is a [Node] that adds a text to the DOM.
-class Text extends Node {
+/// A [TextNode] is a [Node] that adds a text to the DOM.
+class TextNode extends Node {
   final String text;
 
-  Text._(this.text) : super._(null);
+  TextNode._(this.text) : super._(null);
 }
 
-/// Creates a [Text] node with the given [text].
-Text txt(String text) => Text._(text);
+/// Creates a [TextNode] node with the given [text].
+TextNode txt(String text) => TextNode._(text);
 
 /// Adds the getter [txt] to the [String] class.
 ///
-/// The getter return a [Text] node with the string as its
+/// The getter return a [TextNode] node with the string as its
 /// content.
 ///
 /// Example:
@@ -20,5 +20,5 @@ Text txt(String text) => Text._(text);
 /// deact('#id', 'some text'.txt);
 /// ```
 extension DeactString on String {
-  Text get txt => Text._(this);
+  TextNode get txt => TextNode._(this);
 }
