@@ -134,7 +134,7 @@ class ComponentRenderContext {
 
   /// Returns a state provided by a [GlobalRefProvider].
   ///
-  /// If no state with the given [name] and type [S] is
+  /// If no reference with the given [name] and type [R] is
   /// found, an [StateError] is thrown. The search starts
   /// at the nearest state provider of the compoent and
   /// proceeds in direction to the root of the node
@@ -219,10 +219,10 @@ class ComponentRenderContext {
 }
 
 /// A function that creates a component.
-typedef FunctionalComponent = Node Function(ComponentRenderContext ctx);
+typedef FunctionalComponent = DeactNode Function(ComponentRenderContext ctx);
 
 /// Super class for class-based components.
-abstract class ComponentNode extends Node {
+abstract class ComponentNode extends DeactNode {
   final Object key;
 
   /// States and effects are not bound to a component but to
@@ -245,7 +245,7 @@ abstract class ComponentNode extends Node {
 
   /// Override this method to render the content of the
   /// component.
-  Node render(ComponentRenderContext context);
+  DeactNode render(ComponentRenderContext context);
 }
 
 /// Deact internally stores a functional component as a
@@ -256,7 +256,7 @@ class Functional extends ComponentNode {
   Functional._({Object key, this.builder}) : super(key: key);
 
   @override
-  Node render(ComponentRenderContext context) {
+  DeactNode render(ComponentRenderContext context) {
     return builder(context);
   }
 }
@@ -281,6 +281,6 @@ class Functional extends ComponentNode {
 /// you can provided a key to a component (e.g. a technical
 /// id or a name). When a component with a key is moved its
 /// states and effects will also move.
-Node fc(FunctionalComponent builder, [Object key]) {
+DeactNode fc(FunctionalComponent builder, [Object key]) {
   return Functional._(key: key, builder: builder);
 }

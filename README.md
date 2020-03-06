@@ -51,7 +51,7 @@ void main() {
       ]));
 }
 
-Node coloredText(String text, String color) => fc((_) {
+DeactNode coloredText(String text, String color) => fc((_) {
       return div(style: 'color: $color', children: [txt(text)]);
     });
 ```
@@ -65,7 +65,7 @@ In this example a component with the name ```coloredText``` is introduced. The n
 A component can have a state. To access the state of a component, the function ```state()``` of the ```ComponentRenderContext``` is used. A state has a name and a type.
 
 ```dart
-Node statefulComponent() => fc((ctx) {
+DeactNode statefulComponent() => fc((ctx) {
       final counter = ctx.state<int>('counter', 0);
       return div(onclick: (_) => counter.set((c) => c + 1), children: [txt('Counter: ${counter.value}')]);
     });
@@ -91,12 +91,12 @@ void main() {
       ));
 }
 
-Node incrementor() => fc((ctx) {
+DeactNode incrementor() => fc((ctx) {
       final counter = ctx.globalState<int>('counter');
       return button(onclick: (_) => counter.set((c) => c + 1), children: [txt('Click me to increment to counter')]);
     });
 
-Node display() => fc((ctx) {
+DeactNode display() => fc((ctx) {
       final counter = ctx.globalState<int>('counter');
       return div(children: [txt('Counter: ${counter.value}')]);
     });
@@ -119,7 +119,7 @@ An effect can have a cleanup function. The cleanup is called depending how the c
 If the effect is called when the component was added to the node hierarchy, the cleanup will called, when the component was removed from the hierarchy. If the effect is called on every rerender or in succession to a state change, the cleanup will be called before the effect is called the next time.
 
 ```dart
-Node componentWithEffect() => fc((ctx) {
+DeactNode componentWithEffect() => fc((ctx) {
       final counter = ctx.state<int>('counter', 0);
       ctx.effect('myEffect', () {
           // do something...
@@ -158,7 +158,7 @@ A local reference is created by calling the ```ref()``` method of the ```Compone
 A special way to set the value of a reference is to provide the reference to the ```ref``` parameter of an element node.
 
 ```dart
-Node refs() => fc((ctx) {
+DeactNode refs() => fc((ctx) {
       final inputRef = ctx.ref<InputElement>('input');
 
       return fragment([
@@ -191,7 +191,7 @@ void main() {
       ));
 }
 
-Node incrementor() => fc((ctx) {
+DeactNode incrementor() => fc((ctx) {
       final counter = ctx.globalRef<int>('counter');
       return button(
         onclick: (_) => counter.value = counter.value + 1,
@@ -199,7 +199,7 @@ Node incrementor() => fc((ctx) {
       );
     });
 
-Node display() => fc((ctx) {
+DeactNode display() => fc((ctx) {
       final counter = ctx.state<int>('counter', null);
       ctx.effect('init', () {
         // listen to changes of the value of the 'counter' reference

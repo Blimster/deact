@@ -7,7 +7,7 @@ void main() {
   deact('#root', refs());
 }
 
-Node refs() => fc((ctx) {
+DeactNode refs() => fc((ctx) {
       final inputRef = ctx.ref<InputElement>('input', null);
 
       return fragment([

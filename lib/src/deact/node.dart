@@ -1,10 +1,10 @@
 part of deact;
 
 /// A Deact application consists of a hierarchy of
-/// [Node]s. A node can have one or more child nodes.
-abstract class Node {
-  final List<Node> _children;
+/// [DeactNode]s. A node can have one or more child nodes.
+abstract class DeactNode {
+  final List<DeactNode> _children;
   _TreeLocation _location;
 
-  Node._(this._children);
+  DeactNode._(this._children);
 }

@@ -26,3 +26,7 @@
 - A ```Ref``` now provides a stream of change events
 - BREAKING CHANGE: Renamed ```globalStateProvider()```to ```globalState()```
 - BREAKING CHANGE: Renamed ```Component``` to ```ComponentNode```, ```Element``` to ```ElementNode```, ```Text``` to ```TextNode``` and ```Fragment``` to ```FragmentNode``` to avoid name conflicts with the ```dart:html``` package
+
+## v0.3.0
+
+- BREAKING CHANGE: Renamed Node to DeactNode to avoid name conflicts with the Node class from the dart:html package

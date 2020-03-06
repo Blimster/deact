@@ -1,7 +1,7 @@
 part of deact;
 
-/// A [TextNode] is a [Node] that adds a text to the DOM.
-class TextNode extends Node {
+/// A [TextNode] is a [DeactNode] that adds a text to the DOM.
+class TextNode extends DeactNode {
   final String text;
 
   TextNode._(this.text) : super._(null);

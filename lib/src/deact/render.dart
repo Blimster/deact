@@ -34,8 +34,8 @@ void _renderInstance(_DeactInstance instance) {
   });
 }
 
-void _renderNode(_DeactInstance instance, Node node, _TreeLocation parentLocation, ComponentRenderContext parentContext,
-    Set<_TreeLocation> usedLocations) {
+void _renderNode(_DeactInstance instance, DeactNode node, _TreeLocation parentLocation,
+    ComponentRenderContext parentContext, Set<_TreeLocation> usedLocations) {
   if (node is ElementNode) {
     node._location = _TreeLocation(parentLocation, 'e:${node.name}');
     instance.logger.finest('${node._location}: processing node');

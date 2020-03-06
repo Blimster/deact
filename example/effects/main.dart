@@ -16,22 +16,22 @@ void main() {
       ]));
 }
 
-Node toggleButton() => fc((ctx) {
+DeactNode toggleButton() => fc((ctx) {
       final toggle = ctx.globalState<bool>('toggle');
       return button(onclick: (_) => toggle.set((t) => !t), children: [txt('Toggle Component')]);
     });
 
-Node counterButton() => fc((ctx) {
+DeactNode counterButton() => fc((ctx) {
       final counter = ctx.globalState<int>('counter');
       return button(onclick: (_) => counter.set((t) => t + 1), children: [txt('Increase Counter')]);
     });
 
-Node renderButton() => fc((ctx) {
+DeactNode renderButton() => fc((ctx) {
       final counter = ctx.globalState<int>('render');
       return button(onclick: (_) => counter.set((c) => c + 1), children: [txt('Rerender Component')]);
     });
 
-Node effectComponent() => fc((ctx) {
+DeactNode effectComponent() => fc((ctx) {
       final toggle = ctx.globalState<bool>('toggle');
       return toggle.value
           ? fc((ctx) {

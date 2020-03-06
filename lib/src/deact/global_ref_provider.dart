@@ -9,13 +9,13 @@ part of deact;
 class GlobalRefProvider<T> extends ComponentNode {
   final String _name;
   final T _initialValue;
-  final List<Node> _children;
+  final List<DeactNode> _children;
   Ref<T> _ref;
 
   GlobalRefProvider._(Object key, this._name, this._initialValue, this._children) : super(key: key);
 
   @override
-  Node render(ComponentRenderContext ctx) {
+  DeactNode render(ComponentRenderContext ctx) {
     _ref = ctx.ref('ref', _initialValue);
     return fragment(_children);
   }
@@ -28,6 +28,6 @@ class GlobalRefProvider<T> extends ComponentNode {
 /// The refeence can be accessed using
 /// [ComponentRenderContext.globalRef] with the according
 /// [name] and type [T].
-Node globalRef<T>({Object key, String name, T initialValue, List<Node> children}) {
+DeactNode globalRef<T>({Object key, String name, T initialValue, List<DeactNode> children}) {
   return GlobalRefProvider<T>._(key, name, initialValue, children);
 }

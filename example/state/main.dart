@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:deact/deact.dart';
 import 'package:deact/deact_html52.dart';
 
@@ -7,7 +5,7 @@ void main() {
   deact('#root', state());
 }
 
-Node state() => fc((ctx) {
+DeactNode state() => fc((ctx) {
       final counter = ctx.state('counter', 0);
 
       return fragment([

@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:deact/deact.dart';
 import 'package:deact/deact_html52.dart';
 
@@ -16,7 +14,7 @@ void main() {
       ));
 }
 
-Node incrementor() => fc((ctx) {
+DeactNode incrementor() => fc((ctx) {
       final counter = ctx.globalRef<int>('counter');
       return button(
         onclick: (_) => counter.value = counter.value + 1,
@@ -24,7 +22,7 @@ Node incrementor() => fc((ctx) {
       );
     });
 
-Node display() => fc((ctx) {
+DeactNode display() => fc((ctx) {
       final counter = ctx.state<int>('counter', null);
       ctx.effect('init', () {
         // listen to changes of the value of the 'counter' reference

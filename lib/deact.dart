@@ -23,6 +23,6 @@ part 'src/deact/tree_location.dart';
 /// selected by the given [selector]. All node beneath
 /// that element will be deleted and replaced by the
 /// [root] node.
-void deact(String selector, Node root) {
+void deact(String selector, DeactNode root) {
   _renderInstance(_DeactInstance(selector, root));
 }

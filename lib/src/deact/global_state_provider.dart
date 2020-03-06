@@ -10,13 +10,13 @@ part of deact;
 class GlobalStateProvider<T> extends ComponentNode {
   final String _name;
   final T _initialValue;
-  final List<Node> _children;
+  final List<DeactNode> _children;
   State<T> _state;
 
   GlobalStateProvider._(Object key, this._name, this._initialValue, this._children) : super(key: key);
 
   @override
-  Node render(ComponentRenderContext ctx) {
+  DeactNode render(ComponentRenderContext ctx) {
     _state = ctx.state('state', _initialValue);
     return fragment(_children);
   }
@@ -29,6 +29,6 @@ class GlobalStateProvider<T> extends ComponentNode {
 /// The state can be accessed using
 /// [ComponentRenderContext.globalState] with the according
 /// [name] and type [T].
-Node globalState<T>({Object key, String name, T initialValue, List<Node> children}) {
+DeactNode globalState<T>({Object key, String name, T initialValue, List<DeactNode> children}) {
   return GlobalStateProvider<T>._(key, name, initialValue, children);
 }

@@ -70,7 +70,7 @@ ElementNode a({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -348,7 +348,7 @@ ElementNode abbr({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -605,7 +605,7 @@ ElementNode address({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -872,7 +872,7 @@ ElementNode area({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -1159,7 +1159,7 @@ ElementNode article({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -1416,7 +1416,7 @@ ElementNode aside({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -1680,7 +1680,7 @@ ElementNode audio({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -1958,7 +1958,7 @@ ElementNode b({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -2217,7 +2217,7 @@ ElementNode base({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -2480,7 +2480,7 @@ ElementNode bdi({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -2737,7 +2737,7 @@ ElementNode bdo({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -2995,7 +2995,7 @@ ElementNode blockquote({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -3255,7 +3255,7 @@ ElementNode body({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -3512,7 +3512,7 @@ ElementNode br({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -3780,7 +3780,7 @@ ElementNode button({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -4072,7 +4072,7 @@ ElementNode canvas({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -4335,7 +4335,7 @@ ElementNode caption({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -4592,7 +4592,7 @@ ElementNode cite({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -4849,7 +4849,7 @@ ElementNode code({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -5107,7 +5107,7 @@ ElementNode col({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -5368,7 +5368,7 @@ ElementNode colgroup({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -5629,7 +5629,7 @@ ElementNode data({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -5889,7 +5889,7 @@ ElementNode datalist({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -6146,7 +6146,7 @@ ElementNode dd({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -6405,7 +6405,7 @@ ElementNode del({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -6669,7 +6669,7 @@ ElementNode details({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -6929,7 +6929,7 @@ ElementNode dfn({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -7187,7 +7187,7 @@ ElementNode dialog({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -7447,7 +7447,7 @@ ElementNode div({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -7704,7 +7704,7 @@ ElementNode dl({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -7961,7 +7961,7 @@ ElementNode dt({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -8218,7 +8218,7 @@ ElementNode em({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -8479,7 +8479,7 @@ ElementNode embed({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -8751,7 +8751,7 @@ ElementNode fieldset({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -9017,7 +9017,7 @@ ElementNode figcaption({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -9274,7 +9274,7 @@ ElementNode figure({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -9531,7 +9531,7 @@ ElementNode footer({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -9796,7 +9796,7 @@ ElementNode form({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -10077,7 +10077,7 @@ ElementNode h1({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -10334,7 +10334,7 @@ ElementNode h2({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -10591,7 +10591,7 @@ ElementNode h3({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -10848,7 +10848,7 @@ ElementNode h4({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -11105,7 +11105,7 @@ ElementNode h5({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -11362,7 +11362,7 @@ ElementNode h6({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -11619,7 +11619,7 @@ ElementNode head({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -11876,7 +11876,7 @@ ElementNode header({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -12133,7 +12133,7 @@ ElementNode hr({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -12391,7 +12391,7 @@ ElementNode html({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -12651,7 +12651,7 @@ ElementNode i({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -12916,7 +12916,7 @@ ElementNode iframe({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -13207,7 +13207,7 @@ ElementNode img({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -13525,7 +13525,7 @@ ElementNode input({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -13877,7 +13877,7 @@ ElementNode ins({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -14140,7 +14140,7 @@ ElementNode kbd({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -14398,7 +14398,7 @@ ElementNode label({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -14658,7 +14658,7 @@ ElementNode legend({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -14916,7 +14916,7 @@ ElementNode li({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -15185,7 +15185,7 @@ ElementNode link({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -15469,7 +15469,7 @@ ElementNode main({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -15727,7 +15727,7 @@ ElementNode map({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -15987,7 +15987,7 @@ ElementNode mark({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -16248,7 +16248,7 @@ ElementNode meta({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -16523,7 +16523,7 @@ ElementNode meter({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -16798,7 +16798,7 @@ ElementNode nav({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -17055,7 +17055,7 @@ ElementNode noscript({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -17319,7 +17319,7 @@ ElementNode object({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -17600,7 +17600,7 @@ ElementNode ol({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -17868,7 +17868,7 @@ ElementNode optgroup({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -18135,7 +18135,7 @@ ElementNode option({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -18407,7 +18407,7 @@ ElementNode output({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -18673,7 +18673,7 @@ ElementNode p({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -18932,7 +18932,7 @@ ElementNode param({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -19195,7 +19195,7 @@ ElementNode picture({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -19452,7 +19452,7 @@ ElementNode pre({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -19711,7 +19711,7 @@ ElementNode progress({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -19975,7 +19975,7 @@ ElementNode q({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -20235,7 +20235,7 @@ ElementNode rb({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -20492,7 +20492,7 @@ ElementNode rp({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -20749,7 +20749,7 @@ ElementNode rt({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -21006,7 +21006,7 @@ ElementNode rtc({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -21263,7 +21263,7 @@ ElementNode ruby({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -21520,7 +21520,7 @@ ElementNode s({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -21777,7 +21777,7 @@ ElementNode samp({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -22041,7 +22041,7 @@ ElementNode script({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -22319,7 +22319,7 @@ ElementNode section({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -22584,7 +22584,7 @@ ElementNode select({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -22865,7 +22865,7 @@ ElementNode small({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -23127,7 +23127,7 @@ ElementNode source({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -23399,7 +23399,7 @@ ElementNode span({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -23656,7 +23656,7 @@ ElementNode strong({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -23916,7 +23916,7 @@ ElementNode style({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -24182,7 +24182,7 @@ ElementNode sub({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -24439,7 +24439,7 @@ ElementNode summary({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -24696,7 +24696,7 @@ ElementNode sup({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -24954,7 +24954,7 @@ ElementNode table({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -25214,7 +25214,7 @@ ElementNode tbody({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -25474,7 +25474,7 @@ ElementNode td({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -25740,7 +25740,7 @@ ElementNode template({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -26010,7 +26010,7 @@ ElementNode textarea({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -26306,7 +26306,7 @@ ElementNode tfoot({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -26568,7 +26568,7 @@ ElementNode th({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -26840,7 +26840,7 @@ ElementNode thead({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -27098,7 +27098,7 @@ ElementNode time({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -27358,7 +27358,7 @@ ElementNode title({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -27615,7 +27615,7 @@ ElementNode tr({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -27877,7 +27877,7 @@ ElementNode track({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -28149,7 +28149,7 @@ ElementNode u({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -28406,7 +28406,7 @@ ElementNode ul({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -28663,7 +28663,7 @@ ElementNode variable({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -28930,7 +28930,7 @@ ElementNode video({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {
@@ -29217,7 +29217,7 @@ ElementNode wbr({
   EventListener<h.Event> onsubmit,
   EventListener<h.UIEvent> onunload,
   EventListener<h.WheelEvent> onwheel,
-  List<Node> children,
+  List<DeactNode> children,
 }) {
   final attributes = <String, Object>{};
   if (accesskey != null) {

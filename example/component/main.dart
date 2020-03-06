@@ -10,6 +10,6 @@ void main() {
       ]));
 }
 
-Node coloredText(String text, String color) => fc((_) {
+DeactNode coloredText(String text, String color) => fc((_) {
       return div(style: 'color: $color', children: [txt(text)]);
     });
