@@ -1,6 +1,6 @@
 name: deact
 description: A web UI framework inspired by React. The main building blocks are components, which can be implemented as classes or functions.
-version: 0.3.0
+version: 0.3.1
 homepage: https://www.github.com/blimster/deact
 
 environment:

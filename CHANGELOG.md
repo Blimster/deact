@@ -29,4 +29,8 @@
 
 ## v0.3.0
 
-- BREAKING CHANGE: Renamed Node to DeactNode to avoid name conflicts with the Node class from the dart:html package
+- BREAKING CHANGE: Renamed ```Node``` to ```DeactNode``` to avoid name conflicts with the Node class from the ```dart:html``` package
+
+## v0.3.1
+
+- Fix: Setting the attributes ```selected``` and ```checked``` had not has any effect, if a user interaction has changed the underlying properties

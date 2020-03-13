@@ -2,8 +2,9 @@ library deact;
 
 import 'dart:async';
 import 'dart:html' as html;
+import 'dart:html';
 
-import 'package:incremental_dom_bindings/incremental_dom_bindings.dart';
+import 'package:incremental_dom_bindings/incremental_dom_bindings.dart' as incDom;
 import 'package:logging/logging.dart';
 
 part 'src/deact/component.dart';
@@ -24,5 +25,20 @@ part 'src/deact/tree_location.dart';
 /// that element will be deleted and replaced by the
 /// [root] node.
 void deact(String selector, DeactNode root) {
+  // Input elements have attributes and properties with
+  // the same name. The Deact element API usually sets the
+  // the attribute. If an user interaction updates the value 
+  // of a property with one of those names, the attribute with
+  // that name is ignored. For those properties/attributes
+  // it is required to set the attribute and the properties.
+  incDom.attributes['checked'] = _applyAttrAndPropBool;
+  incDom.attributes['selected'] = _applyAttrAndPropBool;
+
+  // Initial render of the Deact node hierarchy.
   _renderInstance(_DeactInstance(selector, root));
+}
+
+_applyAttrAndPropBool(Element element, String name, Object value) {
+  incDom.applyAttr(element, name, value);
+  incDom.applyProp(element, name, value != null);
 }
