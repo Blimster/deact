@@ -15,7 +15,8 @@ class ElementNode extends DeactNode {
   final Map<String, Object> attributes;
   final Map<String, Object> listeners;
 
-  ElementNode._(this.name, this.key, this.ref, this.attributes, this.listeners, List<DeactNode> children) : super._(children) {
+  ElementNode._(this.name, this.key, this.ref, this.attributes, this.listeners, Iterable<DeactNode> children)
+      : super._(children) {
     if (this.name == null) {
       throw ArgumentError('parameter "name" is required!');
     }
@@ -52,7 +53,7 @@ ElementNode el(
   Ref<html.Element> ref,
   Map<String, Object> attributes,
   Map<String, Object> listeners,
-  List<DeactNode> children,
+  Iterable<DeactNode> children,
 }) {
   return ElementNode._(name, key, ref, attributes, listeners, children);
 }

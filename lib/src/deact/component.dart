@@ -111,7 +111,7 @@ class ComponentRenderContext {
   final Map<String, State> _states = {};
   final Map<String, Effect> _effects = {};
   final Map<String, Cleanup> _cleanups = {};
-  final Map<String, List<State>> _effectStateDependencies = {};
+  final Map<String, Iterable<State>> _effectStateDependencies = {};
 
   ComponentRenderContext._(this._parent, this._instance, this._location, this._component);
 
@@ -212,7 +212,7 @@ class ComponentRenderContext {
   /// cleanup will be executed when the component is
   /// removed from the DOM and before the effect is
   /// executed the next time.
-  void effect(String name, Effect effect, {List<State> dependsOn}) {
+  void effect(String name, Effect effect, {Iterable<State> dependsOn}) {
     _effects[name] = effect;
     _effectStateDependencies[name] = dependsOn;
   }
