@@ -8,7 +8,7 @@ void _renderInstance(_DeactInstance instance) {
     }
 
     final usedLocations = <_TreeLocation>{};
-    incDom.patch(
+    inc_dom.patch(
         hostElement,
         (_) => _renderNode(
               instance,
@@ -47,11 +47,11 @@ void _renderNode(_DeactInstance instance, DeactNode node, _TreeLocation parentLo
       node.listeners.forEach((event, listener) => props.addAll([event, listener]));
     }
 
-    incDom.elementOpen(node.name, null, null, props);
+    inc_dom.elementOpen(node.name, null, null, props);
     if (node._children != null) {
       node._children.forEach((child) => _renderNode(instance, child, node._location, parentContext, usedLocations));
     }
-    final el = incDom.elementClose(node.name);
+    final el = inc_dom.elementClose(node.name);
     if (node.ref != null && node.ref.value != el) {
       node.ref.value = el;
     }
@@ -62,7 +62,7 @@ void _renderNode(_DeactInstance instance, DeactNode node, _TreeLocation parentLo
   } else if (node is TextNode) {
     node._location = _TreeLocation(parentLocation, 't');
     instance.logger.finest('${node._location}: processing node');
-    incDom.text(node.text);
+    inc_dom.text(node.text);
   } else if (node is ComponentNode) {
     node._location = _TreeLocation(parentLocation, 'c:${node.runtimeType}', key: node.key);
     usedLocations.add(node._location);

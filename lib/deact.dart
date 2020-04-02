@@ -4,7 +4,7 @@ import 'dart:async';
 import 'dart:html' as html;
 import 'dart:html';
 
-import 'package:incremental_dom_bindings/incremental_dom_bindings.dart' as incDom;
+import 'package:incremental_dom_bindings/incremental_dom_bindings.dart' as inc_dom;
 import 'package:logging/logging.dart';
 
 part 'src/deact/component.dart';
@@ -31,14 +31,14 @@ void deact(String selector, DeactNode root) {
   // of a property with one of those names, the attribute with
   // that name is ignored. For those properties/attributes
   // it is required to set the attribute and the properties.
-  incDom.attributes['checked'] = _applyAttrAndPropBool;
-  incDom.attributes['selected'] = _applyAttrAndPropBool;
+  inc_dom.attributes['checked'] = _applyAttrAndPropBool;
+  inc_dom.attributes['selected'] = _applyAttrAndPropBool;
 
   // Initial render of the Deact node hierarchy.
   _renderInstance(_DeactInstance(selector, root));
 }
 
 _applyAttrAndPropBool(Element element, String name, Object value) {
-  incDom.applyAttr(element, name, value);
-  incDom.applyProp(element, name, value != null);
+  inc_dom.applyAttr(element, name, value);
+  inc_dom.applyProp(element, name, value != null);
 }
