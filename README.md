@@ -14,7 +14,7 @@ Deact depends on Incremental DOM, an in-place DOM diffing library written in Jav
 </html>
 ```
 
-The entrypoint of a Deact application is the ```deact()``` function. It requires a selector string and a root node. The selector string is used to query a host element from the DOM.
+The entrypoint of a Deact application is the ```deact()``` function. It requires a selector string and a function, thats returns the root node of the application. The selector string is used to query a host element from the DOM.
 
 All elements beneath the host element will be deleted and replaced by the provided root node.
 
@@ -81,14 +81,14 @@ State created by the function ```state()```is local to the component. If it is r
 void main() {
   deact(
       '#root',
-      globalState<int>(
-        name: 'counter',
-        initialValue: 0,
-        children: [
-          incrementor(),
-          display(),
-        ],
-      ));
+      (_) => globalState<int>(
+          name: 'counter',
+          initialValue: 0,
+          children: [
+            incrementor(),
+            display(),
+          ],
+        ));
 }
 
 DeactNode incrementor() => fc((ctx) {
@@ -181,14 +181,14 @@ A global reference is introduced using the function ```globalRef()``` which crea
 void main() {
   deact(
       '#root',
-      globalRef<int>(
-        name: 'counter',
-        initialValue: 0,
-        children: [
-          incrementor(),
-          display(),
-        ],
-      ));
+      (_) => globalRef<int>(
+          name: 'counter',
+          initialValue: 0,
+          children: [
+            incrementor(),
+            display(),
+          ],
+        ));
 }
 
 DeactNode incrementor() => fc((ctx) {

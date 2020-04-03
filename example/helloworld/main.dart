@@ -4,6 +4,6 @@ import 'package:deact/deact_html52.dart';
 void main() {
   deact(
     '#root',
-    div(children: [txt('Hello World')]),
+    (_) => div(children: [txt('Hello World')]),
   );
 }

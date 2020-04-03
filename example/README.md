@@ -8,22 +8,31 @@ A very simple Deact application that display ```Hello World```.
 
 Show the usage of components.
 
-## state
+## effects
 
-Shows the usage of component local state.
+Shows the usage of effects.
+
+## globaelrefs
+
+Shows the usage of global references.
 
 ## globalstate
 
 Shows the usage of global state.
 
-## effects
+## helloworld
 
-Shows the usage of effects.
+A simple Hello World application.
+
+## performance
+
+A Deact implementation of the application as decribed at [How to Benchmark React Components: The Quick and Dirty Guide
+](https://engineering.musefind.com/how-to-benchmark-react-components-the-quick-and-dirty-guide-f595baf1014c)
 
 ## refs
 
 Shows the usage of references.
 
-## refs
+## state
 
-Shows the usage of global references.
+Shows the usage of component local state.

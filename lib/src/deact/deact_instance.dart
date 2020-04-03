@@ -1,10 +1,18 @@
 part of deact;
 
-class _DeactInstance {
+/// This interface provides an API to the Deact application.
+abstract class Deact {
+  /// Returns the render time of the last update to the
+  /// DOM in milliseconds.
+  num get lastRenderTimeMs;
+}
+
+class _DeactInstance implements Deact {
   final String selector;
-  final DeactNode rootNode;
   final Logger logger;
   final Map<_TreeLocation, ComponentRenderContext> contexts = {};
+  DeactNode rootNode;
+  num lastRenderTimeMs;
 
-  _DeactInstance(this.selector, this.rootNode) : logger = Logger('deact.$selector');
+  _DeactInstance(this.selector) : logger = Logger('deact.$selector');
 }

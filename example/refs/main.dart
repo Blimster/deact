@@ -4,7 +4,7 @@ import 'package:deact/deact.dart';
 import 'package:deact/deact_html52.dart';
 
 void main() {
-  deact('#root', refs());
+  deact('#root', (_) => refs());
 }
 
 DeactNode refs() => fc((ctx) {

@@ -4,16 +4,16 @@ import 'package:deact/deact_html52.dart';
 void main() {
   deact(
       '#root',
-      globalState<int>(name: 'render', initialValue: 0, children: [
-        globalState<int>(name: 'counter', initialValue: 0, children: [
-          globalState<bool>(name: 'toggle', initialValue: true, children: [
-            toggleButton(),
-            counterButton(),
-            renderButton(),
-            effectComponent(),
-          ])
-        ])
-      ]));
+      (_) => globalState<int>(name: 'render', initialValue: 0, children: [
+            globalState<int>(name: 'counter', initialValue: 0, children: [
+              globalState<bool>(name: 'toggle', initialValue: true, children: [
+                toggleButton(),
+                counterButton(),
+                renderButton(),
+                effectComponent(),
+              ])
+            ])
+          ]));
 }
 
 DeactNode toggleButton() => fc((ctx) {

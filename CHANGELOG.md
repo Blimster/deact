@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.4.0
+
+- BREAKING CHANGE: The root node of a Deact application now has to be provided by a function to the entrypoint ```deact()```
+- It is now possible the get the render time of the last update to the DOM
+- Applied pub.dev health suggestion
+
 ## v0.3.2
 
 - Childs of a node can now be provided as a ```Iterable``` instead as only a ```List```.

@@ -4,14 +4,14 @@ import 'package:deact/deact_html52.dart';
 void main() {
   deact(
       '#root',
-      globalRef<int>(
-        name: 'counter',
-        initialValue: 0,
-        children: [
-          incrementor(),
-          display(),
-        ],
-      ));
+      (_) => globalRef<int>(
+            name: 'counter',
+            initialValue: 0,
+            children: [
+              incrementor(),
+              display(),
+            ],
+          ));
 }
 
 DeactNode incrementor() => fc((ctx) {

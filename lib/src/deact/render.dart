@@ -2,6 +2,9 @@ part of deact;
 
 void _renderInstance(_DeactInstance instance) {
   Future(() {
+    final sw = Stopwatch();
+    sw.start();
+
     final hostElement = html.querySelector(instance.selector);
     if (hostElement == null) {
       throw ArgumentError('no element found for selector {selector}');
@@ -31,6 +34,8 @@ void _renderInstance(_DeactInstance instance) {
       instance.contexts.remove(location);
       instance.logger.fine('${location}: removed context');
     });
+
+    instance.lastRenderTimeMs = sw.elapsedMilliseconds;
   });
 }
 

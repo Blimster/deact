@@ -2,7 +2,7 @@ import 'package:deact/deact.dart';
 import 'package:deact/deact_html52.dart';
 
 void main() {
-  deact('#root', state());
+  deact('#root', (_) => state());
 }
 
 DeactNode state() => fc((ctx) {
