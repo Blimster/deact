@@ -12,6 +12,7 @@ class _DeactInstance implements Deact {
   final Logger logger;
   final Map<_TreeLocation, ComponentRenderContext> contexts = {};
   DeactNode rootNode;
+  @override
   num lastRenderTimeMs;
 
   _DeactInstance(this.selector) : logger = Logger('deact.$selector');

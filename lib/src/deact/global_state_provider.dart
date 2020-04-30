@@ -10,6 +10,7 @@ part of deact;
 class GlobalStateProvider<T> extends ComponentNode {
   final String _name;
   final T _initialValue;
+  @override
   final Iterable<DeactNode> _children;
   State<T> _state;
 

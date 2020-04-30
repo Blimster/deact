@@ -9,6 +9,7 @@ part of deact;
 class GlobalRefProvider<T> extends ComponentNode {
   final String _name;
   final T _initialValue;
+  @override
   final Iterable<DeactNode> _children;
   Ref<T> _ref;
 

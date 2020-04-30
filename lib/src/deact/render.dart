@@ -44,7 +44,7 @@ void _renderNode(_DeactInstance instance, DeactNode node, _TreeLocation parentLo
   if (node is ElementNode) {
     node._location = _TreeLocation(parentLocation, 'e:${node.name}');
     instance.logger.finest('${node._location}: processing node');
-    final props = [];
+    final props = <Object>[];
     if (node.attributes != null) {
       node.attributes.forEach((name, value) => props.addAll([name, value]));
     }

@@ -62,7 +62,7 @@ class State<T> {
   /// complex mutable state objects. After the [updater]
   /// function was executed, the component and its children
   /// will be rerendered using the new state.
-  void update(void updater(T state)) {
+  void update(void Function(T state) updater) {
     updater(_value);
     _valueChanged = true;
     _renderInstance(_instance);
@@ -73,7 +73,7 @@ class State<T> {
   /// immutable state objects. After the [setter] function
   /// was executed, the component and its children will
   /// be rerendered using the new state.
-  void set(T setter(T state)) {
+  void set(T Function(T state) setter) {
     _value = setter(_value);
     _valueChanged = true;
     _renderInstance(_instance);
@@ -107,8 +107,8 @@ class ComponentRenderContext {
   final ComponentRenderContext _parent;
   final _TreeLocation _location;
   final ComponentNode _component;
-  final Map<String, Ref> _refs = {};
-  final Map<String, State> _states = {};
+  final Map<String, Ref<Object>> _refs = {};
+  final Map<String, State<Object>> _states = {};
   final Map<String, Effect> _effects = {};
   final Map<String, Cleanup> _cleanups = {};
   final Map<String, Iterable<State>> _effectStateDependencies = {};
@@ -129,7 +129,7 @@ class ComponentRenderContext {
       final ref = Ref<T>._(initialValue);
       _instance.logger.fine('${_location}: created ref with name ${name} with initial value ${initialValue}');
       return ref;
-    });
+    }) as Ref<T>;
   }
 
   /// Returns a state provided by a [GlobalRefProvider].
@@ -143,7 +143,7 @@ class ComponentRenderContext {
     var parent = _parent;
     while (parent != null) {
       if (parent._component is GlobalRefProvider<R>) {
-        final GlobalRefProvider<R> grp = parent._component;
+        final grp = parent._component as GlobalRefProvider<R>;
         if (grp._name == name) {
           if (grp._ref._type.type() == R) {
             return grp._ref;
@@ -169,7 +169,7 @@ class ComponentRenderContext {
       final state = State<T>._(_instance, initialValue);
       _instance.logger.fine('${_location}: created state with name ${name} with initial value ${initialValue}');
       return state;
-    });
+    }) as State<T>;
   }
 
   /// Returns a state provided by a [GlobalStateProvider].
@@ -183,7 +183,7 @@ class ComponentRenderContext {
     var parent = _parent;
     while (parent != null) {
       if (parent._component is GlobalStateProvider<S>) {
-        final GlobalStateProvider<S> gsp = parent._component;
+        final gsp = parent._component as GlobalStateProvider<S>;
         if (gsp._name == name) {
           if (gsp._state._type.type() == S) {
             return gsp._state;
@@ -240,7 +240,7 @@ abstract class ComponentNode extends DeactNode {
   /// id or a name). When a component with a key is moved its
   /// states and effects will also move.
   ComponentNode({Object key})
-      : this.key = key,
+      : key = key,
         super._(null);
 
   /// Override this method to render the content of the

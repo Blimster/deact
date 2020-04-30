@@ -3,7 +3,7 @@ part of deact;
 class _TreeLocation {
   final _TreeLocation parent;
   final String token;
-  final String key;
+  final Object key;
   final int position;
   final Map<String, int> tokenPositions = {};
 
@@ -11,9 +11,7 @@ class _TreeLocation {
 
   int positionForToken(String token) {
     var position = tokenPositions[token];
-    if (position == null) {
-      position = 0;
-    }
+    position ??= 0;
     final result = position + 1;
     tokenPositions[token] = result;
     return result;
@@ -28,6 +26,7 @@ class _TreeLocation {
   @override
   int get hashCode => toString().hashCode;
 
+  @override
   String toString() {
     final key = this.key != null ? '@${this.key}' : null;
     final position = this.position != null ? '#${this.position}' : '';

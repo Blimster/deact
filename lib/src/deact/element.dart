@@ -17,7 +17,7 @@ class ElementNode extends DeactNode {
 
   ElementNode._(this.name, this.key, this.ref, this.attributes, this.listeners, Iterable<DeactNode> children)
       : super._(children) {
-    if (this.name == null) {
+    if (name == null) {
       throw ArgumentError('parameter "name" is required!');
     }
   }
