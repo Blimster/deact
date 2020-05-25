@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.4.1
+
+- A component can make its states or references global to its children by implementing [GlobalStateProbider] or [GlobalRefProvider]. Thus, it is no longer necessary to always add an extra level to the node hierarchy if a global state or reference is required.
+
 ## v0.4.0
 
 - BREAKING CHANGE: The root node of a Deact application now has to be provided by a function to the entrypoint ```deact()```

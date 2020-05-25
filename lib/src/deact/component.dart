@@ -4,6 +4,10 @@ class _TypeLiteral<T> {
   Type type() => T;
 }
 
+/// A combination of a [GlobalStateProvider]
+/// and a [GlobalRefProvider].
+abstract class GlobalProvider implements GlobalStateProvider, GlobalRefProvider {}
+
 /// A reference to a value.
 ///
 /// The reference will persist the component is removed
@@ -142,12 +146,11 @@ class ComponentRenderContext {
   Ref<R> globalRef<R>(String name) {
     var parent = _parent;
     while (parent != null) {
-      if (parent._component is GlobalRefProvider<R>) {
-        final grp = parent._component as GlobalRefProvider<R>;
-        if (grp._name == name) {
-          if (grp._ref._type.type() == R) {
-            return grp._ref;
-          }
+      if (parent._component is GlobalRefProvider) {
+        final ctx = parent._instance.contexts[parent._location];
+        final ref = ctx._refs[name];
+        if (ref != null && ref._type.type() == R) {
+          return ref as Ref<R>;
         }
       }
       parent = parent._parent;
@@ -182,12 +185,11 @@ class ComponentRenderContext {
   State<S> globalState<S>(String name) {
     var parent = _parent;
     while (parent != null) {
-      if (parent._component is GlobalStateProvider<S>) {
-        final gsp = parent._component as GlobalStateProvider<S>;
-        if (gsp._name == name) {
-          if (gsp._state._type.type() == S) {
-            return gsp._state;
-          }
+      if (parent._component is GlobalStateProvider) {
+        final ctx = parent._instance.contexts[parent._location];
+        final state = ctx._states[name];
+        if (state != null && state._type.type() == S) {
+          return state as State<S>;
         }
       }
       parent = parent._parent;

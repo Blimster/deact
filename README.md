@@ -75,7 +75,7 @@ In the example above a state with the name ```counter``` and the initial value `
 
 ### Global state
 
-State created by the function ```state()```is local to the component. If it is required to share state over multiple components a ```GlobalStateProvider``` can be used. A global state provider is a node and thus, it can be placed everywhere in the node hierarchy. Every component beneath a global state provider can access the state of the provider using the function ```globalState()``` and read or update it like a local state.
+State created by the function ```state()```is local to the component. If it is required to share state over multiple components, a ```GlobalStateProviderComponent``` can be used. A global state provider is a node and thus, it can be placed everywhere in the node hierarchy. Every component beneath a global state provider can access the state of the provider using the method ```globalState()``` of the ```ComponentRenderContext``` to read or update it like a local state.
 
 ```dart
 void main() {
@@ -103,6 +103,8 @@ DeactNode display() => fc((ctx) {
 ```
 
 Above, a global state with name ```counter``` and the initial value ```0``` is introduced on the top level of the node hierarchy. The components ```incrementor``` and ```display``` are children of the provider. The component ```incrementor``` updates the state and the component ```display``` reads the state.
+
+It is also possible to let a component implement the interface ```GlobalStateProvider```. In this case, all local states of the compoenent is global to all its children.
 
 ## Effects
 
@@ -175,7 +177,7 @@ In this example, a reference to a ```InputElement``` is created. The initial val
 
 ### Global references
 
-A global reference is introduced using the function ```globalRef()``` which creates an instance of a ```GloablRefProvider``` component. All children of this component can access the global reference by calling the ```gloablRef<T>(String)``` method of the ```ComponentRenderContext```. The same rules of how to find a global state apply here.
+A global reference is introduced using the function ```globalRef()``` which creates an instance of a ```GloablRefProviderComponent``` component. All children of this component can access the global reference by calling the ```gloablRef<T>(String)``` method of the ```ComponentRenderContext```. The same rules of how to find a global state apply here.
 
 ```dart
 void main() {
@@ -216,6 +218,8 @@ DeactNode display() => fc((ctx) {
 ```
 
 As you can see, a reference provices a stream of value change events.
+
+It is also possible to let a component implement the interface ```GlobalRefProvider```. In this case, all local references of the compoenent is global to all its children.
 
 ## Experimental
 
