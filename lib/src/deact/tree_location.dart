@@ -3,19 +3,10 @@ part of deact;
 class _TreeLocation {
   final _TreeLocation parent;
   final String token;
-  final Object key;
   final int position;
-  final Map<String, int> tokenPositions = {};
+  final Object key;
 
-  _TreeLocation(this.parent, this.token, {this.key}) : position = parent?.positionForToken(token);
-
-  int positionForToken(String token) {
-    var position = tokenPositions[token];
-    position ??= 0;
-    final result = position + 1;
-    tokenPositions[token] = result;
-    return result;
-  }
+  _TreeLocation(this.parent, this.token, this.position, {this.key});
 
   @override
   bool operator ==(Object other) {

@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.5.0
+
+- BREAKING CHANGE: The parameter ```key``` is now named instead of positional.
+- It is now possible to make states and/or references of a component global to its children.
+- It is now possible to register a listener to be called after the node hierarchy was rendered.
+
 ## v0.4.1
 
 - A component can make its states or references global to its children by implementing [GlobalStateProbider] or [GlobalRefProvider]. Thus, it is no longer necessary to always add an extra level to the node hierarchy if a global state or reference is required.

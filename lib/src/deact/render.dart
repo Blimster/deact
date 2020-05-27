@@ -10,19 +10,19 @@ void _renderInstance(_DeactInstance instance) {
       throw ArgumentError('no element found for selector {selector}');
     }
 
-    final usedLocations = <_TreeLocation>{};
+    final usedComponentLocations = <_TreeLocation>{};
     inc_dom.patch(
         hostElement,
         (_) => _renderNode(
               instance,
               instance.rootNode,
-              _TreeLocation(null, 's:${instance.selector}'),
-              null,
-              usedLocations,
+              0,
+              ComponentRenderContext._(null, instance, _TreeLocation(null, 's:${instance.selector}', null), null),
+              usedComponentLocations,
             ));
     final locationsToRemove = <_TreeLocation>{};
     instance.contexts.keys.forEach((location) {
-      if (usedLocations.contains(location) == false) {
+      if (usedComponentLocations.contains(location) == false) {
         locationsToRemove.add(location);
       }
     });
@@ -36,13 +36,19 @@ void _renderInstance(_DeactInstance instance) {
     });
 
     instance.lastRenderTimeMs = sw.elapsedMilliseconds;
+    instance.afterRender?.call(instance);
   });
 }
 
-void _renderNode(_DeactInstance instance, DeactNode node, _TreeLocation parentLocation,
-    ComponentRenderContext parentContext, Set<_TreeLocation> usedLocations) {
+void _renderNode(
+  _DeactInstance instance,
+  DeactNode node,
+  int nodePosition,
+  ComponentRenderContext parentContext,
+  Set<_TreeLocation> usedComponentLocations,
+) {
   if (node is ElementNode) {
-    node._location = _TreeLocation(parentLocation, 'e:${node.name}');
+    node._location = _TreeLocation(parentContext._location, 'e:${node.name}', nodePosition, key: node.key);
     instance.logger.finest('${node._location}: processing node');
     final props = <Object>[];
     if (node.attributes != null) {
@@ -54,7 +60,11 @@ void _renderNode(_DeactInstance instance, DeactNode node, _TreeLocation parentLo
 
     inc_dom.elementOpen(node.name, null, null, props);
     if (node._children != null) {
-      node._children.forEach((child) => _renderNode(instance, child, node._location, parentContext, usedLocations));
+      var i = 0;
+      node._children.forEach((child) {
+        _renderNode(instance, child, i, parentContext, usedComponentLocations);
+        i++;
+      });
     }
     final el = inc_dom.elementClose(node.name);
     if (node.ref != null && node.ref.value != el) {
@@ -62,15 +72,19 @@ void _renderNode(_DeactInstance instance, DeactNode node, _TreeLocation parentLo
     }
   } else if (node is FragmentNode) {
     if (node._children != null) {
-      node._children.forEach((child) => _renderNode(instance, child, node._location, parentContext, usedLocations));
+      var i = 0;
+      node._children.forEach((child) {
+        _renderNode(instance, child, i, parentContext, usedComponentLocations);
+        i++;
+      });
     }
   } else if (node is TextNode) {
-    node._location = _TreeLocation(parentLocation, 't');
+    node._location = _TreeLocation(parentContext._location, 't', nodePosition);
     instance.logger.finest('${node._location}: processing node');
     inc_dom.text(node.text);
   } else if (node is ComponentNode) {
-    node._location = _TreeLocation(parentLocation, 'c:${node.runtimeType}', key: node.key);
-    usedLocations.add(node._location);
+    node._location = _TreeLocation(parentContext._location, 'c:${node.runtimeType}', nodePosition, key: node.key);
+    usedComponentLocations.add(node._location);
     instance.logger.finest('${node._location}: processing node');
     var newContext = false;
     var context = instance.contexts[node._location];
@@ -82,7 +96,7 @@ void _renderNode(_DeactInstance instance, DeactNode node, _TreeLocation parentLo
     }
     context._effects.clear();
     final elementNode = node.render(context);
-    _renderNode(instance, elementNode, node._location, context, usedLocations);
+    _renderNode(instance, elementNode, 0, context, usedComponentLocations);
     context._effects.keys.forEach((name) {
       final states = context._effectStateDependencies[name];
 

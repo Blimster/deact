@@ -4,14 +4,17 @@ import 'package:deact/deact_html52.dart';
 void main() {
   deact(
       '#root',
-      (_) => globalRef<int>(
-            name: 'counter',
-            initialValue: 0,
-            children: [
-              incrementor(),
-              display(),
-            ],
-          ));
+      (_) => fragment([
+            globalRef<int>(
+              name: 'counter',
+              initialValue: 0,
+              children: [
+                incrementor(),
+                display(),
+              ],
+            ),
+            counter(),
+          ]));
 }
 
 DeactNode incrementor() => fc((ctx) {
@@ -20,7 +23,7 @@ DeactNode incrementor() => fc((ctx) {
         onclick: (_) => counter.value = counter.value + 1,
         children: [txt('Click me to increment to counter')],
       );
-    });
+    }, key: 'incrementor');
 
 DeactNode display() => fc((ctx) {
       final counter = ctx.state<int>('counter', null);
@@ -35,4 +38,15 @@ DeactNode display() => fc((ctx) {
         return null;
       }, dependsOn: []);
       return div(children: [txt('Counter: ${counter.value}')]);
-    }, 'display');
+    }, key: 'display');
+
+DeactNode counter() => fc((ctx) {
+      ctx.ref<int>('counter', 0);
+      return fragment([
+        incrementor(),
+        display(),
+      ]);
+      // as an alternative, it is possible to make a
+      // reference of a component global to its children
+      // by setting the globalRef parameter to true.
+    }, globalRef: true);

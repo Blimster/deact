@@ -15,13 +15,12 @@ class GlobalRefProviderComponent<T> extends ComponentNode implements GlobalRefPr
   final T _initialValue;
   @override
   final Iterable<DeactNode> _children;
-  Ref<T> _ref;
 
   GlobalRefProviderComponent._(Object key, this._name, this._initialValue, this._children) : super(key: key);
 
   @override
   DeactNode render(ComponentRenderContext ctx) {
-    _ref = ctx.ref(_name, _initialValue);
+    ctx.ref(_name, _initialValue);
     return fragment(_children);
   }
 }

@@ -263,6 +263,18 @@ class Functional extends ComponentNode {
   }
 }
 
+class _GlobalStateProviderFunctional extends Functional implements GlobalStateProvider {
+  _GlobalStateProviderFunctional({Object key, FunctionalComponent builder}) : super._(key: key, builder: builder);
+}
+
+class _GlobalRefProviderFunctional extends Functional implements GlobalRefProvider {
+  _GlobalRefProviderFunctional({Object key, FunctionalComponent builder}) : super._(key: key, builder: builder);
+}
+
+class _GlobalProviderFunctional extends Functional implements GlobalStateProvider, GlobalRefProvider {
+  _GlobalProviderFunctional({Object key, FunctionalComponent builder}) : super._(key: key, builder: builder);
+}
+
 /// A helper function to implement functional components.
 ///
 /// This functions creates a [Functional]. The provided
@@ -283,6 +295,30 @@ class Functional extends ComponentNode {
 /// you can provided a key to a component (e.g. a technical
 /// id or a name). When a component with a key is moved its
 /// states and effects will also move.
-DeactNode fc(FunctionalComponent builder, [Object key]) {
-  return Functional._(key: key, builder: builder);
+///
+/// Setting the parameter [globalState] to true makes all
+/// states of the created component global to its children.
+///
+/// Setting the parameter [globalRef] to true makes all
+/// references of the created component global to its
+/// children.
+///
+/// Global to its children means, that the states/references
+/// are accessible using the [gloablState()]/[gloablRef]
+/// functions of [ComponentRenderContext].
+DeactNode fc(
+  FunctionalComponent builder, {
+  Object key,
+  bool globalState = false,
+  bool globalRef = false,
+}) {
+  if (globalState == false && globalRef == false) {
+    return Functional._(key: key, builder: builder);
+  } else if (globalState == true && globalRef == true) {
+    return _GlobalProviderFunctional(key: key, builder: builder);
+  } else if (globalState == true && globalRef == false) {
+    return _GlobalStateProviderFunctional(key: key, builder: builder);
+  } else {
+    return _GlobalRefProviderFunctional(key: key, builder: builder);
+  }
 }

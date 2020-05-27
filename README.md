@@ -214,7 +214,7 @@ DeactNode display() => fc((ctx) {
         return null;
       }, dependsOn: []);
       return div(children: [txt('Counter: ${counter.value}')]);
-    }, 'display');
+    }, key: 'display');
 ```
 
 As you can see, a reference provices a stream of value change events.
