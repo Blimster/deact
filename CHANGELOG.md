@@ -2,6 +2,7 @@
 
 ## v0.5.0
 
+- BREAKING CHANGE: ranmed ```ComponentRenderContext``` to ```ComponentContext```.
 - BREAKING CHANGE: The parameter ```key``` is now named instead of positional.
 - It is now possible to make states and/or references of a component global to its children.
 - It is now possible to register a listener to be called after the node hierarchy was rendered.

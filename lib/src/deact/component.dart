@@ -103,12 +103,12 @@ typedef Cleanup = void Function();
 /// compoenent was (re)rendered.
 typedef Effect = Cleanup Function();
 
-/// A [ComponentRenderContext] is the interface for
+/// A [ComponentContext] is the interface for
 /// component to the Deact API. It is provied to the
 /// component, when it is rendered.
-class ComponentRenderContext {
+class ComponentContext {
   final _DeactInstance _instance;
-  final ComponentRenderContext _parent;
+  final ComponentContext _parent;
   final _TreeLocation _location;
   final ComponentNode _component;
   final Map<String, Ref<Object>> _refs = {};
@@ -117,7 +117,7 @@ class ComponentRenderContext {
   final Map<String, Cleanup> _cleanups = {};
   final Map<String, Iterable<State>> _effectStateDependencies = {};
 
-  ComponentRenderContext._(this._parent, this._instance, this._location, this._component);
+  ComponentContext._(this._parent, this._instance, this._location, this._component);
 
   /// Creates a reference with the given [name] and
   /// [intialValue].
@@ -221,7 +221,7 @@ class ComponentRenderContext {
 }
 
 /// A function that creates a component.
-typedef FunctionalComponent = DeactNode Function(ComponentRenderContext ctx);
+typedef FunctionalComponent = DeactNode Function(ComponentContext ctx);
 
 /// Super class for class-based components.
 abstract class ComponentNode extends DeactNode {
@@ -247,7 +247,7 @@ abstract class ComponentNode extends DeactNode {
 
   /// Override this method to render the content of the
   /// component.
-  DeactNode render(ComponentRenderContext context);
+  DeactNode render(ComponentContext context);
 }
 
 /// Deact internally stores a functional component as a
@@ -258,7 +258,7 @@ class Functional extends ComponentNode {
   Functional._({Object key, this.builder}) : super(key: key);
 
   @override
-  DeactNode render(ComponentRenderContext context) {
+  DeactNode render(ComponentContext context) {
     return builder(context);
   }
 }
@@ -305,7 +305,7 @@ class _GlobalProviderFunctional extends Functional implements GlobalStateProvide
 ///
 /// Global to its children means, that the states/references
 /// are accessible using the [gloablState()]/[gloablRef]
-/// functions of [ComponentRenderContext].
+/// functions of [ComponentContext].
 DeactNode fc(
   FunctionalComponent builder, {
   Object key,

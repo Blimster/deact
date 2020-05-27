@@ -16,7 +16,7 @@ abstract class Deact {
 class _DeactInstance implements Deact {
   final String selector;
   final Logger logger;
-  final Map<_TreeLocation, ComponentRenderContext> contexts = {};
+  final Map<_TreeLocation, ComponentContext> contexts = {};
   DeactNode rootNode;
   @override
   num lastRenderTimeMs;
