@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.5.1
+
+- Initial values for states and references can now alternatively be provided by a function.
+
 ## v0.5.0
 
 - BREAKING CHANGE: ranmed ```ComponentRenderContext``` to ```ComponentContext```.

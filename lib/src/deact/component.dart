@@ -103,6 +103,8 @@ typedef Cleanup = void Function();
 /// compoenent was (re)rendered.
 typedef Effect = Cleanup Function();
 
+typedef InitialValueProvider<T> = T Function();
+
 /// A [ComponentContext] is the interface for
 /// component to the Deact API. It is provied to the
 /// component, when it is rendered.
@@ -128,9 +130,15 @@ class ComponentContext {
   /// reference is accessed, this value will be returned.
   /// A reference will persist until the component is
   /// removed from the node hierarchy.
-  Ref<T> ref<T>(String name, [T initialValue]) {
+  ///
+  /// If the initial value is expensive to compute, it is
+  /// possible to provide ```null``` as the initial value
+  /// and a function as an additional parameter. That
+  /// function will only be called once to create the
+  /// initial value.
+  Ref<T> ref<T>(String name, [T initialValue, InitialValueProvider<T> initialValueProvider]) {
     return _refs.putIfAbsent(name, () {
-      final ref = Ref<T>._(initialValue);
+      final ref = Ref<T>._(initialValue ?? initialValueProvider?.call());
       _instance.logger.fine('${_location}: created ref with name ${name} with initial value ${initialValue}');
       return ref;
     }) as Ref<T>;
@@ -167,9 +175,15 @@ class ComponentContext {
   /// accessed, this state will be returned. A
   /// state will persist until the component is removed
   /// from the node hierarchy.
-  State<T> state<T>(String name, [T initialValue]) {
+  ///
+  /// If the initial value is expensive to compute, it is
+  /// possible to provide ```null``` as the initial value
+  /// and a function as an additional parameter. That
+  /// function will only be called once to create the
+  /// initial value.
+  State<T> state<T>(String name, [T initialValue, InitialValueProvider<T> initialValueProvider]) {
     return _states.putIfAbsent(name, () {
-      final state = State<T>._(_instance, initialValue);
+      final state = State<T>._(_instance, initialValue ?? initialValueProvider?.call());
       _instance.logger.fine('${_location}: created state with name ${name} with initial value ${initialValue}');
       return state;
     }) as State<T>;
