@@ -14,11 +14,11 @@ Deact depends on Incremental DOM, an in-place DOM diffing library written in Jav
 </html>
 ```
 
-The entrypoint of a Deact application is the ```deact()``` function. It requires a selector string and a function, thats returns the root node of the application. The selector string is used to query a host element from the DOM.
+The entrypoint of a Deact application is the ```deact()``` function. It requires a selector string and a function, that returns the root node of the application. The selector string is used to query a host element from the DOM.
 
 All elements beneath the host element will be deleted and replaced by the provided root node.
 
-A node can be an DOM element, a text or a component.
+A node can be a DOM element, a text or a component.
 
 ```dart
 import 'package:deact/deact.dart';
@@ -36,7 +36,7 @@ In the example above, a ```div``` element with the text ```Hello World``` is add
 
 ## Components
 
-If a application becomes more complex, it is advisable to separate the UI into smaller reusable chunks. Here components come into play. A component is a function that returns a node. As as normal Dart function, a component can have parameters to configure the component.
+If an application becomes more complex, it is advisable to separate the UI into smaller reusable chunks. Here, components come into play. A component is a function that returns a node. As a normal Dart function, a component can have parameters to configure the component.
 
 ```dart
 import 'package:deact/deact.dart';
@@ -56,13 +56,15 @@ DeactNode coloredText(String text, String color) => fc((_) {
     });
 ```
 
-In this example a component with the name ```coloredText``` is introduced. The name itself is inrelevant for Deact and just helps to give the component a meaningful description. To really create a component, the function ```fc()``` has to be used. The only parameter of the ```fc()``` function is a builder function that has to return a node. In this case, the component ```coloredText``` creates a ```div``` element with a ```text``` and ```color```. 
+In this example a component with the name ```coloredText``` is introduced. The name itself is irrelevant for Deact and just helps to give the component a meaningful description.
+
+To really create a component (in a Deact way), the function ```fc()``` has to be used. The only parameter of the ```fc()``` function is a builder function that has to return a node and accepts a ```ComponentContext```. This is required to use component-specific functionality of Deact.
 
 ## State
 
 ### Local state
 
-A component can have a state. To access the state of a component, the function ```state()``` of the ```ComponentRenderContext``` is used. A state has a name and a type.
+A component can have a state. To access the state of a component, the function ```state()``` of the ```ComponentContext``` is used. A state has a name and a type.
 
 ```dart
 DeactNode statefulComponent() => fc((ctx) {
@@ -75,7 +77,7 @@ In the example above a state with the name ```counter``` and the initial value `
 
 ### Global state
 
-State created by the function ```state()```is local to the component. If it is required to share state over multiple components, a ```GlobalStateProviderComponent``` can be used. A global state provider is a node and thus, it can be placed everywhere in the node hierarchy. Every component beneath a global state provider can access the state of the provider using the method ```globalState()``` of the ```ComponentRenderContext``` to read or update it like a local state.
+State created by the function ```state()```is local to the component. If it is required to share state over multiple components, a ```GlobalStateProviderComponent``` can be used. A global state provider is a node and thus, it can be placed everywhere in the node hierarchy. Every component beneath a global state provider can access the state of the provider using the method ```globalState()``` of the ```ComponentContext``` to read or update it like a local state.
 
 ```dart
 void main() {
@@ -155,7 +157,7 @@ component to rerender.
 
 ### Local references
 
-A local reference is created by calling the ```ref()``` method of the ```ComponentRenderContext```. A reference has a name and an optional initial value. The value of the reference can be accessed by ```value``` memeber.
+A local reference is created by calling the ```ref()``` method of the ```ComponentContext```. A reference has a name and an optional initial value. The value of the reference can be accessed by ```value``` memeber.
 
 A special way to set the value of a reference is to provide the reference to the ```ref``` parameter of an element node.
 
@@ -177,7 +179,7 @@ In this example, a reference to a ```InputElement``` is created. The initial val
 
 ### Global references
 
-A global reference is introduced using the function ```globalRef()``` which creates an instance of a ```GloablRefProviderComponent``` component. All children of this component can access the global reference by calling the ```gloablRef<T>(String)``` method of the ```ComponentRenderContext```. The same rules of how to find a global state apply here.
+A global reference is introduced using the function ```globalRef()``` which creates an instance of a ```GloablRefProviderComponent``` component. All children of this component can access the global reference by calling the ```gloablRef<T>(String)``` method of the ```ComponentContext```. The same rules of how to find a global state apply here.
 
 ```dart
 void main() {

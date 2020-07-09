@@ -103,6 +103,7 @@ typedef Cleanup = void Function();
 /// compoenent was (re)rendered.
 typedef Effect = Cleanup Function();
 
+/// A function to provide an intial value.
 typedef InitialValueProvider<T> = T Function();
 
 /// A [ComponentContext] is the interface for
