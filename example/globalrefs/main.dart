@@ -41,12 +41,12 @@ DeactNode display() => fc((ctx) {
     }, key: 'display');
 
 DeactNode counter() => fc((ctx) {
-      ctx.ref<int>('counter', 0);
+      // as an alternative, it is possible to make a
+      // reference of a component global to its children
+      // by setting the global parameter to true.
+      ctx.ref<int>('counter', 0, global: true);
       return fragment([
         incrementor(),
         display(),
       ]);
-      // as an alternative, it is possible to make a
-      // reference of a component global to its children
-      // by setting the globalRef parameter to true.
-    }, globalRef: true);
+    });

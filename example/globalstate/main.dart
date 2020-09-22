@@ -28,12 +28,12 @@ DeactNode display() => fc((ctx) {
     });
 
 DeactNode counter() => fc((ctx) {
-      ctx.state<int>('counter', 0);
+      // as an alternative, it is possible to make a
+      // state of a component global to its children
+      // by setting the global parameter to true.
+      ctx.state<int>('counter', 0, global: true);
       return fragment([
         incrementor(),
         display(),
       ]);
-      // as an alternative, it is possible to make a
-      // reference of a component global to its children
-      // by setting the globalState parameter to true.
-    }, globalState: true);
+    });

@@ -23,9 +23,10 @@ abstract class GlobalProvider implements GlobalStateProvider, GlobalRefProvider 
 class Ref<T> {
   final _TypeLiteral<T> _type;
   final StreamController<T> _streamController = StreamController<T>();
+  final bool _global;
   T _value;
 
-  Ref._(this._value) : _type = _TypeLiteral<T>() {
+  Ref._(this._global, this._value) : _type = _TypeLiteral<T>() {
     if (_value != null) {
       _streamController.add(_value);
     }
@@ -56,10 +57,11 @@ class Ref<T> {
 class State<T> {
   final _DeactInstance _instance;
   final _TypeLiteral<T> _type;
+  final bool _global;
   T _value;
   bool _valueChanged = true;
 
-  State._(this._instance, this._value) : _type = _TypeLiteral<T>();
+  State._(this._instance, this._global, this._value) : _type = _TypeLiteral<T>();
 
   /// Executes to provided [updater] function to update
   /// a part of the state. This function is useful for
@@ -132,14 +134,36 @@ class ComponentContext {
   /// A reference will persist until the component is
   /// removed from the node hierarchy.
   ///
-  /// If the initial value is expensive to compute, it is
-  /// possible to provide ```null``` as the initial value
-  /// and a function as an additional parameter. That
-  /// function will only be called once to create the
-  /// initial value.
-  Ref<T> ref<T>(String name, [T initialValue, InitialValueProvider<T> initialValueProvider]) {
+  /// Setting [global] to `true` makes the reference
+  /// accessible for all children of the component.
+  Ref<T> ref<T>(String name, T initialValue, {bool global = false}) {
     return _refs.putIfAbsent(name, () {
-      final ref = Ref<T>._(initialValue ?? initialValueProvider?.call());
+      final ref = Ref<T>._(global, initialValue);
+      _instance.logger.fine('${_location}: created ref with name ${name} with initial value ${initialValue}');
+      return ref;
+    }) as Ref<T>;
+  }
+
+  /// Creates a reference with the given [name] and
+  /// the result of a call to [initialValueProvider].
+  ///
+  /// If no reference is registered with the given
+  /// [name], a new reference is created with by calling
+  /// [initialValueProvider]. The next time the
+  /// reference is accessed, this value will be returned.
+  /// A reference will persist until the component is
+  /// removed from the node hierarchy.
+  ///
+  /// Use this method if the initial value is expensive
+  /// to compute, because the function will only be
+  /// called once to create the initial value.
+  ///
+  /// Setting [global] to `true` makes the reference
+  /// accessible for all children of the component.
+  Ref<T> refProvided<T>(String name, InitialValueProvider<T> initialValueProvider, {bool global = false}) {
+    return _refs.putIfAbsent(name, () {
+      final initialValue = initialValueProvider?.call();
+      final ref = Ref<T>._(global, initialValue);
       _instance.logger.fine('${_location}: created ref with name ${name} with initial value ${initialValue}');
       return ref;
     }) as Ref<T>;
@@ -155,12 +179,10 @@ class ComponentContext {
   Ref<R> globalRef<R>(String name) {
     var parent = _parent;
     while (parent != null) {
-      if (parent._component is GlobalRefProvider) {
-        final ctx = parent._instance.contexts[parent._location];
-        final ref = ctx._refs[name];
-        if (ref != null && ref._type.type() == R) {
-          return ref as Ref<R>;
-        }
+      final ctx = parent._instance.contexts[parent._location];
+      final ref = ctx._refs[name];
+      if (ref != null && ref._global && ref._type.type() == R) {
+        return ref as Ref<R>;
       }
       parent = parent._parent;
     }
@@ -178,13 +200,42 @@ class ComponentContext {
   /// from the node hierarchy.
   ///
   /// If the initial value is expensive to compute, it is
-  /// possible to provide ```null``` as the initial value
+  /// possible to provide `null` as the initial value
   /// and a function as an additional parameter. That
   /// function will only be called once to create the
   /// initial value.
-  State<T> state<T>(String name, [T initialValue, InitialValueProvider<T> initialValueProvider]) {
+  ///
+  /// Setting [global] to `true` makes the state accessible
+  /// for all children of the component.
+  State<T> state<T>(String name, T initialValue, {bool global = false}) {
     return _states.putIfAbsent(name, () {
-      final state = State<T>._(_instance, initialValue ?? initialValueProvider?.call());
+      final state = State<T>._(_instance, global, initialValue);
+      _instance.logger.fine('${_location}: created state with name ${name} with initial value ${initialValue}');
+      return state;
+    }) as State<T>;
+  }
+
+  /// Creates a state with the given [name] and the result
+  /// of a call to  [initialValueProvider]. This state is
+  /// local to the component.
+  ///
+  /// If no state is registered with the given [name], a
+  /// new state is created with by calling
+  /// [initialValueProvider]. The next time the state is
+  /// accessed, this state will be returned. A state will
+  /// persist until the component is removed from the
+  /// node hierarchy.
+  ///
+  /// Use this method if the initial value is expensive
+  /// to compute, because the function will only be
+  /// called once to create the initial value.
+  ///
+  /// Setting [global] to `true` makes the state accessible
+  /// for all children of the component.
+  State<T> stateProvided<T>(String name, InitialValueProvider<T> initialValueProvider, {bool global = false}) {
+    return _states.putIfAbsent(name, () {
+      final initialValue = initialValueProvider?.call();
+      final state = State<T>._(_instance, global, initialValue);
       _instance.logger.fine('${_location}: created state with name ${name} with initial value ${initialValue}');
       return state;
     }) as State<T>;
@@ -200,12 +251,10 @@ class ComponentContext {
   State<S> globalState<S>(String name) {
     var parent = _parent;
     while (parent != null) {
-      if (parent._component is GlobalStateProvider) {
-        final ctx = parent._instance.contexts[parent._location];
-        final state = ctx._states[name];
-        if (state != null && state._type.type() == S) {
-          return state as State<S>;
-        }
+      final ctx = parent._instance.contexts[parent._location];
+      final state = ctx._states[name];
+      if (state != null && state._global && state._type.type() == S) {
+        return state as State<S>;
       }
       parent = parent._parent;
     }
@@ -278,18 +327,6 @@ class Functional extends ComponentNode {
   }
 }
 
-class _GlobalStateProviderFunctional extends Functional implements GlobalStateProvider {
-  _GlobalStateProviderFunctional({Object key, FunctionalComponent builder}) : super._(key: key, builder: builder);
-}
-
-class _GlobalRefProviderFunctional extends Functional implements GlobalRefProvider {
-  _GlobalRefProviderFunctional({Object key, FunctionalComponent builder}) : super._(key: key, builder: builder);
-}
-
-class _GlobalProviderFunctional extends Functional implements GlobalStateProvider, GlobalRefProvider {
-  _GlobalProviderFunctional({Object key, FunctionalComponent builder}) : super._(key: key, builder: builder);
-}
-
 /// A helper function to implement functional components.
 ///
 /// This functions creates a [Functional]. The provided
@@ -310,30 +347,9 @@ class _GlobalProviderFunctional extends Functional implements GlobalStateProvide
 /// you can provided a key to a component (e.g. a technical
 /// id or a name). When a component with a key is moved its
 /// states and effects will also move.
-///
-/// Setting the parameter [globalState] to true makes all
-/// states of the created component global to its children.
-///
-/// Setting the parameter [globalRef] to true makes all
-/// references of the created component global to its
-/// children.
-///
-/// Global to its children means, that the states/references
-/// are accessible using the [gloablState()]/[gloablRef]
-/// functions of [ComponentContext].
 DeactNode fc(
   FunctionalComponent builder, {
   Object key,
-  bool globalState = false,
-  bool globalRef = false,
 }) {
-  if (globalState == false && globalRef == false) {
-    return Functional._(key: key, builder: builder);
-  } else if (globalState == true && globalRef == true) {
-    return _GlobalProviderFunctional(key: key, builder: builder);
-  } else if (globalState == true && globalRef == false) {
-    return _GlobalStateProviderFunctional(key: key, builder: builder);
-  } else {
-    return _GlobalRefProviderFunctional(key: key, builder: builder);
-  }
+  return Functional._(key: key, builder: builder);
 }
