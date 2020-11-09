@@ -22,7 +22,7 @@ abstract class GlobalProvider implements GlobalStateProvider, GlobalRefProvider 
 /// events.
 class Ref<T> {
   final _TypeLiteral<T> _type;
-  final StreamController<T> _streamController = StreamController<T>();
+  final StreamController<T> _streamController = StreamController<T>.broadcast();
   final bool _global;
   T _value;
 

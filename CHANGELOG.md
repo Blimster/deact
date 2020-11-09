@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.7.0
+
+- BREAKING CHANGE: The stream returned by Ref.onChange is now a broadcast stream.
+
 ## v0.6.0
 
 -   BREAKING CHANGE: creating an initial value for a state or reference using a `InitialValueProvider` is moved to the separate methods `stateProvided()` and `refProvided()`.
