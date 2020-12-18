@@ -13,3 +13,9 @@ class FragmentNode extends DeactNode {
 FragmentNode fragment(Iterable<DeactNode> children) {
   return FragmentNode._(children);
 }
+
+/// A [FragmentNode] with no children nodes. Renders nothing
+/// to the DOM.
+FragmentNode empty() {
+  return FragmentNode._([]);
+}

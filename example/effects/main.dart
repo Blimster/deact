@@ -33,26 +33,27 @@ DeactNode renderButton() => fc((ctx) {
 
 DeactNode effectComponent() => fc((ctx) {
       final toggle = ctx.globalState<bool>('toggle');
-      return toggle.value
-          ? fc((ctx) {
-              final counter = ctx.globalState<int>('counter');
+      if (!toggle.value) {
+        return empty();
+      }
+      return fc((ctx) {
+        final counter = ctx.globalState<int>('counter');
 
-              ctx.effect('every render', () {
-                print('effect: every render');
-                return () => print('cleanup: every render');
-              });
+        ctx.effect('every render', () {
+          print('effect: every render');
+          return () => print('cleanup: every render');
+        });
 
-              ctx.effect('mount/unmount', () {
-                print('effect: mount/unmount');
-                return () => print('cleanup: mount/unmount');
-              }, dependsOn: []);
+        ctx.effect('mount/unmount', () {
+          print('effect: mount/unmount');
+          return () => print('cleanup: mount/unmount');
+        }, dependsOn: []);
 
-              ctx.effect('depends on state', () {
-                print('effect: depends on. counter: ${counter.value}');
-                return () => print('cleanup: depends on');
-              }, dependsOn: [counter]);
+        ctx.effect('depends on state', () {
+          print('effect: depends on. counter: ${counter.value}');
+          return () => print('cleanup: depends on');
+        }, dependsOn: [counter]);
 
-              return div(children: [txt('I am a component with effects! Open the browsers console.')]);
-            })
-          : null;
+        return div(children: [txt('I am a component with effects! Open the browsers console.')]);
+      });
     });

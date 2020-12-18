@@ -24,19 +24,19 @@ class Ref<T> {
   final _TypeLiteral<T> _type;
   final StreamController<T> _streamController = StreamController<T>.broadcast();
   final bool _global;
-  T _value;
+  T? _value;
 
   Ref._(this._global, this._value) : _type = _TypeLiteral<T>() {
     if (_value != null) {
-      _streamController.add(_value);
+      _streamController.add(_value as T);
     }
   }
 
-  T get value => _value;
+  T get value => _value as T;
 
   set value(T value) {
     _value = value;
-    _streamController.add(_value);
+    _streamController.add(_value as T);
   }
 
   /// Returns a stream of events of changes to the value
@@ -58,7 +58,7 @@ class State<T> {
   final _DeactInstance _instance;
   final _TypeLiteral<T> _type;
   final bool _global;
-  T _value;
+  T? _value;
   bool _valueChanged = true;
 
   State._(this._instance, this._global, this._value) : _type = _TypeLiteral<T>();
@@ -68,7 +68,7 @@ class State<T> {
   /// complex mutable state objects. After the [updater]
   /// function was executed, the component and its children
   /// will be rerendered using the new state.
-  void update(void Function(T state) updater) {
+  void update(void Function(T? state) updater) {
     updater(_value);
     _valueChanged = true;
     _renderInstance(_instance);
@@ -80,7 +80,7 @@ class State<T> {
   /// was executed, the component and its children will
   /// be rerendered using the new state.
   void set(T Function(T state) setter) {
-    _value = setter(_value);
+    _value = setter(_value as T);
     _valueChanged = true;
     _renderInstance(_instance);
   }
@@ -95,7 +95,7 @@ class State<T> {
   }
 
   /// Returns the actual state object.
-  T get value => _value;
+  T get value => _value as T;
 }
 
 /// A function to be called to cleanup an effect.
@@ -103,7 +103,7 @@ typedef Cleanup = void Function();
 
 /// An [Effect] is a function to be called when a
 /// compoenent was (re)rendered.
-typedef Effect = Cleanup Function();
+typedef Effect = Cleanup? Function();
 
 /// A function to provide an intial value.
 typedef InitialValueProvider<T> = T Function();
@@ -113,16 +113,15 @@ typedef InitialValueProvider<T> = T Function();
 /// component, when it is rendered.
 class ComponentContext {
   final _DeactInstance _instance;
-  final ComponentContext _parent;
+  final ComponentContext? _parent;
   final _TreeLocation _location;
-  final ComponentNode _component;
-  final Map<String, Ref<Object>> _refs = {};
-  final Map<String, State<Object>> _states = {};
+  final Map<String, Ref> _refs = {};
+  final Map<String, State> _states = {};
   final Map<String, Effect> _effects = {};
   final Map<String, Cleanup> _cleanups = {};
-  final Map<String, Iterable<State>> _effectStateDependencies = {};
+  final Map<String, Iterable<State>?> _effectStateDependencies = {};
 
-  ComponentContext._(this._parent, this._instance, this._location, this._component);
+  ComponentContext._(this._parent, this._instance, this._location);
 
   /// Creates a reference with the given [name] and
   /// [intialValue].
@@ -160,7 +159,7 @@ class ComponentContext {
   ///
   /// Setting [global] to `true` makes the reference
   /// accessible for all children of the component.
-  Ref<T> refProvided<T>(String name, InitialValueProvider<T> initialValueProvider, {bool global = false}) {
+  Ref<T> refProvided<T>(String name, InitialValueProvider<T>? initialValueProvider, {bool global = false}) {
     return _refs.putIfAbsent(name, () {
       final initialValue = initialValueProvider?.call();
       final ref = Ref<T>._(global, initialValue);
@@ -180,9 +179,11 @@ class ComponentContext {
     var parent = _parent;
     while (parent != null) {
       final ctx = parent._instance.contexts[parent._location];
-      final ref = ctx._refs[name];
-      if (ref != null && ref._global && ref._type.type() == R) {
-        return ref as Ref<R>;
+      if (ctx != null) {
+        final ref = ctx._refs[name];
+        if (ref != null && ref._global && ref._type.type() == R) {
+          return ref as Ref<R>;
+        }
       }
       parent = parent._parent;
     }
@@ -232,7 +233,7 @@ class ComponentContext {
   ///
   /// Setting [global] to `true` makes the state accessible
   /// for all children of the component.
-  State<T> stateProvided<T>(String name, InitialValueProvider<T> initialValueProvider, {bool global = false}) {
+  State<T> stateProvided<T>(String name, InitialValueProvider<T>? initialValueProvider, {bool global = false}) {
     return _states.putIfAbsent(name, () {
       final initialValue = initialValueProvider?.call();
       final state = State<T>._(_instance, global, initialValue);
@@ -252,9 +253,11 @@ class ComponentContext {
     var parent = _parent;
     while (parent != null) {
       final ctx = parent._instance.contexts[parent._location];
-      final state = ctx._states[name];
-      if (state != null && state._global && state._type.type() == S) {
-        return state as State<S>;
+      if (ctx != null) {
+        final state = ctx._states[name];
+        if (state != null && state._global && state._type.type() == S) {
+          return state as State<S>;
+        }
       }
       parent = parent._parent;
     }
@@ -278,7 +281,7 @@ class ComponentContext {
   /// cleanup will be executed when the component is
   /// removed from the DOM and before the effect is
   /// executed the next time.
-  void effect(String name, Effect effect, {Iterable<State> dependsOn}) {
+  void effect(String name, Effect effect, {Iterable<State>? dependsOn}) {
     _effects[name] = effect;
     _effectStateDependencies[name] = dependsOn;
   }
@@ -289,7 +292,7 @@ typedef FunctionalComponent = DeactNode Function(ComponentContext ctx);
 
 /// Super class for class-based components.
 abstract class ComponentNode extends DeactNode {
-  final Object key;
+  final Object? key;
 
   /// States and effects are not bound to a component but to
   /// its location the node hierarchy. If no [key] is provided,
@@ -305,9 +308,9 @@ abstract class ComponentNode extends DeactNode {
   /// you can provided a key to a component (e.g. a technical
   /// id or a name). When a component with a key is moved its
   /// states and effects will also move.
-  ComponentNode({Object key})
+  ComponentNode({Object? key})
       : key = key,
-        super._(null);
+        super._([]);
 
   /// Override this method to render the content of the
   /// component.
@@ -319,7 +322,7 @@ abstract class ComponentNode extends DeactNode {
 class Functional extends ComponentNode {
   final FunctionalComponent builder;
 
-  Functional._({Object key, this.builder}) : super(key: key);
+  Functional._({Object? key, required this.builder}) : super(key: key);
 
   @override
   DeactNode render(ComponentContext context) {
@@ -349,7 +352,7 @@ class Functional extends ComponentNode {
 /// states and effects will also move.
 DeactNode fc(
   FunctionalComponent builder, {
-  Object key,
+  Object? key,
 }) {
   return Functional._(key: key, builder: builder);
 }

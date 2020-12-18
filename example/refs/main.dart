@@ -8,11 +8,11 @@ void main() {
 }
 
 DeactNode refs() => fc((ctx) {
-      final inputRef = ctx.ref<InputElement>('input', null);
+      final inputRef = ctx.ref<InputElement?>('input', null);
 
       return fragment([
         button(
-          onclick: (_) => inputRef.value.focus(),
+          onclick: (_) => inputRef.value?.focus(),
           children: [txt('Click me to focus the input element!')],
         ),
         input(ref: inputRef),

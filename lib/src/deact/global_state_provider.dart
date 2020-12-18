@@ -14,11 +14,11 @@ abstract class GlobalStateProvider {}
 /// See also [ComponentContext.globalState].
 class GlobalStateProviderComponent<T> extends ComponentNode implements GlobalStateProvider {
   final String _name;
-  final T _initialValue;
+  final T? _initialValue;
   @override
   final Iterable<DeactNode> _children;
 
-  GlobalStateProviderComponent._(Object key, this._name, this._initialValue, this._children) : super(key: key);
+  GlobalStateProviderComponent._(Object? key, this._name, this._initialValue, this._children) : super(key: key);
 
   @override
   DeactNode render(ComponentContext ctx) {
@@ -34,6 +34,6 @@ class GlobalStateProviderComponent<T> extends ComponentNode implements GlobalSta
 /// The state can be accessed using
 /// [ComponentContext.globalState] with the according
 /// [name] and type [T].
-DeactNode globalState<T>({Object key, String name, T initialValue, Iterable<DeactNode> children}) {
+DeactNode globalState<T>({Object? key, required String name, T? initialValue, required Iterable<DeactNode> children}) {
   return GlobalStateProviderComponent<T>._(key, name, initialValue, children);
 }

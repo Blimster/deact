@@ -10,17 +10,13 @@ typedef EventListener<E extends html.Event> = void Function(E event);
 /// listeners and optional children.
 class ElementNode extends DeactNode {
   final String name;
-  final Object key;
-  final Ref<html.Element> ref;
-  final Map<String, Object> attributes;
-  final Map<String, Object> listeners;
+  final Object? key;
+  final Ref<html.Element?>? ref;
+  final Map<String, Object>? attributes;
+  final Map<String, Object>? listeners;
 
-  ElementNode._(this.name, this.key, this.ref, this.attributes, this.listeners, Iterable<DeactNode> children)
-      : super._(children) {
-    if (name == null) {
-      throw ArgumentError('parameter "name" is required!');
-    }
-  }
+  ElementNode._(this.name, this.key, this.ref, this.attributes, this.listeners, Iterable<DeactNode?>? children)
+      : super._(children ?? []);
 }
 
 /// Creates an [ElementNode] node.
@@ -49,11 +45,11 @@ class ElementNode extends DeactNode {
 /// [DeactNode]s.
 ElementNode el(
   String name, {
-  Object key,
-  Ref<html.Element> ref,
-  Map<String, Object> attributes,
-  Map<String, Object> listeners,
-  Iterable<DeactNode> children,
+  Object? key,
+  Ref<html.Element?>? ref,
+  Map<String, Object>? attributes,
+  Map<String, Object>? listeners,
+  Iterable<DeactNode>? children,
 }) {
   return ElementNode._(name, key, ref, attributes, listeners, children);
 }

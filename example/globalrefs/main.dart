@@ -26,7 +26,7 @@ DeactNode incrementor() => fc((ctx) {
     }, key: 'incrementor');
 
 DeactNode display() => fc((ctx) {
-      final counter = ctx.state<int>('counter', null);
+      final counter = ctx.state<int>('counter', 0);
       ctx.effect('init', () {
         // listen to changes of the value of the 'counter' reference
         ctx.globalRef<int>('counter').onChange.listen((c) {

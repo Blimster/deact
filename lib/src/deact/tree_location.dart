@@ -1,10 +1,10 @@
 part of deact;
 
 class _TreeLocation {
-  final _TreeLocation parent;
+  final _TreeLocation? parent;
   final String token;
-  final int position;
-  final Object key;
+  final int? position;
+  final Object? key;
 
   _TreeLocation(this.parent, this.token, this.position, {this.key});
 

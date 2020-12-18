@@ -4,7 +4,7 @@ part of deact;
 class TextNode extends DeactNode {
   final String text;
 
-  TextNode._(this.text) : super._(null);
+  TextNode._(this.text) : super._([]);
 }
 
 /// Creates a [TextNode] node with the given [text].

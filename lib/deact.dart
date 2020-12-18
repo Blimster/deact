@@ -48,7 +48,7 @@ Deact deact(String selector, RootNodeProvider root) {
   return deact;
 }
 
-void _applyAttrAndPropBool(Element element, String name, Object value) {
+void _applyAttrAndPropBool(Element element, String name, Object? value) {
   inc_dom.applyAttr(element, name, value);
   inc_dom.applyProp(element, name, value != null);
 }
