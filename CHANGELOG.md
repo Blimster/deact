@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.0-nullsafety.0
+
+- BREAKING CHANGE: Migrated to null safety.
+
 ## v0.7.0
 
 - BREAKING CHANGE: The stream returned by Ref.onChange is now a broadcast stream.

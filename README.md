@@ -163,11 +163,11 @@ A special way to set the value of a reference is to provide the reference to the
 
 ```dart
 DeactNode refs() => fc((ctx) {
-      final inputRef = ctx.ref<InputElement>('input');
+      final inputRef = ctx.ref<InputElement?>('input');
 
       return fragment([
         button(
-          onclick: (_) => inputRef.value.focus(),
+          onclick: (_) => inputRef.value?.focus(),
           children: [txt('Click me to focus the input element!')],
         ),
         input(ref: inputRef),
@@ -204,7 +204,7 @@ DeactNode incrementor() => fc((ctx) {
     });
 
 DeactNode display() => fc((ctx) {
-      final counter = ctx.state<int>('counter', null);
+      final counter = ctx.state<int>('counter', 0);
       ctx.effect('init', () {
         // listen to changes of the value of the 'counter' reference
         ctx.globalRef<int>('counter').onChange.listen((c) {

@@ -5,7 +5,6 @@ import 'dart:html' as html;
 import 'dart:html';
 
 import 'package:incremental_dom_bindings/incremental_dom_bindings.dart' as inc_dom;
-import 'package:logging/logging.dart';
 
 part 'src/deact/component.dart';
 part 'src/deact/deact_instance.dart';

@@ -33,10 +33,10 @@ void _renderInstance(_DeactInstance instance) {
           cleanup();
         });
       } else {
-        instance.logger.warning('${location}: no context found. this looks like a bug!');
+        //instance.logger.warning('${location}: no context found. this looks like a bug!');
       }
       instance.contexts.remove(location);
-      instance.logger.fine('${location}: removed context');
+      //instance.logger.fine('${location}: removed context');
     });
 
     instance.lastRenderTimeMs = sw.elapsedMilliseconds;
@@ -53,7 +53,7 @@ void _renderNode(
 ) {
   if (node is ElementNode) {
     node._location = _TreeLocation(parentContext._location, 'e:${node.name}', nodePosition, key: node.key);
-    instance.logger.finest('${node._location}: processing node');
+    //instance.logger.finest('${node._location}: processing node');
     final props = <Object>[];
     final attributes = node.attributes;
     if (attributes != null) {
@@ -83,19 +83,19 @@ void _renderNode(
     });
   } else if (node is TextNode) {
     node._location = _TreeLocation(parentContext._location, 't', nodePosition);
-    instance.logger.finest('${node._location}: processing node');
+    //instance.logger.finest('${node._location}: processing node');
     inc_dom.text(node.text);
   } else if (node is ComponentNode) {
     final location = _TreeLocation(parentContext._location, 'c:${node.runtimeType}', nodePosition, key: node.key);
     node._location = location;
     usedComponentLocations.add(location);
-    instance.logger.finest('${node._location}: processing node');
+    //instance.logger.finest('${node._location}: processing node');
     var newContext = false;
     var context = instance.contexts[node._location];
     if (context == null) {
       context = ComponentContext._(parentContext, instance, location);
       instance.contexts[location] = context;
-      instance.logger.fine('${node._location}: created context');
+      //instance.logger.fine('${node._location}: created context');
       newContext = true;
     }
     context._effects.clear();

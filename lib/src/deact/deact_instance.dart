@@ -15,7 +15,7 @@ abstract class Deact {
 
 class _DeactInstance implements Deact {
   final String selector;
-  final Logger logger;
+  // final Logger logger;
   final Map<_TreeLocation, ComponentContext> contexts = {};
   DeactNode? rootNode;
   @override
@@ -23,5 +23,5 @@ class _DeactInstance implements Deact {
   @override
   AfterRender? afterRender;
 
-  _DeactInstance(this.selector) : logger = Logger('deact.$selector');
+  _DeactInstance(this.selector); // : logger = Logger('deact.$selector');
 }

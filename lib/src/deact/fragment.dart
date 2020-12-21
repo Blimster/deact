@@ -15,7 +15,5 @@ FragmentNode fragment(Iterable<DeactNode> children) {
 }
 
 /// A [FragmentNode] with no children nodes. Renders nothing
-/// to the DOM.
-FragmentNode empty() {
-  return FragmentNode._([]);
-}
+/// to the DOM. This is an alternative to providing [null].
+FragmentNode empty() => FragmentNode._([]);
