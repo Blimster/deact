@@ -68,8 +68,8 @@ class State<T> {
   /// complex mutable state objects. After the [updater]
   /// function was executed, the component and its children
   /// will be rerendered using the new state.
-  void update(void Function(T? state) updater) {
-    updater(_value);
+  void update(void Function(T state) updater) {
+    updater(_value as T);
     _valueChanged = true;
     _renderInstance(_instance);
   }

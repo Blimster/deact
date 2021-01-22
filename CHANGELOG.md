@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.0-nullsafety.1
+
+- Fixed always nullable parameter in function provided to State.update().
+
 ## v1.0.0-nullsafety.0
 
 - BREAKING CHANGE: Migrated to null safety.
