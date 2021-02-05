@@ -7,6 +7,8 @@
   - `ComponentContext.refProvided()`
   - `ComponentContext.state()`
   - `ComponentContext.stateProvided()`
+- BREAKING CHANGE: `globalState()` and `globalRef()` of `ComponentContext` now start search in the component it was called and not in its parent.
+- A rerender of a component can now be scheduled using `ComponentContext.scheduleRerender()`.
 
 ## v1.0.0-nullsafety.1
 
