@@ -115,14 +115,13 @@ class ComponentContext {
   final _DeactInstance _instance;
   final ComponentContext _parent;
   final _TreeLocation _location;
-  final ComponentNode _component;
   final Map<String, Ref<Object>> _refs = {};
   final Map<String, State<Object>> _states = {};
   final Map<String, Effect> _effects = {};
   final Map<String, Cleanup> _cleanups = {};
   final Map<String, Iterable<State>> _effectStateDependencies = {};
 
-  ComponentContext._(this._parent, this._instance, this._location, this._component);
+  ComponentContext._(this._parent, this._instance, this._location);
 
   /// Creates a reference with the given [name] and
   /// [intialValue].
@@ -177,14 +176,13 @@ class ComponentContext {
   /// proceeds in direction to the root of the node
   /// hierarchy.
   Ref<R> globalRef<R>(String name) {
-    var parent = _parent;
-    while (parent != null) {
-      final ctx = parent._instance.contexts[parent._location];
+    var ctx = this;
+    while (ctx != null) {
       final ref = ctx._refs[name];
       if (ref != null && ref._global && ref._type.type() == R) {
         return ref as Ref<R>;
       }
-      parent = parent._parent;
+      ctx = ctx._parent;
     }
     return throw StateError('no global ref with name $name and type $R found!');
   }
@@ -249,14 +247,13 @@ class ComponentContext {
   /// proceeds in direction to the root of the node
   /// hierarchy.
   State<S> globalState<S>(String name) {
-    var parent = _parent;
-    while (parent != null) {
-      final ctx = parent._instance.contexts[parent._location];
+    var ctx = this;
+    while (ctx != null) {
       final state = ctx._states[name];
       if (state != null && state._global && state._type.type() == S) {
         return state as State<S>;
       }
-      parent = parent._parent;
+      ctx = ctx._parent;
     }
     return throw StateError('no global state with name $name and type $S found!');
   }
@@ -281,6 +278,12 @@ class ComponentContext {
   void effect(String name, Effect effect, {Iterable<State> dependsOn}) {
     _effects[name] = effect;
     _effectStateDependencies[name] = dependsOn;
+  }
+
+  /// Schedules a rerender of the component and all its
+  /// children.
+  void scheduleRerender() {
+    _renderInstance(_instance);
   }
 }
 

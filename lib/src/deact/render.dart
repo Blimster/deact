@@ -17,7 +17,7 @@ void _renderInstance(_DeactInstance instance) {
               instance,
               instance.rootNode,
               0,
-              ComponentContext._(null, instance, _TreeLocation(null, 's:${instance.selector}', null), null),
+              ComponentContext._(null, instance, _TreeLocation(null, 's:${instance.selector}', null)),
               usedComponentLocations,
             ));
     final locationsToRemove = <_TreeLocation>{};
@@ -89,7 +89,7 @@ void _renderNode(
     var newContext = false;
     var context = instance.contexts[node._location];
     if (context == null) {
-      context = ComponentContext._(parentContext, instance, node._location, node);
+      context = ComponentContext._(parentContext, instance, node._location);
       instance.contexts[node._location] = context;
       instance.logger.fine('${node._location}: created context');
       newContext = true;
