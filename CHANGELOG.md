@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.8.0
+
+- BREAKING CHANGE: `globalState()` and `globalRef()` of `ComponentContext` now start search in the component it was called and not in its parent.
+- A rerender of a component can now be scheduled using `ComponentContext.scheduleRerender()`.
+
 ## v0.7.0
 
 - BREAKING CHANGE: The stream returned by Ref.onChange is now a broadcast stream.
