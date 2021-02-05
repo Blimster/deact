@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.0.0-nullsafety.2
+
+- BREAKING CHANGE: Fixed nullable parameter types for 
+  - `ComponentContext.ref()`
+  - `ComponentContext.refProvided()`
+  - `ComponentContext.state()`
+  - `ComponentContext.stateProvided()`
+
 ## v1.0.0-nullsafety.1
 
 - Fixed always nullable parameter in function provided to State.update().

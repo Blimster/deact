@@ -135,7 +135,7 @@ class ComponentContext {
   ///
   /// Setting [global] to `true` makes the reference
   /// accessible for all children of the component.
-  Ref<T> ref<T>(String name, T? initialValue, {bool global = false}) {
+  Ref<T> ref<T>(String name, T initialValue, {bool global = false}) {
     return _refs.putIfAbsent(name, () {
       final ref = Ref<T>._(global, initialValue);
       //_instance.logger.fine('${_location}: created ref with name ${name} with initial value ${initialValue}');
@@ -159,9 +159,9 @@ class ComponentContext {
   ///
   /// Setting [global] to `true` makes the reference
   /// accessible for all children of the component.
-  Ref<T> refProvided<T>(String name, InitialValueProvider<T>? initialValueProvider, {bool global = false}) {
+  Ref<T> refProvided<T>(String name, InitialValueProvider<T> initialValueProvider, {bool global = false}) {
     return _refs.putIfAbsent(name, () {
-      final initialValue = initialValueProvider?.call();
+      final initialValue = initialValueProvider.call();
       final ref = Ref<T>._(global, initialValue);
       //_instance.logger.fine('${_location}: created ref with name ${name} with initial value ${initialValue}');
       return ref;
@@ -208,7 +208,7 @@ class ComponentContext {
   ///
   /// Setting [global] to `true` makes the state accessible
   /// for all children of the component.
-  State<T> state<T>(String name, T? initialValue, {bool global = false}) {
+  State<T> state<T>(String name, T initialValue, {bool global = false}) {
     return _states.putIfAbsent(name, () {
       final state = State<T>._(_instance, global, initialValue);
       //_instance.logger.fine('${_location}: created state with name ${name} with initial value ${initialValue}');
@@ -233,7 +233,7 @@ class ComponentContext {
   ///
   /// Setting [global] to `true` makes the state accessible
   /// for all children of the component.
-  State<T> stateProvided<T>(String name, InitialValueProvider<T>? initialValueProvider, {bool global = false}) {
+  State<T> stateProvided<T>(String name, InitialValueProvider<T> initialValueProvider, {bool global = false}) {
     return _states.putIfAbsent(name, () {
       final initialValue = initialValueProvider?.call();
       final state = State<T>._(_instance, global, initialValue);
