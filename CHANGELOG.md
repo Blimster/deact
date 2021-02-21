@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.0
+
+- Stable null safety release.
+
 ## v1.0.0-nullsafety.2
 
 - BREAKING CHANGE: Fixed nullable parameter types for 
