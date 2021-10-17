@@ -308,9 +308,7 @@ abstract class ComponentNode extends DeactNode {
   /// you can provided a key to a component (e.g. a technical
   /// id or a name). When a component with a key is moved its
   /// states and effects will also move.
-  ComponentNode({Object? key})
-      : key = key,
-        super._([]);
+  ComponentNode({this.key}) : super._([]);
 
   /// Override this method to render the content of the
   /// component.

@@ -19,8 +19,8 @@ class GlobalRefProviderComponent<T> extends ComponentNode implements GlobalRefPr
   GlobalRefProviderComponent._(Object? key, this._name, this._initialValue, this._children) : super(key: key);
 
   @override
-  DeactNode render(ComponentContext ctx) {
-    ctx.ref<T>(_name, _initialValue as T, global: true);
+  DeactNode render(ComponentContext context) {
+    context.ref<T>(_name, _initialValue as T, global: true);
     return fragment(_children);
   }
 }

@@ -21,8 +21,8 @@ class GlobalStateProviderComponent<T> extends ComponentNode implements GlobalSta
   GlobalStateProviderComponent._(Object? key, this._name, this._initialValue, this._children) : super(key: key);
 
   @override
-  DeactNode render(ComponentContext ctx) {
-    ctx.state<T>(_name, _initialValue as T, global: true);
+  DeactNode render(ComponentContext context) {
+    context.state<T>(_name, _initialValue as T, global: true);
     return fragment(_children);
   }
 }

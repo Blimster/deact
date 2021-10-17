@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.1.0
+
+- BREAKING CHANGE: Requires Dart SDK 2.14.0
+- Bugfix: TypeError when running with `webdev -r ...` (https://github.com/Blimster/deact/issues/2)
+- Updated dependencies
+
 ## v1.0.0
 
 - Stable null safety release.

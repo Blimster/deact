@@ -21,23 +21,23 @@ void _renderInstance(_DeactInstance instance) {
               usedComponentLocations,
             ));
     final locationsToRemove = <_TreeLocation>{};
-    instance.contexts.keys.forEach((location) {
+    for (var location in instance.contexts.keys) {
       if (usedComponentLocations.contains(location) == false) {
         locationsToRemove.add(location);
       }
-    });
-    locationsToRemove.forEach((location) {
+    }
+    for (var location in locationsToRemove) {
       final ctx = instance.contexts[location];
       if (ctx != null) {
-        ctx._cleanups.values.forEach((cleanup) {
+        for (var cleanup in ctx._cleanups.values) {
           cleanup();
-        });
+        }
       } else {
         //instance.logger.warning('${location}: no context found. this looks like a bug!');
       }
       instance.contexts.remove(location);
       //instance.logger.fine('${location}: removed context');
-    });
+    }
 
     instance.lastRenderTimeMs = sw.elapsedMilliseconds;
     instance.afterRender?.call(instance);
@@ -53,7 +53,7 @@ void _renderNode(
 ) {
   if (node is ElementNode) {
     node._location = _TreeLocation(parentContext._location, 'e:${node.name}', nodePosition, key: node.key);
-    //instance.logger.finest('${node._location}: processing node');
+    instance.logger.finest('${node._location}: processing node');
     final props = <Object>[];
     final attributes = node.attributes;
     if (attributes != null) {
@@ -66,10 +66,10 @@ void _renderNode(
 
     inc_dom.elementOpen(node.name, null, null, props);
     var i = 0;
-    node._children.forEach((child) {
+    for (var child in node._children) {
       _renderNode(instance, child, i, parentContext, usedComponentLocations);
       i++;
-    });
+    }
     final el = inc_dom.elementClose(node.name);
     final ref = node.ref;
     if (ref != null && ref.value != el) {
@@ -77,10 +77,10 @@ void _renderNode(
     }
   } else if (node is FragmentNode) {
     var i = 0;
-    node._children.forEach((child) {
+    for (var child in node._children) {
       _renderNode(instance, child, i, parentContext, usedComponentLocations);
       i++;
-    });
+    }
   } else if (node is TextNode) {
     node._location = _TreeLocation(parentContext._location, 't', nodePosition);
     //instance.logger.finest('${node._location}: processing node');
@@ -101,8 +101,8 @@ void _renderNode(
     context._effects.clear();
     final elementNode = node.render(context);
     _renderNode(instance, elementNode, 0, context, usedComponentLocations);
-    context._effects.keys.forEach((name) {
-      final states = context!._effectStateDependencies[name];
+    for (var name in context._effects.keys) {
+      final states = context._effectStateDependencies[name];
       var executeEffect = false;
       if (states == null || newContext) {
         executeEffect = true;
@@ -128,8 +128,10 @@ void _renderNode(
           }
         }
       }
-    });
-    context._states.values.forEach((state) => state._valueChanged = false);
+    }
+    for (var state in context._states.values) {
+      state._valueChanged = false;
+    }
   } else if (node == null) {
     // null means nothing should be rendered
   } else {

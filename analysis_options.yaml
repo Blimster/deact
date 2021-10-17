@@ -1,6 +1,6 @@
-include: package:pedantic/analysis_options.yaml
+include: package:lints/recommended.yaml
 
 analyzer:
     strong-mode:
-      implicit-casts: false
-      implicit-dynamic: false
+        implicit-casts: false
+        implicit-dynamic: false
