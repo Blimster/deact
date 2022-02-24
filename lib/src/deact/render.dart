@@ -11,16 +11,6 @@ void _renderInstance(_DeactInstance instance) {
     }
 
     final usedComponentLocations = <_TreeLocation>{};
-    // inc_dom.patch(
-    //     hostElement,
-    //     (_) => _renderNode(
-    //           instance,
-    //           instance.rootNode,
-    //           0,
-    //           ComponentContext._(null, instance,
-    //               _TreeLocation(null, 's:${instance.selector}', null)),
-    //           usedComponentLocations,
-    //         ));
     domino_browser.registerView(
         root: hostElement,
         builderFn: (builder) => _renderNode(
@@ -81,21 +71,18 @@ void _renderNode(
       });
     }
 
-    // inc_dom.elementOpen(node.name, null, null, props);
-    domBuilder.open(node.name,
-        attributes: attributes?.map((key, value) => MapEntry(key, '$value')),
-        events:
-            listeners?.map((key, value) => MapEntry(key.substring(2), (event) {
-                  print(value);
-                  print(event.event.runtimeType);
-                })));
+    domBuilder.open(
+      node.name,
+      attributes: attributes?.map((key, value) => MapEntry(key, '$value')),
+      events: listeners?.map((key, value) => MapEntry(
+          key.substring(2), (event) => (value as dynamic)(event.event))),
+    );
     var i = 0;
     for (var child in node._children) {
       _renderNode(domBuilder, instance, child, i, parentContext,
           usedComponentLocations);
       i++;
     }
-    // final el = inc_dom.elementClose(node.name);
     final el = domBuilder.close();
     final ref = node.ref;
     if (ref != null && ref.value != el) {
@@ -111,7 +98,6 @@ void _renderNode(
   } else if (node is TextNode) {
     node._location = _TreeLocation(parentContext._location, 't', nodePosition);
     //instance.logger.finest('${node._location}: processing node');
-    //inc_dom.text(node.text);
     domBuilder.text(node.text);
   } else if (node is ComponentNode) {
     final location = _TreeLocation(

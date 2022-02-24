@@ -7,7 +7,6 @@ environment:
     sdk: ">=2.14.0 <3.0.0"
 
 dependencies:
-    incremental_dom_bindings: ^2.1.0
     domino:
         path: /Users/olli/Dev/workspaces/domino/domino
     logging: ^1.0.0

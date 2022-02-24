@@ -4,8 +4,6 @@ import 'dart:async';
 import 'dart:html' as html;
 import 'dart:html';
 
-import 'package:incremental_dom_bindings/incremental_dom_bindings.dart'
-    as inc_dom;
 import 'package:domino/domino.dart' as domino;
 import 'package:domino/browser.dart' as domino_browser;
 import 'package:logging/logging.dart';
@@ -32,15 +30,6 @@ typedef RootNodeProvider = DeactNode Function(Deact);
 /// that element will be deleted and replaced by the
 /// [root] node.
 Deact deact(String selector, RootNodeProvider root) {
-  // Input elements have attributes and properties with
-  // the same name. The Deact element API usually sets the
-  // the attribute. If an user interaction updates the value
-  // of a property with one of those names, the attribute with
-  // that name is ignored. For those properties/attributes
-  // it is required to set the attribute and the properties.
-  inc_dom.attributes['checked'] = _applyAttrAndPropBool;
-  inc_dom.attributes['selected'] = _applyAttrAndPropBool;
-
   // create the deact instance
   final deact = _DeactInstance(selector);
   deact.rootNode = root(deact);
@@ -49,9 +38,4 @@ Deact deact(String selector, RootNodeProvider root) {
   _renderInstance(deact);
 
   return deact;
-}
-
-void _applyAttrAndPropBool(Element element, String name, Object? value) {
-  inc_dom.applyAttr(element, name, value);
-  inc_dom.applyProp(element, name, value != null);
 }

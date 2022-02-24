@@ -2,18 +2,6 @@
 A web UI framework inspired by React. An UI is built of components and components are built of DOM elements. Components can be stateless or stateful.
 
 ## Getting started
-Deact depends on Incremental DOM, an in-place DOM diffing library written in JavaScript. Thus, it is required to load this library.
-
-```html
-<html>
-    <head>
-        ...
-        <script src="/packages/incremental_dom_bindings/assets/incremental-dom-min.js"></script>
-        ...
-    </head>
-</html>
-```
-
 The entrypoint of a Deact application is the ```deact()``` function. It requires a selector string and a function, that returns the root node of the application. The selector string is used to query a host element from the DOM.
 
 All elements beneath the host element will be deleted and replaced by the provided root node.
