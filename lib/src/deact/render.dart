@@ -11,13 +11,25 @@ void _renderInstance(_DeactInstance instance) {
     }
 
     final usedComponentLocations = <_TreeLocation>{};
-    inc_dom.patch(
-        hostElement,
-        (_) => _renderNode(
+    // inc_dom.patch(
+    //     hostElement,
+    //     (_) => _renderNode(
+    //           instance,
+    //           instance.rootNode,
+    //           0,
+    //           ComponentContext._(null, instance,
+    //               _TreeLocation(null, 's:${instance.selector}', null)),
+    //           usedComponentLocations,
+    //         ));
+    domino_browser.registerView(
+        root: hostElement,
+        builderFn: (builder) => _renderNode(
+              builder,
               instance,
               instance.rootNode,
               0,
-              ComponentContext._(null, instance, _TreeLocation(null, 's:${instance.selector}', null)),
+              ComponentContext._(null, instance,
+                  _TreeLocation(null, 's:${instance.selector}', null)),
               usedComponentLocations,
             ));
     final locationsToRemove = <_TreeLocation>{};
@@ -45,6 +57,7 @@ void _renderInstance(_DeactInstance instance) {
 }
 
 void _renderNode(
+  domino.DomBuilder<Element, Event> domBuilder,
   _DeactInstance instance,
   DeactNode? node,
   int nodePosition,
@@ -52,7 +65,9 @@ void _renderNode(
   Set<_TreeLocation> usedComponentLocations,
 ) {
   if (node is ElementNode) {
-    node._location = _TreeLocation(parentContext._location, 'e:${node.name}', nodePosition, key: node.key);
+    node._location = _TreeLocation(
+        parentContext._location, 'e:${node.name}', nodePosition,
+        key: node.key);
     instance.logger.finest('${node._location}: processing node');
     final props = <Object>[];
     final attributes = node.attributes;
@@ -61,16 +76,27 @@ void _renderNode(
     }
     final listeners = node.listeners;
     if (listeners != null) {
-      listeners.forEach((event, listener) => props.addAll([event, listener]));
+      listeners.forEach((event, listener) {
+        props.addAll([event, listener]);
+      });
     }
 
-    inc_dom.elementOpen(node.name, null, null, props);
+    // inc_dom.elementOpen(node.name, null, null, props);
+    domBuilder.open(node.name,
+        attributes: attributes?.map((key, value) => MapEntry(key, '$value')),
+        events:
+            listeners?.map((key, value) => MapEntry(key.substring(2), (event) {
+                  print(value);
+                  print(event.event.runtimeType);
+                })));
     var i = 0;
     for (var child in node._children) {
-      _renderNode(instance, child, i, parentContext, usedComponentLocations);
+      _renderNode(domBuilder, instance, child, i, parentContext,
+          usedComponentLocations);
       i++;
     }
-    final el = inc_dom.elementClose(node.name);
+    // final el = inc_dom.elementClose(node.name);
+    final el = domBuilder.close();
     final ref = node.ref;
     if (ref != null && ref.value != el) {
       ref.value = el;
@@ -78,15 +104,19 @@ void _renderNode(
   } else if (node is FragmentNode) {
     var i = 0;
     for (var child in node._children) {
-      _renderNode(instance, child, i, parentContext, usedComponentLocations);
+      _renderNode(domBuilder, instance, child, i, parentContext,
+          usedComponentLocations);
       i++;
     }
   } else if (node is TextNode) {
     node._location = _TreeLocation(parentContext._location, 't', nodePosition);
     //instance.logger.finest('${node._location}: processing node');
-    inc_dom.text(node.text);
+    //inc_dom.text(node.text);
+    domBuilder.text(node.text);
   } else if (node is ComponentNode) {
-    final location = _TreeLocation(parentContext._location, 'c:${node.runtimeType}', nodePosition, key: node.key);
+    final location = _TreeLocation(
+        parentContext._location, 'c:${node.runtimeType}', nodePosition,
+        key: node.key);
     node._location = location;
     usedComponentLocations.add(location);
     //instance.logger.finest('${node._location}: processing node');
@@ -100,7 +130,8 @@ void _renderNode(
     }
     context._effects.clear();
     final elementNode = node.render(context);
-    _renderNode(instance, elementNode, 0, context, usedComponentLocations);
+    _renderNode(
+        domBuilder, instance, elementNode, 0, context, usedComponentLocations);
     for (var name in context._effects.keys) {
       final states = context._effectStateDependencies[name];
       var executeEffect = false;

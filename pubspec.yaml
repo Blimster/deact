@@ -8,6 +8,8 @@ environment:
 
 dependencies:
     incremental_dom_bindings: ^2.1.0
+    domino:
+        path: /Users/olli/Dev/workspaces/domino/domino
     logging: ^1.0.0
 
 dev_dependencies:

@@ -4,7 +4,10 @@ import 'dart:async';
 import 'dart:html' as html;
 import 'dart:html';
 
-import 'package:incremental_dom_bindings/incremental_dom_bindings.dart' as inc_dom;
+import 'package:incremental_dom_bindings/incremental_dom_bindings.dart'
+    as inc_dom;
+import 'package:domino/domino.dart' as domino;
+import 'package:domino/browser.dart' as domino_browser;
 import 'package:logging/logging.dart';
 
 part 'src/deact/component.dart';
