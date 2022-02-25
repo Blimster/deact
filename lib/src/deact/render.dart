@@ -73,6 +73,7 @@ void _renderNode(
 
     domBuilder.open(
       node.name,
+      key: node.key != null ? '${node.key}' : null,
       attributes: attributes?.map((key, value) => MapEntry(key, '$value')),
       events: listeners?.map((key, value) => MapEntry(
           key.substring(2), (event) => (value as dynamic)(event.event))),

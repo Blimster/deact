@@ -11,7 +11,7 @@ abstract class GlobalProvider
 
 /// A reference to a value.
 ///
-/// The reference will persist the component is removed
+/// The reference will persist until the component is removed
 /// from the node hierarchy.
 ///
 /// Changing the value of the reference does not force a
