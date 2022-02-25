@@ -1,7 +1,7 @@
 name: deact_gen
 description: A sample command-line application.
 version: 0.3.2
-homepage: https://github.com/blimster/deact/package/tree/main/package
+homepage: https://github.com/blimster/deact/package/tree/main/generator
 
 environment:
   sdk: '>=2.7.0 <3.0.0'
