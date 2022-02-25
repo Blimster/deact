@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.2.0
+
+- BREAKING CHANGE: Incremental DOM was replaced by [domino](https://pub.dev/packages/domino). As a consequence the link to the script `incremental-dom-min.js` is no longer required and will not work anymore.
+
 ## v1.1.0
 
 - BREAKING CHANGE: Requires Dart SDK 2.14.0
