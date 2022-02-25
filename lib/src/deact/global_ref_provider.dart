@@ -13,7 +13,6 @@ abstract class GlobalRefProvider {}
 class GlobalRefProviderComponent<T> extends ComponentNode implements GlobalRefProvider {
   final String _name;
   final T? _initialValue;
-  @override
   final Iterable<DeactNode> _children;
 
   GlobalRefProviderComponent._(Object? key, this._name, this._initialValue, this._children) : super(key: key);

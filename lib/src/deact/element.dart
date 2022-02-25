@@ -14,9 +14,16 @@ class ElementNode extends DeactNode {
   final Ref<html.Element?>? ref;
   final Map<String, Object>? attributes;
   final Map<String, Object>? listeners;
+  final Iterable<DeactNode> _children;
 
-  ElementNode._(this.name, this.key, this.ref, this.attributes, this.listeners, Iterable<DeactNode?>? children)
-      : super._(children ?? []);
+  ElementNode._(
+    this.name,
+    this.key,
+    this.ref,
+    this.attributes,
+    this.listeners,
+    this._children,
+  ) : super._();
 }
 
 /// Creates an [ElementNode] node.
@@ -51,5 +58,5 @@ ElementNode el(
   Map<String, Object>? listeners,
   Iterable<DeactNode>? children,
 }) {
-  return ElementNode._(name, key, ref, attributes, listeners, children);
+  return ElementNode._(name, key, ref, attributes, listeners, children ?? []);
 }

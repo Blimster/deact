@@ -6,7 +6,9 @@ part of deact;
 /// You can wrap a list of nodes into a fragment and use
 /// the fragment where only a single node is applicable.
 class FragmentNode extends DeactNode {
-  FragmentNode._(Iterable<DeactNode> children) : super._(children);
+  final Iterable<DeactNode> _children;
+
+  FragmentNode._(this._children) : super._();
 }
 
 /// Creates a [Fragement] node with the given [children].
