@@ -62,7 +62,7 @@ void generate(String name, ElementDefinitions definitions,
       final attr = definitions.attributes[a];
       if (attr == null || attr.global) {
         throw StateError(
-            'attribute $a in element ${k} not supported or it is a global attribute!');
+            'attribute $a in element $k not supported or it is a global attribute!');
       }
       final name =
           attr.alternativeName != null && attr.alternativeName.trim().isNotEmpty

@@ -34,7 +34,10 @@ DeactNode counter(String index, int delta, String? key) => fc((ctx) {
 
       ctx.effect('init', () {
         Timer.periodic(
-            Duration(seconds: 1), (_) => counter.value = counter.value + delta);
+          Duration(seconds: 1),
+          (_) => counter.value = counter.value + delta,
+        );
+        return null;
       }, dependsOn: []);
 
       return div(key: index, children: [txt('$index: ${counter.value}')]);
