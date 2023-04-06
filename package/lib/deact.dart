@@ -4,9 +4,8 @@ import 'dart:async';
 import 'dart:html' as html;
 import 'dart:html';
 
-import 'package:domino/domino.dart' as domino;
 import 'package:domino/browser.dart' as domino_browser;
-import 'package:logging/logging.dart';
+import 'package:domino/domino.dart' as domino;
 
 part 'src/deact/component.dart';
 part 'src/deact/deact_instance.dart';

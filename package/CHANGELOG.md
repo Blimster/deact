@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.3.0
+
+- BREAKING CHANGE: The effects of a component node are executed before the created node is rendered.
+
 ## v1.2.0
 
 - BREAKING CHANGE: Incremental DOM was replaced by [domino](https://pub.dev/packages/domino). As a consequence the link to the script `incremental-dom-min.js` is no longer required and will not work anymore.
