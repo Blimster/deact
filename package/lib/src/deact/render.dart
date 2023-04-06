@@ -89,6 +89,8 @@ void _renderNode(
   } else if (node is TextNode) {
     node._location = _TreeLocation(parentContext._location, 't', nodePosition);
     domBuilder.text(node.text);
+  } else if (node is Deferred) {
+    _renderNode(domBuilder, instance, node.render(), 0, parentContext, usedComponentLocations);
   } else if (node is ComponentNode) {
     final location = _TreeLocation(parentContext._location, 'c:${node.runtimeType}', nodePosition, key: node.key);
     node._location = location;
@@ -102,6 +104,9 @@ void _renderNode(
     }
     context._effects.clear();
     final elementNode = node.render(context);
+    if (elementNode is! Deferred) {
+      _renderNode(domBuilder, instance, elementNode, 0, context, usedComponentLocations);
+    }
     for (var name in context._effects.keys) {
       final states = context._effectStateDependencies[name];
       var executeEffect = false;
@@ -131,7 +136,9 @@ void _renderNode(
       }
     }
 
-    _renderNode(domBuilder, instance, elementNode, 0, context, usedComponentLocations);
+    if (elementNode is Deferred) {
+      _renderNode(domBuilder, instance, elementNode, 0, context, usedComponentLocations);
+    }
 
     for (var state in context._states.values) {
       state._valueChanged = false;

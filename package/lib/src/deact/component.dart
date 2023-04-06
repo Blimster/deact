@@ -6,8 +6,7 @@ class _TypeLiteral<T> {
 
 /// A combination of a [GlobalStateProvider]
 /// and a [GlobalRefProvider].
-abstract class GlobalProvider
-    implements GlobalStateProvider, GlobalRefProvider {}
+abstract class GlobalProvider implements GlobalStateProvider, GlobalRefProvider {}
 
 /// A reference to a value.
 ///
@@ -62,8 +61,7 @@ class State<T> {
   T? _value;
   bool _valueChanged = true;
 
-  State._(this._instance, this._global, this._value)
-      : _type = _TypeLiteral<T>();
+  State._(this._instance, this._global, this._value) : _type = _TypeLiteral<T>();
 
   /// Executes to provided [updater] function to update
   /// a part of the state. This function is useful for
@@ -161,9 +159,7 @@ class ComponentContext {
   ///
   /// Setting [global] to `true` makes the reference
   /// accessible for all children of the component.
-  Ref<T> refProvided<T>(
-      String name, InitialValueProvider<T> initialValueProvider,
-      {bool global = false}) {
+  Ref<T> refProvided<T>(String name, InitialValueProvider<T> initialValueProvider, {bool global = false}) {
     return _refs.putIfAbsent(name, () {
       final initialValue = initialValueProvider.call();
       final ref = Ref<T>._(global, initialValue);
@@ -234,9 +230,7 @@ class ComponentContext {
   ///
   /// Setting [global] to `true` makes the state accessible
   /// for all children of the component.
-  State<T> stateProvided<T>(
-      String name, InitialValueProvider<T> initialValueProvider,
-      {bool global = false}) {
+  State<T> stateProvided<T>(String name, InitialValueProvider<T> initialValueProvider, {bool global = false}) {
     return _states.putIfAbsent(name, () {
       final initialValue = initialValueProvider();
       final state = State<T>._(_instance, global, initialValue);
@@ -261,8 +255,7 @@ class ComponentContext {
       }
       ctx = ctx._parent;
     }
-    return throw StateError(
-        'no global state with name $name and type $S found!');
+    return throw StateError('no global state with name $name and type $S found!');
   }
 
   /// Introduces an effect that will be called, if the
@@ -320,6 +313,31 @@ abstract class ComponentNode extends DeactNode {
   /// Override this method to render the content of the
   /// component.
   DeactNode render(ComponentContext context);
+}
+
+/// Deact internally stores a deferred component as a
+/// class of this type.
+class Deferred extends DeactNode {
+  final DeactNode Function() builder;
+
+  Deferred._(this.builder) : super._();
+
+  DeactNode render() {
+    return builder();
+  }
+}
+
+/// Normally, the effects of a component node are executed after
+/// created node is rendered. Thus, any global state or reference
+/// created in an effect can't be accessed in the child nodes.
+///
+/// A component node created with this function will execute effects
+/// before the created node is rendered.
+DeactNode deferred(
+  DeactNode Function() builder, {
+  Object? key,
+}) {
+  return Deferred._(builder);
 }
 
 /// Deact internally stores a functional component as a

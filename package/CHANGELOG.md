@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.4.0
+
+- BREAKING CHANGE: Rolled back changes of v1.3.0.
+- Added function `deferred()` to render a created node of a component node after the effects were executed.
+
 ## v1.3.0
 
 - BREAKING CHANGE: The effects of a component node are executed before the created node is rendered.
