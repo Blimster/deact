@@ -7,7 +7,7 @@ void _renderInstance(_DeactInstance instance) {
 
     final hostElement = html.querySelector(instance.selector);
     if (hostElement == null) {
-      throw ArgumentError('no element found for selector {selector}');
+      throw ArgumentError('no element found for selector ${instance.selector}');
     }
 
     final usedComponentLocations = <_TreeLocation>{};

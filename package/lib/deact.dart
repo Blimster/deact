@@ -9,6 +9,7 @@ import 'package:domino/domino.dart' as domino;
 
 part 'src/deact/component.dart';
 part 'src/deact/deact_instance.dart';
+part 'src/deact/deferred.dart';
 part 'src/deact/element.dart';
 part 'src/deact/fragment.dart';
 part 'src/deact/global_ref_provider.dart';
