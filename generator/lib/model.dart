@@ -5,7 +5,7 @@ part 'model.g.dart';
 @JsonSerializable()
 class AttributeDefinition {
   final String type;
-  final String alternativeName;
+  final String? alternativeName;
   final bool global;
   AttributeDefinition(this.type, this.alternativeName, this.global);
 

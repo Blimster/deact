@@ -1,7 +1,6 @@
 import 'model.dart';
 
-void generate(String name, ElementDefinitions definitions,
-    void Function(Object object) print) {
+void generate(String name, ElementDefinitions definitions, void Function(Object object) print) {
   print('part of deact_$name;');
   print('');
 
@@ -13,11 +12,7 @@ void generate(String name, ElementDefinitions definitions,
     definitions.attributes.forEach((k, v) {
       if (v.global) {
         final attr = definitions.attributes[k];
-        final name = attr.alternativeName != null &&
-                attr.alternativeName.trim().isNotEmpty
-            ? attr.alternativeName
-            : k;
-        // print('${_mapType(attr.type)} $name, ');
+        final name = _alternativeNameOr(attr, k);
         print('String? $name, ');
       }
     });
@@ -30,11 +25,7 @@ void generate(String name, ElementDefinitions definitions,
       if (attr.global) {
         throw StateError('attribute $a in element $k is a global attribute!');
       }
-      final name =
-          attr.alternativeName != null && attr.alternativeName.trim().isNotEmpty
-              ? attr.alternativeName
-              : a;
-      // print('${_mapType(attr.type)} $name, ');
+      final name = _alternativeNameOr(attr, a);
       print('String? $name, ');
     });
 
@@ -48,10 +39,7 @@ void generate(String name, ElementDefinitions definitions,
     print('final attributes = <String, Object>{};');
 
     definitions.attributes.forEach((v, k) {
-      final name =
-          k.alternativeName != null && k.alternativeName.trim().isNotEmpty
-              ? k.alternativeName
-              : v;
+      final name = _alternativeNameOr(k, v);
       if (k.global) {
         print('if($name != null) {');
         print('attributes[\'$v\'] = $name;');
@@ -61,13 +49,9 @@ void generate(String name, ElementDefinitions definitions,
     v.attributes.forEach((a) {
       final attr = definitions.attributes[a];
       if (attr == null || attr.global) {
-        throw StateError(
-            'attribute $a in element $k not supported or it is a global attribute!');
+        throw StateError('attribute $a in element $k not supported or it is a global attribute!');
       }
-      final name =
-          attr.alternativeName != null && attr.alternativeName.trim().isNotEmpty
-              ? attr.alternativeName
-              : a;
+      final name = _alternativeNameOr(attr, a);
       print('if($name != null) {');
       print('attributes[\'$a\'] = $name;');
       print('}');
@@ -80,9 +64,16 @@ void generate(String name, ElementDefinitions definitions,
       print('}');
     });
 
-    print(
-        'return el(\'$k\', key: key, ref: ref, attributes: attributes, listeners: listeners, children: children,);');
+    print('return el(\'$k\', key: key, ref: ref, attributes: attributes, listeners: listeners, children: children,);');
     print('}');
     print('');
   });
+}
+
+String _alternativeNameOr(AttributeDefinition? attr, String name) {
+  final alternativeName = attr?.alternativeName?.trim() ?? '';
+  if (alternativeName.isNotEmpty) {
+    return alternativeName;
+  }
+  return name;
 }

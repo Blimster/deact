@@ -1,19 +1,16 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:deact_gen/model.dart';
 import 'package:deact_gen/deact_gen.dart';
+import 'package:deact_gen/model.dart';
 
 void main(List<String> arguments) async {
   final inputFile = File('${arguments[0]}.json');
-  final definitions = ElementDefinitions.fromJson(
-      json.decode(inputFile.readAsStringSync()) as Map<String, dynamic>);
+  final definitions = ElementDefinitions.fromJson(json.decode(inputFile.readAsStringSync()) as Map<String, dynamic>);
 
   final lines = <String>[];
   void writer(Object object) {
-    if (object != null) {
-      lines.add('${object.toString()}');
-    }
+    lines.add('${object.toString()}');
   }
 
   generate(arguments[0], definitions, writer);
