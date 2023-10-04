@@ -5,20 +5,15 @@ void _renderInstance(_DeactInstance instance) {
     final sw = Stopwatch();
     sw.start();
 
-    final hostElement = html.querySelector(instance.selector);
-    if (hostElement == null) {
-      throw ArgumentError('no element found for selector ${instance.selector}');
-    }
-
     final usedComponentLocations = <_TreeLocation>{};
     domino_browser.registerView(
-        root: hostElement,
+        root: instance.rootNode.hostElement,
         builderFn: (builder) => _renderNode(
               builder,
               instance,
               instance.rootNode,
               0,
-              ComponentContext._(null, instance, _TreeLocation(null, 's:${instance.selector}', null)),
+              null,
               usedComponentLocations,
             ));
     final locationsToRemove = <_TreeLocation>{};
@@ -47,11 +42,11 @@ void _renderNode(
   _DeactInstance instance,
   DeactNode? node,
   int nodePosition,
-  ComponentContext parentContext,
+  ComponentContext? parentContext,
   Set<_TreeLocation> usedComponentLocations,
 ) {
   if (node is ElementNode) {
-    node._location = _TreeLocation(parentContext._location, 'e:${node.name}', nodePosition, key: node.key);
+    node._location = _TreeLocation(parentContext?._location, 'e:${node.name}', nodePosition, key: node.key);
     final props = <Object>[];
     final attributes = node.attributes;
     if (attributes != null) {
@@ -87,12 +82,12 @@ void _renderNode(
       i++;
     }
   } else if (node is TextNode) {
-    node._location = _TreeLocation(parentContext._location, 't', nodePosition);
+    node._location = _TreeLocation(parentContext?._location, 't', nodePosition);
     domBuilder.text(node.text);
   } else if (node is Deferred) {
     _renderNode(domBuilder, instance, node.render(), 0, parentContext, usedComponentLocations);
   } else if (node is ComponentNode) {
-    final location = _TreeLocation(parentContext._location, 'c:${node.runtimeType}', nodePosition, key: node.key);
+    final location = _TreeLocation(parentContext?._location, 'c:${node.runtimeType}', nodePosition, key: node.key);
     node._location = location;
     usedComponentLocations.add(location);
     var newContext = false;
@@ -143,6 +138,16 @@ void _renderNode(
     for (var state in context._states.values) {
       state._valueChanged = false;
     }
+  } else if (node is RootNode) {
+    final rootNode = node.provider(instance);
+    _renderNode(
+      domBuilder,
+      instance,
+      rootNode,
+      0,
+      parentContext,
+      usedComponentLocations,
+    );
   } else if (node == null) {
     // null means nothing should be rendered
   } else {

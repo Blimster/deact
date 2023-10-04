@@ -16,6 +16,7 @@ part 'src/deact/global_ref_provider.dart';
 part 'src/deact/global_state_provider.dart';
 part 'src/deact/node.dart';
 part 'src/deact/render.dart';
+part 'src/deact/root.dart';
 part 'src/deact/text.dart';
 part 'src/deact/tree_location.dart';
 
@@ -30,9 +31,15 @@ typedef RootNodeProvider = DeactNode Function(Deact);
 /// that element will be deleted and replaced by the
 /// [root] node.
 Deact deact(String selector, RootNodeProvider root) {
+  // query the host element
+  final hostElement = html.querySelector(selector);
+  if (hostElement == null) {
+    throw ArgumentError('no element found for selector $selector');
+  }
+  final rootNode = RootNode._(selector, hostElement, root);
+
   // create the deact instance
-  final deact = _DeactInstance(selector);
-  deact.rootNode = root(deact);
+  final deact = _DeactInstance(rootNode);
 
   // Initial render of the Deact node hierarchy.
   _renderInstance(deact);

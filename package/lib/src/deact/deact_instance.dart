@@ -14,13 +14,13 @@ abstract class Deact {
 }
 
 class _DeactInstance implements Deact {
-  final String selector;
+  final RootNode rootNode;
   final Map<_TreeLocation, ComponentContext> contexts = {};
-  DeactNode? rootNode;
+
   @override
   num lastRenderTimeMs = -1;
   @override
   AfterRender? afterRender;
 
-  _DeactInstance(this.selector);
+  _DeactInstance(this.rootNode);
 }

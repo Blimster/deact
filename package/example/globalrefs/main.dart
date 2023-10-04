@@ -2,19 +2,19 @@ import 'package:deact/deact.dart';
 import 'package:deact/deact_html52.dart';
 
 void main() {
-  deact(
-      '#root',
-      (_) => fragment([
-            globalRef<int>(
-              name: 'counter',
-              initialValue: 0,
-              children: [
-                incrementor(),
-                display(),
-              ],
-            ),
-            counter(),
-          ]));
+  deact('#root', (_) {
+    return fragment([
+      globalRef<int>(
+        name: 'counter',
+        initialValue: 0,
+        children: [
+          incrementor(),
+          display(),
+        ],
+      ),
+      counter(),
+    ]);
+  });
 }
 
 DeactNode incrementor() => fc((ctx) {
