@@ -5,6 +5,8 @@ void _renderInstance(_DeactInstance instance) {
     final sw = Stopwatch();
     sw.start();
 
+    final rootLocation = instance.rootLocation;
+
     final usedComponentLocations = <_TreeLocation>{};
     domino_browser.registerView(
         root: instance.rootNode.hostElement,
@@ -13,6 +15,7 @@ void _renderInstance(_DeactInstance instance) {
               instance,
               instance.rootNode,
               0,
+              rootLocation,
               null,
               usedComponentLocations,
             ));
@@ -40,13 +43,14 @@ void _renderInstance(_DeactInstance instance) {
 void _renderNode(
   domino.DomBuilder<Element, Event> domBuilder,
   _DeactInstance instance,
-  DeactNode? node,
+  DeactNode node,
   int nodePosition,
+  _TreeLocation parentLocation,
   ComponentContext? parentContext,
   Set<_TreeLocation> usedComponentLocations,
 ) {
   if (node is ElementNode) {
-    node._location = _TreeLocation(parentContext?._location, 'e:${node.name}', nodePosition, key: node.key);
+    final location = parentLocation.addChild(node, _NodeType.element, node.name, nodePosition, key: node.key);
     final props = <Object>[];
     final attributes = node.attributes;
     if (attributes != null) {
@@ -67,7 +71,7 @@ void _renderNode(
     );
     var i = 0;
     for (var child in node._children) {
-      _renderNode(domBuilder, instance, child, i, parentContext, usedComponentLocations);
+      _renderNode(domBuilder, instance, child, i, location, parentContext, usedComponentLocations);
       i++;
     }
     final el = domBuilder.close();
@@ -78,20 +82,20 @@ void _renderNode(
   } else if (node is FragmentNode) {
     var i = 0;
     for (var child in node._children) {
-      _renderNode(domBuilder, instance, child, i, parentContext, usedComponentLocations);
+      _renderNode(domBuilder, instance, child, i, parentLocation, parentContext, usedComponentLocations);
       i++;
     }
   } else if (node is TextNode) {
-    node._location = _TreeLocation(parentContext?._location, 't', nodePosition);
+    parentLocation.addChild(node, _NodeType.text, '', nodePosition);
     domBuilder.text(node.text);
   } else if (node is Deferred) {
-    _renderNode(domBuilder, instance, node.render(), 0, parentContext, usedComponentLocations);
+    _renderNode(domBuilder, instance, node.render(), 0, parentLocation, parentContext, usedComponentLocations);
   } else if (node is ComponentNode) {
-    final location = _TreeLocation(parentContext?._location, 'c:${node.runtimeType}', nodePosition, key: node.key);
-    node._location = location;
+    final location =
+        parentLocation.addChild(node, _NodeType.component, node.runtimeType.toString(), nodePosition, key: node.key);
     usedComponentLocations.add(location);
     var newContext = false;
-    var context = instance.contexts[node._location];
+    var context = instance.contexts[location];
     if (context == null) {
       context = ComponentContext._(parentContext, instance, location);
       instance.contexts[location] = context;
@@ -100,7 +104,7 @@ void _renderNode(
     context._effects.clear();
     final elementNode = node.render(context);
     if (elementNode is! Deferred) {
-      _renderNode(domBuilder, instance, elementNode, 0, context, usedComponentLocations);
+      _renderNode(domBuilder, instance, elementNode, 0, location, context, usedComponentLocations);
     }
     for (var name in context._effects.keys) {
       final states = context._effectStateDependencies[name];
@@ -132,7 +136,7 @@ void _renderNode(
     }
 
     if (elementNode is Deferred) {
-      _renderNode(domBuilder, instance, elementNode, 0, context, usedComponentLocations);
+      _renderNode(domBuilder, instance, elementNode, 0, location, context, usedComponentLocations);
     }
 
     for (var state in context._states.values) {
@@ -145,11 +149,10 @@ void _renderNode(
       instance,
       rootNode,
       0,
+      parentLocation,
       parentContext,
       usedComponentLocations,
     );
-  } else if (node == null) {
-    // null means nothing should be rendered
   } else {
     throw ArgumentError('unsupported type ${node.runtimeType} of node!');
   }

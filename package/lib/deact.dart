@@ -36,10 +36,12 @@ Deact deact(String selector, RootNodeProvider root) {
   if (hostElement == null) {
     throw ArgumentError('no element found for selector $selector');
   }
+
   final rootNode = RootNode._(selector, hostElement, root);
+  final rootLocation = _TreeLocation(null, rootNode, _NodeType.root, '"$selector"', 0);
 
   // create the deact instance
-  final deact = _DeactInstance(rootNode);
+  final deact = _DeactInstance(rootLocation);
 
   // Initial render of the Deact node hierarchy.
   _renderInstance(deact);
