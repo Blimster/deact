@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.5.0
+
+- BREAKING CHANGE: Requires Dart SDK 3 or newer.
+- BREAKING CHANGE: Changing a state now only rerenders the child nodes of the according component.
+
 ## v1.4.0
 
 - BREAKING CHANGE: Rolled back changes of v1.3.0.
