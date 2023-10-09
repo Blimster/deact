@@ -15,6 +15,7 @@ class ElementNode extends DeactNode {
   final Map<String, Object>? attributes;
   final Map<String, Object>? listeners;
   final Iterable<DeactNode> _children;
+  Element? _element;
 
   ElementNode._(
     this.name,

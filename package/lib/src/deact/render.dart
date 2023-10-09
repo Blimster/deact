@@ -1,31 +1,46 @@
 part of deact;
 
-void _renderInstance(_DeactInstance instance) {
+void _renderInstance(_DeactInstance instance, {_TreeLocation? nodeLocation}) {
   Future(() {
     final sw = Stopwatch();
     sw.start();
 
-    final rootLocation = instance.rootLocation;
+    final rootLocation = nodeLocation ?? instance.rootLocation;
+    final parentLocation = rootLocation.parent ?? rootLocation;
+    final hostElement = rootLocation.hostElement();
+    final parentContext = instance.contexts[rootLocation.parentComponent()];
 
-    final usedComponentLocations = <_TreeLocation>{};
+    final (elementsBefore, elementsAfter) = parentLocation.countElementNodes(rootLocation);
+    final rootIndex = parentLocation.children.indexOf(rootLocation);
+    final locationsBefore = rootIndex != -1 ? parentLocation.children.sublist(0, rootIndex) : <_TreeLocation>[];
+    final locationsAfter = rootIndex != -1 ? parentLocation.children.sublist(rootIndex + 1) : <_TreeLocation>[];
+
+    parentLocation.children.clear();
+
+    final unusedComponentLocations = instance.rootLocation.componentLocations();
     domino_browser.registerView(
-        root: instance.rootNode.hostElement,
-        builderFn: (builder) => _renderNode(
-              builder,
-              instance,
-              instance.rootNode,
-              0,
-              rootLocation,
-              null,
-              usedComponentLocations,
-            ));
-    final locationsToRemove = <_TreeLocation>{};
-    for (var location in instance.contexts.keys) {
-      if (usedComponentLocations.contains(location) == false) {
-        locationsToRemove.add(location);
-      }
-    }
-    for (var location in locationsToRemove) {
+        root: hostElement,
+        builderFn: (builder) {
+          for (int i = 0; i < elementsBefore; i++) {
+            builder.skipNode();
+          }
+          parentLocation.children.addAll(locationsBefore);
+          _renderNode(
+            builder,
+            instance,
+            rootLocation.node,
+            locationsBefore.length,
+            parentLocation,
+            parentContext,
+            unusedComponentLocations,
+          );
+          for (int i = 0; i < elementsAfter; i++) {
+            builder.skipNode();
+          }
+          parentLocation.children.addAll(locationsAfter);
+        });
+
+    for (var location in unusedComponentLocations) {
       final ctx = instance.contexts[location];
       if (ctx != null) {
         for (var cleanup in ctx._cleanups.values) {
@@ -47,7 +62,7 @@ void _renderNode(
   int nodePosition,
   _TreeLocation parentLocation,
   ComponentContext? parentContext,
-  Set<_TreeLocation> usedComponentLocations,
+  Set<_TreeLocation> unusedComponentLocations,
 ) {
   if (node is ElementNode) {
     final location = parentLocation.addChild(node, _NodeType.element, node.name, nodePosition, key: node.key);
@@ -71,10 +86,11 @@ void _renderNode(
     );
     var i = 0;
     for (var child in node._children) {
-      _renderNode(domBuilder, instance, child, i, location, parentContext, usedComponentLocations);
+      _renderNode(domBuilder, instance, child, i, location, parentContext, unusedComponentLocations);
       i++;
     }
     final el = domBuilder.close();
+    node._element = el;
     final ref = node.ref;
     if (ref != null && ref.value != el) {
       ref.value = el;
@@ -82,18 +98,18 @@ void _renderNode(
   } else if (node is FragmentNode) {
     var i = 0;
     for (var child in node._children) {
-      _renderNode(domBuilder, instance, child, i, parentLocation, parentContext, usedComponentLocations);
+      _renderNode(domBuilder, instance, child, i, parentLocation, parentContext, unusedComponentLocations);
       i++;
     }
   } else if (node is TextNode) {
     parentLocation.addChild(node, _NodeType.text, '', nodePosition);
     domBuilder.text(node.text);
   } else if (node is Deferred) {
-    _renderNode(domBuilder, instance, node.render(), 0, parentLocation, parentContext, usedComponentLocations);
+    _renderNode(domBuilder, instance, node.render(), 0, parentLocation, parentContext, unusedComponentLocations);
   } else if (node is ComponentNode) {
     final location =
         parentLocation.addChild(node, _NodeType.component, node.runtimeType.toString(), nodePosition, key: node.key);
-    usedComponentLocations.add(location);
+    unusedComponentLocations.remove(location);
     var newContext = false;
     var context = instance.contexts[location];
     if (context == null) {
@@ -104,7 +120,7 @@ void _renderNode(
     context._effects.clear();
     final elementNode = node.render(context);
     if (elementNode is! Deferred) {
-      _renderNode(domBuilder, instance, elementNode, 0, location, context, usedComponentLocations);
+      _renderNode(domBuilder, instance, elementNode, 0, location, context, unusedComponentLocations);
     }
     for (var name in context._effects.keys) {
       final states = context._effectStateDependencies[name];
@@ -136,7 +152,7 @@ void _renderNode(
     }
 
     if (elementNode is Deferred) {
-      _renderNode(domBuilder, instance, elementNode, 0, location, context, usedComponentLocations);
+      _renderNode(domBuilder, instance, elementNode, 0, location, context, unusedComponentLocations);
     }
 
     for (var state in context._states.values) {
@@ -151,7 +167,7 @@ void _renderNode(
       0,
       parentLocation,
       parentContext,
-      usedComponentLocations,
+      unusedComponentLocations,
     );
   } else {
     throw ArgumentError('unsupported type ${node.runtimeType} of node!');

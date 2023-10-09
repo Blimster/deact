@@ -56,12 +56,13 @@ class Ref<T> {
 /// not recognize, that the state has changed.
 class State<T> {
   final _DeactInstance _instance;
+  final _TreeLocation _location;
   final _TypeLiteral<T> _type;
   final bool _global;
   T? _value;
   bool _valueChanged = true;
 
-  State._(this._instance, this._global, this._value) : _type = _TypeLiteral<T>();
+  State._(this._instance, this._location, this._global, this._value) : _type = _TypeLiteral<T>();
 
   /// Executes to provided [updater] function to update
   /// a part of the state. This function is useful for
@@ -71,7 +72,7 @@ class State<T> {
   void update(void Function(T state) updater) {
     updater(_value as T);
     _valueChanged = true;
-    _renderInstance(_instance);
+    _renderInstance(_instance, nodeLocation: _location);
   }
 
   /// Executes to provided [setter] function to replace
@@ -82,7 +83,7 @@ class State<T> {
   void set(T Function(T state) setter) {
     _value = setter(_value as T);
     _valueChanged = true;
-    _renderInstance(_instance);
+    _renderInstance(_instance, nodeLocation: _location);
   }
 
   /// Sets a new state. After the new state is applied,
@@ -91,7 +92,7 @@ class State<T> {
   set value(T value) {
     _value = value;
     _valueChanged = true;
-    _renderInstance(_instance);
+    _renderInstance(_instance, nodeLocation: _location);
   }
 
   /// Returns the actual state object.
@@ -207,7 +208,7 @@ class ComponentContext {
   /// for all children of the component.
   State<T> state<T>(String name, T initialValue, {bool global = false}) {
     return _states.putIfAbsent(name, () {
-      final state = State<T>._(_instance, global, initialValue);
+      final state = State<T>._(_instance, _location, global, initialValue);
       //_instance.logger.fine('${_location}: created state with name ${name} with initial value ${initialValue}');
       return state;
     }) as State<T>;
@@ -233,7 +234,7 @@ class ComponentContext {
   State<T> stateProvided<T>(String name, InitialValueProvider<T> initialValueProvider, {bool global = false}) {
     return _states.putIfAbsent(name, () {
       final initialValue = initialValueProvider();
-      final state = State<T>._(_instance, global, initialValue);
+      final state = State<T>._(_instance, _location, global, initialValue);
       //_instance.logger.fine('${_location}: created state with name ${name} with initial value ${initialValue}');
       return state;
     }) as State<T>;
