@@ -10,7 +10,8 @@ void _renderInstance(_DeactInstance instance, {_TreeLocation? nodeLocation}) {
     final hostElement = rootLocation.hostElement();
     final parentContext = instance.contexts[rootLocation.parentComponent()];
 
-    final (elementsBefore, elementsAfter) = parentLocation.countElementNodes(rootLocation);
+    final (elementsBefore, elementsAfter) =
+        nodeLocation == null ? (0, 0) : parentLocation.countElementNodes(rootLocation);
     final rootIndex = parentLocation.children.indexOf(rootLocation);
     final locationsBefore = rootIndex != -1 ? parentLocation.children.sublist(0, rootIndex) : <_TreeLocation>[];
     final locationsAfter = rootIndex != -1 ? parentLocation.children.sublist(rootIndex + 1) : <_TreeLocation>[];

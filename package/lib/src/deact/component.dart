@@ -283,9 +283,13 @@ class ComponentContext {
 
   /// Schedules a rerender of the component and all its
   /// children.
-  void scheduleRerender() {
-    _renderInstance(_instance);
+  void scheduleRerender({bool completeTree = false}) {
+    _renderInstance(_instance, nodeLocation: completeTree ? null : _location);
   }
+
+  /// Returns a string prepresentation of the location of
+  /// the component of this context.
+  String get locationString => _location.toString();
 }
 
 /// A function that creates a component.

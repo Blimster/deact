@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.5.1
+
+- `ComponentContext.scheduleRerender()` now only rerenders the component and its children (as intended with v1.5.0). Use parameter `completeTree` to rerender the complete tree.
+- Bugfix: `ComponentContext.scheduleRerender()` duplicated the UI when rendering the complete tree.
+- Added `ComponentContext.locationString`
+
 ## v1.5.0
 
 - BREAKING CHANGE: Requires Dart SDK 3 or newer.

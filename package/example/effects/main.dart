@@ -36,8 +36,8 @@ DeactNode counterButton() {
 
 DeactNode renderButton() {
   return fc((ctx) {
-    final render = ctx.globalState<bool>('render');
-    return button(onclick: (_) => render.set((r) => !r), children: [txt('Rerender Component')]);
+    //final render = ctx.globalState<bool>('render');
+    return button(onclick: (_) => ctx.scheduleRerender(completeTree: true), children: [txt('Rerender Component')]);
   });
 }
 
