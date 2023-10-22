@@ -18,7 +18,7 @@ void _renderInstance(_DeactInstance instance, {_TreeLocation? nodeLocation}) {
 
     parentLocation.children.clear();
 
-    final unusedComponentLocations = instance.rootLocation.componentLocations();
+    final unusedComponentLocations = rootLocation.componentLocations();
     domino_browser.registerView(
         root: hostElement,
         builderFn: (builder) {
@@ -42,13 +42,12 @@ void _renderInstance(_DeactInstance instance, {_TreeLocation? nodeLocation}) {
         });
 
     for (var location in unusedComponentLocations) {
-      final ctx = instance.contexts[location];
+      final ctx = instance.contexts.remove(location);
       if (ctx != null) {
         for (var cleanup in ctx._cleanups.values) {
           cleanup();
         }
       }
-      instance.contexts.remove(location);
     }
 
     instance.lastRenderTimeMs = sw.elapsedMilliseconds;
@@ -114,7 +113,7 @@ void _renderNode(
     var newContext = false;
     var context = instance.contexts[location];
     if (context == null) {
-      context = ComponentContext._(parentContext, instance, location);
+      context = ComponentContext._(parentContext, instance, location.toString());
       instance.contexts[location] = context;
       newContext = true;
     }

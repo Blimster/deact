@@ -56,13 +56,13 @@ class Ref<T> {
 /// not recognize, that the state has changed.
 class State<T> {
   final _DeactInstance _instance;
-  final _TreeLocation _location;
+  final String _locationId;
   final _TypeLiteral<T> _type;
   final bool _global;
   T? _value;
   bool _valueChanged = true;
 
-  State._(this._instance, this._location, this._global, this._value) : _type = _TypeLiteral<T>();
+  State._(this._instance, this._locationId, this._global, this._value) : _type = _TypeLiteral<T>();
 
   /// Executes to provided [updater] function to update
   /// a part of the state. This function is useful for
@@ -72,7 +72,11 @@ class State<T> {
   void update(void Function(T state) updater) {
     updater(_value as T);
     _valueChanged = true;
-    _renderInstance(_instance, nodeLocation: _location);
+    final location = _instance.rootLocation.find(_locationId);
+    if (location != null) {
+      _renderInstance(_instance, nodeLocation: location);
+    }
+    //throw StateError('location $_locationId not found!');
   }
 
   /// Executes to provided [setter] function to replace
@@ -83,7 +87,11 @@ class State<T> {
   void set(T Function(T state) setter) {
     _value = setter(_value as T);
     _valueChanged = true;
-    _renderInstance(_instance, nodeLocation: _location);
+    final location = _instance.rootLocation.find(_locationId);
+    if (location != null) {
+      _renderInstance(_instance, nodeLocation: location);
+    }
+    //throw StateError('location $_locationId not found!');
   }
 
   /// Sets a new state. After the new state is applied,
@@ -92,7 +100,11 @@ class State<T> {
   set value(T value) {
     _value = value;
     _valueChanged = true;
-    _renderInstance(_instance, nodeLocation: _location);
+    final location = _instance.rootLocation.find(_locationId);
+    if (location != null) {
+      _renderInstance(_instance, nodeLocation: location);
+    }
+    //throw StateError('location $_locationId not found!');
   }
 
   /// Returns the actual state object.
@@ -115,14 +127,14 @@ typedef InitialValueProvider<T> = T Function();
 class ComponentContext {
   final _DeactInstance _instance;
   final ComponentContext? _parent;
-  final _TreeLocation _location;
+  final String _locationId;
   final Map<String, Ref> _refs = {};
   final Map<String, State> _states = {};
   final Map<String, Effect> _effects = {};
   final Map<String, Cleanup> _cleanups = {};
   final Map<String, Iterable<State>?> _effectStateDependencies = {};
 
-  ComponentContext._(this._parent, this._instance, this._location);
+  ComponentContext._(this._parent, this._instance, this._locationId);
 
   /// Creates a reference with the given [name] and
   /// [intialValue].
@@ -208,7 +220,7 @@ class ComponentContext {
   /// for all children of the component.
   State<T> state<T>(String name, T initialValue, {bool global = false}) {
     return _states.putIfAbsent(name, () {
-      final state = State<T>._(_instance, _location, global, initialValue);
+      final state = State<T>._(_instance, _locationId, global, initialValue);
       //_instance.logger.fine('${_location}: created state with name ${name} with initial value ${initialValue}');
       return state;
     }) as State<T>;
@@ -234,7 +246,7 @@ class ComponentContext {
   State<T> stateProvided<T>(String name, InitialValueProvider<T> initialValueProvider, {bool global = false}) {
     return _states.putIfAbsent(name, () {
       final initialValue = initialValueProvider();
-      final state = State<T>._(_instance, _location, global, initialValue);
+      final state = State<T>._(_instance, _locationId, global, initialValue);
       //_instance.logger.fine('${_location}: created state with name ${name} with initial value ${initialValue}');
       return state;
     }) as State<T>;
@@ -284,12 +296,20 @@ class ComponentContext {
   /// Schedules a rerender of the component and all its
   /// children.
   void scheduleRerender({bool completeTree = false}) {
-    _renderInstance(_instance, nodeLocation: completeTree ? null : _location);
+    if (completeTree) {
+      _renderInstance(_instance);
+    } else {
+      final location = _instance.rootLocation.find(_locationId);
+      if (location != null) {
+        _renderInstance(_instance, nodeLocation: completeTree ? null : location);
+      }
+      //throw StateError('location $_locationId not found!');
+    }
   }
 
   /// Returns a string prepresentation of the location of
   /// the component of this context.
-  String get locationString => _location.toString();
+  String get locationString => _locationId;
 }
 
 /// A function that creates a component.

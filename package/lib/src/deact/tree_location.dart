@@ -61,6 +61,23 @@ class _TreeLocation {
     return null;
   }
 
+  _TreeLocation? find(String id) {
+    return _find(this, id);
+  }
+
+  _TreeLocation? _find(_TreeLocation location, String id) {
+    if (location.toString() == id) {
+      return location;
+    }
+    for (final child in location.children) {
+      final found = _find(child, id);
+      if (found != null) {
+        return found;
+      }
+    }
+    return null;
+  }
+
   (int, int) countElementNodes(_TreeLocation split) {
     return _countElementNodes(children, split, false, 0, 0);
   }
@@ -104,6 +121,17 @@ class _TreeLocation {
     }
     for (final child in children) {
       location._componentLocations(child, locations);
+    }
+  }
+
+  void printTree() {
+    _printNode('', this);
+  }
+
+  void _printNode(String prefix, _TreeLocation location) {
+    print('$prefix${location.positionString}');
+    for (var child in location.children) {
+      _printNode('$prefix  ', child);
     }
   }
 

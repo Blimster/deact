@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.5.2
+
+- Several bugfixes for partial tree render.
+
 ## v1.5.1
 
 - `ComponentContext.scheduleRerender()` now only rerenders the component and its children (as intended with v1.5.0). Use parameter `completeTree` to rerender the complete tree.
