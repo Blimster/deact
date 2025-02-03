@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.6.0
+
+- BREAKING CHANGE: Migrated from `dart:html` to `package:web` (including requirement for Dart SDK 3.4.0 or higher).
+
 ## v1.5.2
 
 - Several bugfixes for partial tree render.

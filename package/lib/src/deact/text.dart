@@ -1,4 +1,4 @@
-part of deact;
+part of '../../deact.dart';
 
 /// A [TextNode] is a [DeactNode] that adds a text to the DOM.
 class TextNode extends DeactNode {

@@ -1,4 +1,4 @@
-part of deact;
+part of '../../deact.dart';
 
 class _TypeLiteral<T> {
   Type type() => T;
@@ -345,7 +345,7 @@ abstract class ComponentNode extends DeactNode {
 class Functional extends ComponentNode {
   final FunctionalComponent builder;
 
-  Functional._({Object? key, required this.builder}) : super(key: key);
+  Functional._({super.key, required this.builder});
 
   @override
   DeactNode render(ComponentContext context) {

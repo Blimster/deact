@@ -1,4 +1,4 @@
-part of deact;
+part of '../../deact.dart';
 
 /// The state of a component that implements this interface
 /// is global to all its child components.

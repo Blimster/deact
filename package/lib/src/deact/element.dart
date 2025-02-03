@@ -1,7 +1,7 @@
-part of deact;
+part of '../../deact.dart';
 
 /// A listener for an HTML event.
-typedef EventListener<E extends html.Event> = void Function(E event);
+typedef EventListener<E extends web.Event> = void Function(E event);
 
 /// A [ElementNode] is a [DeactNode] that represents a DOM element.
 ///
@@ -11,11 +11,11 @@ typedef EventListener<E extends html.Event> = void Function(E event);
 class ElementNode extends DeactNode {
   final String name;
   final Object? key;
-  final Ref<html.Element?>? ref;
+  final Ref<web.Element?>? ref;
   final Map<String, Object>? attributes;
   final Map<String, Object>? listeners;
   final Iterable<DeactNode> _children;
-  Element? _element;
+  web.Element? _element;
 
   ElementNode._(
     this.name,
@@ -54,7 +54,7 @@ class ElementNode extends DeactNode {
 ElementNode el(
   String name, {
   Object? key,
-  Ref<html.Element?>? ref,
+  Ref<web.Element?>? ref,
   Map<String, Object>? attributes,
   Map<String, Object>? listeners,
   Iterable<DeactNode>? children,

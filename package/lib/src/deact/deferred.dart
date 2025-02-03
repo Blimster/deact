@@ -1,4 +1,4 @@
-part of deact;
+part of '../../deact.dart';
 
 /// Deact internally stores a deferred component as a
 /// class of this type.

@@ -1,4 +1,4 @@
-import 'dart:html';
+import 'package:web/web.dart';
 
 import 'package:deact/deact.dart';
 import 'package:deact/deact_html52.dart';
@@ -8,7 +8,7 @@ void main() {
 }
 
 DeactNode refs() => fc((ctx) {
-      final inputRef = ctx.ref<InputElement?>('input', null);
+      final inputRef = ctx.ref<HTMLInputElement?>('input', null);
 
       return fragment([
         button(

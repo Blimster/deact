@@ -1,11 +1,8 @@
-library deact;
-
 import 'dart:async';
-import 'dart:html' as html;
-import 'dart:html';
 
 import 'package:domino/browser.dart' as domino_browser;
 import 'package:domino/domino.dart' as domino;
+import 'package:web/web.dart' as web;
 
 part 'src/deact/component.dart';
 part 'src/deact/deact_instance.dart';
@@ -32,7 +29,7 @@ typedef RootNodeProvider = DeactNode Function(Deact);
 /// [root] node.
 Deact deact(String selector, RootNodeProvider root) {
   // query the host element
-  final hostElement = html.querySelector(selector);
+  final hostElement = web.document.querySelector(selector);
   if (hostElement == null) {
     throw ArgumentError('no element found for selector $selector');
   }

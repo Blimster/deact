@@ -1,4 +1,4 @@
-part of deact;
+part of '../../deact.dart';
 
 typedef AfterRender = void Function(Deact);
 

@@ -1,4 +1,4 @@
-part of deact;
+part of '../../deact.dart';
 
 /// A [FragmentNode] is a [DeactNode] with no content except its
 /// children.

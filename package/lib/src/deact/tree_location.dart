@@ -1,4 +1,4 @@
-part of deact;
+part of '../../deact.dart';
 
 enum _NodeType {
   root,
@@ -30,7 +30,7 @@ class _TreeLocation {
     return '[${type.name.substring(0, 1)}:$description${key ?? position}]';
   }
 
-  Element hostElement() {
+  web.Element hostElement() {
     _TreeLocation? location = this;
     while (location != null) {
       final node = location.node;

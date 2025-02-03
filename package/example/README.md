@@ -1,9 +1,5 @@
 # Examples
 
-## helloworld
-
-A very simple Deact application that display ```Hello World```.
-
 ## component
 
 Show the usage of components.
@@ -23,6 +19,10 @@ Shows the usage of global state.
 ## helloworld
 
 A simple Hello World application.
+
+## keys
+
+Show the usage of keys.
 
 ## performance
 

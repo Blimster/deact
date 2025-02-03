@@ -1,4 +1,4 @@
-part of deact;
+part of '../../deact.dart';
 
 void _renderInstance(_DeactInstance instance, {_TreeLocation? nodeLocation}) {
   Future(() {
@@ -56,7 +56,7 @@ void _renderInstance(_DeactInstance instance, {_TreeLocation? nodeLocation}) {
 }
 
 void _renderNode(
-  domino.DomBuilder<Element, Event> domBuilder,
+  domino.DomBuilder<web.Element, web.Event> domBuilder,
   _DeactInstance instance,
   DeactNode node,
   int nodePosition,

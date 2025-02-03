@@ -1,13 +1,14 @@
 import 'model.dart';
 
 void generate(String name, ElementDefinitions definitions, void Function(Object object) print) {
-  print('part of deact_$name;');
+  print("import 'package:deact/deact.dart';");
+  print("import 'package:web/web.dart' as web;");
   print('');
 
   definitions.elements.forEach((k, v) {
     print('ElementNode $k({');
     print('Object? key, ');
-    print('Ref<h.Element?>? ref, ');
+    print('Ref<web.Element?>? ref, ');
 
     definitions.attributes.forEach((k, v) {
       if (v.global) {
@@ -30,7 +31,7 @@ void generate(String name, ElementDefinitions definitions, void Function(Object 
     });
 
     definitions.events.forEach((v, k) {
-      print('EventListener<h.$k>? on$v, ');
+      print('EventListener<web.$k>? on$v, ');
     });
 
     print('Iterable<DeactNode>? children,');
