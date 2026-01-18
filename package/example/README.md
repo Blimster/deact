@@ -33,6 +33,10 @@ A Deact implementation of the application as decribed at [How to Benchmark React
 
 Shows the usage of references.
 
+## refsandstate
+
+Shows the combined usage of references and state in a todo list application.
+
 ## state
 
 Shows the usage of component local state.
