@@ -11,7 +11,7 @@ class FragmentNode extends DeactNode {
   FragmentNode._(this._children) : super._();
 }
 
-/// Creates a [Fragement] node with the given [children].
+/// Creates a [Fragment] node with the given [children].
 FragmentNode fragment(Iterable<DeactNode> children) {
   return FragmentNode._(children);
 }

@@ -115,14 +115,14 @@ class State<T> {
 typedef Cleanup = void Function();
 
 /// An [Effect] is a function to be called when a
-/// compoenent was (re)rendered.
+/// component was (re)rendered.
 typedef Effect = Cleanup? Function();
 
-/// A function to provide an intial value.
+/// A function to provide an initial value.
 typedef InitialValueProvider<T> = T Function();
 
 /// A [ComponentContext] is the interface for
-/// component to the Deact API. It is provied to the
+/// component to the Deact API. It is provided to the
 /// component, when it is rendered.
 class ComponentContext {
   final _DeactInstance _instance;
@@ -137,7 +137,7 @@ class ComponentContext {
   ComponentContext._(this._parent, this._instance, this._locationId);
 
   /// Creates a reference with the given [name] and
-  /// [intialValue].
+  /// [initialValue].
   ///
   /// If no reference is registered with the given
   /// [name], a new reference is created with
@@ -185,7 +185,7 @@ class ComponentContext {
   ///
   /// If no reference with the given [name] and type [R] is
   /// found, an [StateError] is thrown. The search starts
-  /// at the nearest state provider of the compoent and
+  /// at the nearest state provider of the component and
   /// proceeds in direction to the root of the node
   /// hierarchy.
   Ref<R> globalRef<R>(String name) {
@@ -201,7 +201,7 @@ class ComponentContext {
   }
 
   /// Creates a state with the given [name] and
-  /// [intialValue]. This state is local to the component.
+  /// [initialValue]. This state is local to the component.
   ///
   /// If no state is registered with the given
   /// [name], a new state is created with [initialValue]
@@ -256,7 +256,7 @@ class ComponentContext {
   ///
   /// If no state with the given [name] and type [S] is
   /// found, an [StateError] is thrown. The search starts
-  /// at the nearest state provider of the compoent and
+  /// at the nearest state provider of the component and
   /// proceeds in direction to the root of the node
   /// hierarchy.
   State<S> globalState<S>(String name) {
@@ -307,7 +307,7 @@ class ComponentContext {
     }
   }
 
-  /// Returns a string prepresentation of the location of
+  /// Returns a string representation of the location of
   /// the component of this context.
   String get locationString => _locationId;
 }
@@ -321,7 +321,7 @@ abstract class ComponentNode extends DeactNode {
 
   /// States and effects are not bound to a component but to
   /// its location the node hierarchy. If no [key] is provided,
-  /// the location of a component is compposed of the
+  /// the location of a component is composed of the
   /// location of its parent, the type of the component and
   /// an index per component type that is increased for every
   /// component of the same type beneath the same parent.
@@ -361,7 +361,7 @@ class Functional extends ComponentNode {
 ///
 /// States and effects are not bound to a component but to
 /// its location the node hierarchy. If no [key] is provided,
-/// the location of a component is compposed of the
+/// the location of a component is composed of the
 /// location of its parent, the type of the component and
 /// an index per component type that is increased for every
 /// component of the same type beneath the same parent.

@@ -37,7 +37,7 @@ class ElementNode extends DeactNode {
 /// element, especially when items will be moved or
 /// later added to the start or middle. This prevents
 /// that different logical subtrees will be reused and
-/// the focus will correctly maintened.
+/// the focus will correctly maintained.
 ///
 /// When providing a [Ref<Element>], the value of the
 /// reference will be set with the created element node.

@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.x.y
+
+- Fixed typos
+
 ## v1.6.0
 
 - BREAKING CHANGE: Migrated from `dart:html` to `package:web` (including requirement for Dart SDK 3.4.0 or higher).
@@ -83,7 +87,7 @@
 
 ## v0.4.1
 
--   A component can make its states or references global to its children by implementing [GlobalStateProbider] or [GlobalRefProvider]. Thus, it is no longer necessary to always add an extra level to the node hierarchy if a global state or reference is required.
+-   A component can make its states or references global to its children by implementing [GlobalStateProvider] or [GlobalRefProvider]. Thus, it is no longer necessary to always add an extra level to the node hierarchy if a global state or reference is required.
 
 ## v0.4.0
 
@@ -95,7 +99,7 @@
 
 ## v0.3.2
 
--   Childs of a node can now be provided as a `Iterable` instead as only a `List`.
+-   Children of a node can now be provided as a `Iterable` instead as only a `List`.
 
 ## v0.3.1
 
@@ -130,5 +134,5 @@
 
 ## v0.1.0
 
--   Intial release
+-   Initial release
 -

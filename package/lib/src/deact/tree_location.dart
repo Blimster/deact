@@ -41,7 +41,7 @@ class _TreeLocation {
         if (element != null) {
           return element;
         } else {
-          throw StateError('dom element not set for elemenet node $location');
+          throw StateError('dom element not set for element node $location');
         }
       }
       location = location.parent;
