@@ -1,5 +1,18 @@
 part of '../../deact.dart';
 
+T _handleDOMExceptionOn<T>(DeactNode node, T Function() fn) {
+  try {
+    return fn();
+  } catch (e) {
+    if (e.isA<DOMException>()) {
+      console.warn(
+          'An error occurred while rendering. This is likely because of a missing "key" attribute on the node or in the hierarchy: node=$node'
+              .toJS);
+    }
+    rethrow;
+  }
+}
+
 void _renderInstance(_DeactInstance instance, {_TreeLocation? nodeLocation}) {
   Future(() {
     final sw = Stopwatch();
@@ -10,11 +23,16 @@ void _renderInstance(_DeactInstance instance, {_TreeLocation? nodeLocation}) {
     final hostElement = rootLocation.hostElement();
     final parentContext = instance.contexts[rootLocation.parentComponent()];
 
-    final (elementsBefore, elementsAfter) =
-        nodeLocation == null ? (0, 0) : parentLocation.countElementNodes(rootLocation);
+    final (elementsBefore, elementsAfter) = nodeLocation == null
+        ? (0, 0)
+        : parentLocation.countElementNodes(rootLocation);
     final rootIndex = parentLocation.children.indexOf(rootLocation);
-    final locationsBefore = rootIndex != -1 ? parentLocation.children.sublist(0, rootIndex) : <_TreeLocation>[];
-    final locationsAfter = rootIndex != -1 ? parentLocation.children.sublist(rootIndex + 1) : <_TreeLocation>[];
+    final locationsBefore = rootIndex != -1
+        ? parentLocation.children.sublist(0, rootIndex)
+        : <_TreeLocation>[];
+    final locationsAfter = rootIndex != -1
+        ? parentLocation.children.sublist(rootIndex + 1)
+        : <_TreeLocation>[];
 
     parentLocation.children.clear();
 
@@ -65,7 +83,9 @@ void _renderNode(
   Set<_TreeLocation> unusedComponentLocations,
 ) {
   if (node is ElementNode) {
-    final location = parentLocation.addChild(node, _NodeType.element, node.name, nodePosition, key: node.key);
+    final location = parentLocation.addChild(
+        node, _NodeType.element, node.name, nodePosition,
+        key: node.key);
     final props = <Object>[];
     final attributes = node.attributes;
     if (attributes != null) {
@@ -78,18 +98,23 @@ void _renderNode(
       });
     }
 
-    domBuilder.open(
-      node.name,
-      key: node.key != null ? '${node.key}' : null,
-      attributes: attributes?.map((key, value) => MapEntry(key, '$value')),
-      events: listeners?.map((key, value) => MapEntry(key.substring(2), (event) => (value as dynamic)(event.event))),
-    );
+    _handleDOMExceptionOn(node, () {
+      domBuilder.open(
+        node.name,
+        key: node.key != null ? '${node.key}' : null,
+        attributes: attributes?.map((key, value) => MapEntry(key, '$value')),
+        events: listeners?.map((key, value) => MapEntry(
+            key.substring(2), (event) => (value as dynamic)(event.event))),
+      );
+    });
     var i = 0;
     for (var child in node._children) {
-      _renderNode(domBuilder, instance, child, i, location, parentContext, unusedComponentLocations);
+      _renderNode(domBuilder, instance, child, i, location, parentContext,
+          unusedComponentLocations);
       i++;
     }
-    final el = domBuilder.close();
+
+    final el = _handleDOMExceptionOn(node, () => domBuilder.close());
     node._element = el;
     final ref = node.ref;
     if (ref != null && ref.value != el) {
@@ -98,29 +123,34 @@ void _renderNode(
   } else if (node is FragmentNode) {
     var i = 0;
     for (var child in node._children) {
-      _renderNode(domBuilder, instance, child, i, parentLocation, parentContext, unusedComponentLocations);
+      _renderNode(domBuilder, instance, child, i, parentLocation, parentContext,
+          unusedComponentLocations);
       i++;
     }
   } else if (node is TextNode) {
     parentLocation.addChild(node, _NodeType.text, '', nodePosition);
-    domBuilder.text(node.text);
+    _handleDOMExceptionOn(node, () => domBuilder.text(node.text));
   } else if (node is Deferred) {
-    _renderNode(domBuilder, instance, node.render(), 0, parentLocation, parentContext, unusedComponentLocations);
+    _renderNode(domBuilder, instance, node.render(), 0, parentLocation,
+        parentContext, unusedComponentLocations);
   } else if (node is ComponentNode) {
-    final location =
-        parentLocation.addChild(node, _NodeType.component, node.runtimeType.toString(), nodePosition, key: node.key);
+    final location = parentLocation.addChild(
+        node, _NodeType.component, node.runtimeType.toString(), nodePosition,
+        key: node.key);
     unusedComponentLocations.remove(location);
     var newContext = false;
     var context = instance.contexts[location];
     if (context == null) {
-      context = ComponentContext._(parentContext, instance, location.toString());
+      context =
+          ComponentContext._(parentContext, instance, location.toString());
       instance.contexts[location] = context;
       newContext = true;
     }
     context._effects.clear();
     final elementNode = node.render(context);
     if (elementNode is! Deferred) {
-      _renderNode(domBuilder, instance, elementNode, 0, location, context, unusedComponentLocations);
+      _renderNode(domBuilder, instance, elementNode, 0, location, context,
+          unusedComponentLocations);
     }
     for (var name in context._effects.keys) {
       final states = context._effectStateDependencies[name];
@@ -152,7 +182,8 @@ void _renderNode(
     }
 
     if (elementNode is Deferred) {
-      _renderNode(domBuilder, instance, elementNode, 0, location, context, unusedComponentLocations);
+      _renderNode(domBuilder, instance, elementNode, 0, location, context,
+          unusedComponentLocations);
     }
 
     for (var state in context._states.values) {

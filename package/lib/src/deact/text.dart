@@ -5,6 +5,9 @@ class TextNode extends DeactNode {
   final String text;
 
   TextNode._(this.text) : super._();
+
+  @override
+  String toString() => 'TextNode("$text")';
 }
 
 /// Creates a [TextNode] node with the given [text].

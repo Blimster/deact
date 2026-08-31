@@ -1,7 +1,9 @@
 import 'dart:async';
+import 'dart:js_interop';
 
 import 'package:domino/browser.dart' as domino_browser;
 import 'package:domino/domino.dart' as domino;
+import 'package:web/helpers.dart';
 import 'package:web/web.dart' as web;
 
 part 'src/deact/component.dart';

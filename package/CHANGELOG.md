@@ -1,8 +1,8 @@
 # Changelog
 
-## v1.x.y
+## v1.6.1
 
-- Fixed typos
+- Add hint for missing key in case of a `DOMException` when rendering.
 
 ## v1.6.0
 

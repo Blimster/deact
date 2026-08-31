@@ -211,10 +211,22 @@ As you can see, a reference provices a stream of value change events.
 
 It is also possible to let a component implement the interface ```GlobalRefProvider```. In this case, all local references of the compoenent is global to all its children.
 
-## Experimental
+## Keys
 
-Deact has no stable release yet. Functionality is not yet complete. The API may change and maybe in a breaking way. 
+Keys are required when rendering multiple components or elements of the same type in some situations, such as items in a list. They allow Deact to identify nodes between rerenders and preserve the correct component state and DOM elements when items are added, removed, or reordered.
 
-Actually, Deact is tested in an internal project. 
+The same rules that apply to keys in React also apply to Deact: keys must be unique among siblings and should be stable. Prefer an identifier from the rendered data over an array index. Array indexes should only be used when the list is static and never reordered.
 
-If you will try Deact: Feedback is welcome!
+```dart
+DeactNode todoList(List<Todo> todos) => ul(
+    children: todos
+      .map((todo) => li(
+        children: [txt(todo.title)],
+        key: todo.id,
+        ))
+      .toList(),
+  );
+```
+
+In this example, `todo.id` is used as the key so that each item keeps its identity when the list changes.
+
